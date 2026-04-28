@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
-<meta name="wy-full-protection" content="v4-l1l8-silent">
+<meta name="wy-full-protection" content="v5-l1l8-silent">
 <meta name="robots" content="noai, noimageai, noarchive, nosnippet">
 <meta name="googlebot" content="noai, noimageai">
 <meta name="bingbot" content="noai, noimageai">
@@ -2081,145 +2081,6 @@ h5{font-size:18.5px!important;}
 </script>
 
 
-<script id="wy-protection-runtime">
-(function(){
-  if (window.__wyProtectionLoaded) return;
-  window.__wyProtectionLoaded = true;
-
-  var ALLOWED_HOST = "weiwen0925.github.io";
-  var ALLOWED_PATH = "/dazhidulun-16/";
-
-  // 靜默 lockdown：不顯示任何警語，純粹維持空白
-  var _locked = false;
-  function _silent(){
-    if (_locked) return;
-    _locked = true;
-    try {
-      // 維持 wy-preguard-hide 不移除 → html visibility 保持 hidden
-      // 補強：強制把 hide style 補回（即使後續解除也壓回去）
-      var hide = document.getElementById('wy-preguard-hide');
-      if (!hide) {
-        hide = document.createElement('style');
-        hide.id = 'wy-preguard-hide';
-        hide.textContent = 'html{visibility:hidden!important}';
-        (document.head || document.documentElement).appendChild(hide);
-      } else {
-        hide.textContent = 'html{visibility:hidden!important}';
-      }
-      // 清空 body
-      if (document.body) {
-        document.body.innerHTML = '';
-      }
-      // 阻斷 ready 通道
-      window.__wyOriginOK = false;
-    } catch(e){}
-  }
-
-  // L2 · 列印攔截
-  try { window.print = function(){}; } catch(e){}
-  document.addEventListener('keydown', function(e){
-    var k = e.key || '';
-    if ((e.metaKey || e.ctrlKey) && (k === 'p' || k === 'P')) {
-      e.preventDefault(); e.stopPropagation();
-      return false;
-    }
-    // 同步擋 ⌘S/Ctrl+S（另存）、⌘Shift+S
-    if ((e.metaKey || e.ctrlKey) && (k === 's' || k === 'S')) {
-      e.preventDefault(); e.stopPropagation();
-      return false;
-    }
-    // 擋 F12 / ⌘⌥I（DevTools 開啟阻擋僅是輕度提示）
-  }, true);
-
-  // L5 強化 · 選取／複製／剪下／拖曳／右鍵 全攔截（事件層）
-  ['contextmenu','copy','cut','paste','selectstart','dragstart','mousedown'].forEach(function(ev){
-    document.addEventListener(ev, function(e){
-      // 允許 input/textarea 內部正常輸入
-      var t = e.target;
-      var tag = (t && t.tagName || '').toLowerCase();
-      if (ev === 'paste' || ev === 'mousedown') {
-        if (tag === 'input' || tag === 'textarea') return;
-      }
-      if (ev === 'mousedown') {
-        // mousedown 只擋 selectstart 路徑，避免影響 click
-        if (e.detail > 1) { e.preventDefault(); }
-        return;
-      }
-      e.preventDefault();
-      e.stopPropagation();
-      return false;
-    }, true);
-  });
-
-  // B · Webdriver / Headless 偵測
-  function _detectBot(){
-    try {
-      if (navigator.webdriver === true) return 'webdriver';
-      var ua = navigator.userAgent || '';
-      if (/HeadlessChrome|PhantomJS|Selenium|puppeteer|playwright|electron/i.test(ua)) return 'headless';
-      // window.outerHeight 為 0 通常是 headless
-      if (window.outerHeight === 0 && window.outerWidth === 0) return 'headless-size';
-    } catch(e){}
-    return null;
-  }
-  var botHit = _detectBot();
-  if (botHit) { _silent(); return; }
-
-  // 解除遮罩（共用）
-  function _unhide(){
-    try {
-      var hide = document.getElementById('wy-preguard-hide');
-      if (hide && hide.parentNode) {
-        hide.parentNode.removeChild(hide);
-      }
-      document.documentElement.style.setProperty('visibility','visible','important');
-    } catch(e){
-      try { document.documentElement.style.visibility = 'visible'; } catch(_){}
-    }
-  }
-
-  // L4 · Origin Lock（同步檢查，含 file:// 防護）
-  function _originOK(){
-    try {
-      var proto = location.protocol || '';
-      // 拒絕 file:// / about: / data: / webarchive 等非 https/http
-      if (proto !== 'https:' && proto !== 'http:') return false;
-      var h = location.hostname || '';
-      var p = location.pathname || '';
-      if (!h) return false;                            // file:// 時 hostname 是空字串
-      if (h !== ALLOWED_HOST) return false;
-      if (p.indexOf(ALLOWED_PATH) !== 0) return false;
-      return true;
-    } catch(e){ return false; }
-  }
-  if (!_originOK()) { _silent(); return; }
-
-  // L4 通過 → 立刻解除遮罩，不再等 L6
-  // 原因：iOS / iPadOS Safari 對 fetch HEAD + no-cors 行為不一致，
-  // 用 fetch 結果 gate visibility 容易在 iOS 上誤判 → 整頁空白。
-  window.__wyOriginOK = true;
-  _unhide();
-  window.__wyReady = Promise.resolve(true);
-
-  // L6 · 背景活性探測（best-effort）
-  // 不再 gate visibility；只是嘗試 ping 一次部署網址做日誌／日後擴充用
-  // 任何錯誤都吞掉，不再呼叫 _silent
-  try {
-    var ts = Date.now();
-    var rand = Math.random().toString(36).slice(2,10);
-    var probeUrl = 'https://' + ALLOWED_HOST + ALLOWED_PATH + '?_wyping=' + ts + '.' + rand;
-    if (typeof fetch === 'function') {
-      var ctrl = (typeof AbortController === 'function') ? new AbortController() : null;
-      var opts = { method: 'HEAD', cache: 'no-store' };
-      if (ctrl) opts.signal = ctrl.signal;
-      var probeTimer = setTimeout(function(){ try { ctrl && ctrl.abort(); } catch(e){} }, 6000);
-      fetch(probeUrl, opts)
-        .then(function(){ clearTimeout(probeTimer); /* online */ })
-        .catch(function(){ clearTimeout(probeTimer); /* 容忍 iOS quirks，不 _silent */ });
-    }
-  } catch(e){ /* swallow */ }
-})();
-</script>
 </body></html>" loading="lazy"></iframe>
     <div class="bridge bridge-outro">
       <div class="bridge-label">承先啟後</div>
@@ -25070,6 +24931,146 @@ var _rt=0,_riv=setInterval(function(){
   _rt++; resizeAllFrames();
   if(_rt>50) clearInterval(_riv);
 },300);
+</script>
+
+<script id="wy-protection-runtime">
+(function(){
+  if (window.__wyProtectionLoaded) return;
+  window.__wyProtectionLoaded = true;
+
+  var ALLOWED_HOST = "weiwen0925.github.io";
+  var ALLOWED_PATH = "/dazhidulun-16/";
+
+  // 靜默 lockdown：不顯示任何警語，純粹維持空白
+  var _locked = false;
+  function _silent(){
+    if (_locked) return;
+    _locked = true;
+    try {
+      // 維持 wy-preguard-hide 不移除 → html visibility 保持 hidden
+      // 補強：強制把 hide style 補回（即使後續解除也壓回去）
+      var hide = document.getElementById('wy-preguard-hide');
+      if (!hide) {
+        hide = document.createElement('style');
+        hide.id = 'wy-preguard-hide';
+        hide.textContent = 'html{visibility:hidden!important}';
+        (document.head || document.documentElement).appendChild(hide);
+      } else {
+        hide.textContent = 'html{visibility:hidden!important}';
+      }
+      // 清空 body
+      if (document.body) {
+        document.body.innerHTML = '';
+      }
+      // 阻斷 ready 通道
+      window.__wyOriginOK = false;
+    } catch(e){}
+  }
+
+  // L2 · 列印攔截
+  try { window.print = function(){}; } catch(e){}
+  document.addEventListener('keydown', function(e){
+    var k = e.key || '';
+    if ((e.metaKey || e.ctrlKey) && (k === 'p' || k === 'P')) {
+      e.preventDefault(); e.stopPropagation();
+      return false;
+    }
+    // 同步擋 ⌘S/Ctrl+S（另存）、⌘Shift+S
+    if ((e.metaKey || e.ctrlKey) && (k === 's' || k === 'S')) {
+      e.preventDefault(); e.stopPropagation();
+      return false;
+    }
+    // 擋 F12 / ⌘⌥I（DevTools 開啟阻擋僅是輕度提示）
+  }, true);
+
+  // L5 強化 · 選取／複製／剪下／拖曳／右鍵 全攔截（事件層）
+  ['contextmenu','copy','cut','paste','selectstart','dragstart','mousedown'].forEach(function(ev){
+    document.addEventListener(ev, function(e){
+      // 允許 input/textarea 內部正常輸入
+      var t = e.target;
+      var tag = (t && t.tagName || '').toLowerCase();
+      if (ev === 'paste' || ev === 'mousedown') {
+        if (tag === 'input' || tag === 'textarea') return;
+      }
+      if (ev === 'mousedown') {
+        // mousedown 只擋 selectstart 路徑，避免影響 click
+        if (e.detail > 1) { e.preventDefault(); }
+        return;
+      }
+      e.preventDefault();
+      e.stopPropagation();
+      return false;
+    }, true);
+  });
+
+  // B · Webdriver / Headless 偵測
+  function _detectBot(){
+    try {
+      if (navigator.webdriver === true) return 'webdriver';
+      var ua = navigator.userAgent || '';
+      if (/HeadlessChrome|PhantomJS|Selenium|puppeteer|playwright|electron/i.test(ua)) return 'headless';
+      // window.outerHeight 為 0 通常是 headless
+      if (window.outerHeight === 0 && window.outerWidth === 0) return 'headless-size';
+    } catch(e){}
+    return null;
+  }
+  var botHit = _detectBot();
+  if (botHit) { _silent(); return; }
+
+  // 解除遮罩（共用）
+  function _unhide(){
+    try {
+      var hide = document.getElementById('wy-preguard-hide');
+      if (hide && hide.parentNode) {
+        hide.parentNode.removeChild(hide);
+      }
+      document.documentElement.style.setProperty('visibility','visible','important');
+    } catch(e){
+      try { document.documentElement.style.visibility = 'visible'; } catch(_){}
+    }
+  }
+
+  // L4 · Origin Lock（同步檢查，含 file:// 防護）
+  function _originOK(){
+    try {
+      var proto = location.protocol || '';
+      // 拒絕 file:// / about: / data: / webarchive 等非 https/http
+      if (proto !== 'https:' && proto !== 'http:') return false;
+      var h = location.hostname || '';
+      var p = location.pathname || '';
+      if (!h) return false;                            // file:// 時 hostname 是空字串
+      if (h !== ALLOWED_HOST) return false;
+      if (p.indexOf(ALLOWED_PATH) !== 0) return false;
+      return true;
+    } catch(e){ return false; }
+  }
+  if (!_originOK()) { _silent(); return; }
+
+  // L4 通過 → 立刻解除遮罩，不再等 L6
+  // 原因：iOS / iPadOS Safari 對 fetch HEAD + no-cors 行為不一致，
+  // 用 fetch 結果 gate visibility 容易在 iOS 上誤判 → 整頁空白。
+  window.__wyOriginOK = true;
+  _unhide();
+  window.__wyReady = Promise.resolve(true);
+
+  // L6 · 背景活性探測（best-effort）
+  // 不再 gate visibility；只是嘗試 ping 一次部署網址做日誌／日後擴充用
+  // 任何錯誤都吞掉，不再呼叫 _silent
+  try {
+    var ts = Date.now();
+    var rand = Math.random().toString(36).slice(2,10);
+    var probeUrl = 'https://' + ALLOWED_HOST + ALLOWED_PATH + '?_wyping=' + ts + '.' + rand;
+    if (typeof fetch === 'function') {
+      var ctrl = (typeof AbortController === 'function') ? new AbortController() : null;
+      var opts = { method: 'HEAD', cache: 'no-store' };
+      if (ctrl) opts.signal = ctrl.signal;
+      var probeTimer = setTimeout(function(){ try { ctrl && ctrl.abort(); } catch(e){} }, 6000);
+      fetch(probeUrl, opts)
+        .then(function(){ clearTimeout(probeTimer); /* online */ })
+        .catch(function(){ clearTimeout(probeTimer); /* 容忍 iOS quirks，不 _silent */ });
+    }
+  } catch(e){ /* swallow */ }
+})();
 </script>
 </body>
 </html>
