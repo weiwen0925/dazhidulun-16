@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
-<meta name="wy-full-protection" content="v3-l1l8-silent">
+<meta name="wy-full-protection" content="v4-l1l8-silent">
 <meta name="robots" content="noai, noimageai, noarchive, nosnippet">
 <meta name="googlebot" content="noai, noimageai">
 <meta name="bingbot" content="noai, noimageai">
@@ -2080,6 +2080,7 @@ h5{font-size:18.5px!important;}
 })();
 </script>
 
+
 <script id="wy-protection-runtime">
 (function(){
   if (window.__wyProtectionLoaded) return;
@@ -2164,12 +2165,28 @@ h5{font-size:18.5px!important;}
   var botHit = _detectBot();
   if (botHit) { _silent(); return; }
 
-  // L4 · Origin Lock（同步檢查）
+  // 解除遮罩（共用）
+  function _unhide(){
+    try {
+      var hide = document.getElementById('wy-preguard-hide');
+      if (hide && hide.parentNode) {
+        hide.parentNode.removeChild(hide);
+      }
+      document.documentElement.style.setProperty('visibility','visible','important');
+    } catch(e){
+      try { document.documentElement.style.visibility = 'visible'; } catch(_){}
+    }
+  }
+
+  // L4 · Origin Lock（同步檢查，含 file:// 防護）
   function _originOK(){
     try {
+      var proto = location.protocol || '';
+      // 拒絕 file:// / about: / data: / webarchive 等非 https/http
+      if (proto !== 'https:' && proto !== 'http:') return false;
       var h = location.hostname || '';
       var p = location.pathname || '';
-      // 允許 file:// 之外的同源路徑
+      if (!h) return false;                            // file:// 時 hostname 是空字串
       if (h !== ALLOWED_HOST) return false;
       if (p.indexOf(ALLOWED_PATH) !== 0) return false;
       return true;
@@ -2177,53 +2194,30 @@ h5{font-size:18.5px!important;}
   }
   if (!_originOK()) { _silent(); return; }
 
-  // L6 · Freshness HEAD ping（線上活性）
-  // 必須能 HEAD 到部署網址才解除 preguard
-  window.__wyReady = new Promise(function(resolve, reject){
-    var done = false;
-    var timer = setTimeout(function(){
-      if (done) return;
-      done = true;
-      _silent();
-      reject(new Error('timeout'));
-    }, 6000);
+  // L4 通過 → 立刻解除遮罩，不再等 L6
+  // 原因：iOS / iPadOS Safari 對 fetch HEAD + no-cors 行為不一致，
+  // 用 fetch 結果 gate visibility 容易在 iOS 上誤判 → 整頁空白。
+  window.__wyOriginOK = true;
+  _unhide();
+  window.__wyReady = Promise.resolve(true);
 
+  // L6 · 背景活性探測（best-effort）
+  // 不再 gate visibility；只是嘗試 ping 一次部署網址做日誌／日後擴充用
+  // 任何錯誤都吞掉，不再呼叫 _silent
+  try {
     var ts = Date.now();
     var rand = Math.random().toString(36).slice(2,10);
-    var url = 'https://' + ALLOWED_HOST + ALLOWED_PATH + '?_wyping=' + ts + '.' + rand;
-    fetch(url, { method: 'HEAD', cache: 'no-store', mode: 'no-cors' })
-      .then(function(r){
-        if (done) return;
-        done = true;
-        clearTimeout(timer);
-        // no-cors 模式下 r.ok 不可信；只要 fetch 沒 throw 就視為通過
-        window.__wyOriginOK = true;
-        // 解除遮罩：直接 removeChild(wy-preguard-hide)，protect style 不動
-        var hide = document.getElementById('wy-preguard-hide');
-        if (hide && hide.parentNode) {
-          hide.parentNode.removeChild(hide);
-        }
-        // 雙保險：強制 inline visibility:visible !important（覆蓋任何殘留規則）
-        try {
-          document.documentElement.style.setProperty('visibility','visible','important');
-        } catch(e){
-          document.documentElement.style.visibility = 'visible';
-        }
-        resolve(true);
-      })
-      .catch(function(err){
-        if (done) return;
-        done = true;
-        clearTimeout(timer);
-        _silent();
-        reject(err);
-      });
-  });
-
-  // 額外保險：1500ms 後仍未 ready → 靜默
-  setTimeout(function(){
-    if (!window.__wyOriginOK) { _silent(); }
-  }, 8000);
+    var probeUrl = 'https://' + ALLOWED_HOST + ALLOWED_PATH + '?_wyping=' + ts + '.' + rand;
+    if (typeof fetch === 'function') {
+      var ctrl = (typeof AbortController === 'function') ? new AbortController() : null;
+      var opts = { method: 'HEAD', cache: 'no-store' };
+      if (ctrl) opts.signal = ctrl.signal;
+      var probeTimer = setTimeout(function(){ try { ctrl && ctrl.abort(); } catch(e){} }, 6000);
+      fetch(probeUrl, opts)
+        .then(function(){ clearTimeout(probeTimer); /* online */ })
+        .catch(function(){ clearTimeout(probeTimer); /* 容忍 iOS quirks，不 _silent */ });
+    }
+  } catch(e){ /* swallow */ }
 })();
 </script>
 </body></html>" loading="lazy"></iframe>
