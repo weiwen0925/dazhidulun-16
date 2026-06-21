@@ -131,6 +131,41 @@ border-radius:8px;border:none;background:var(--sbBg);color:var(--goldL);font-siz
 .hero-title{font-size:38px;} .ch-name{font-size:26px;} .toc-grid{grid-template-columns:1fr;}
 .site-hero{padding:60px 18px 44px;} .ch-head{padding:34px 18px 30px;}
 }
+
+/* wy-cross-nav-css v1 */
+/* ── 跨卷導覽（側欄底部）── */
+.sb-cross{display:flex;flex-direction:column;align-items:center;gap:8px;
+  width:100%;margin:18px 0 4px;padding:18px 4px 6px;position:relative;}
+.sb-cross::before{content:"";position:absolute;top:0;left:14%;right:14%;
+  height:1px;background:linear-gradient(90deg,
+    transparent 0%,rgba(184,134,11,.15) 18%,
+    var(--gold,#b8860b) 50%,
+    rgba(184,134,11,.15) 82%,transparent 100%);
+  box-shadow:0 1px 0 rgba(212,168,75,.18);}
+.sb-cross::after{content:"";position:absolute;top:6px;left:38%;right:38%;
+  height:1px;background:linear-gradient(90deg,
+    transparent,rgba(184,134,11,.55),transparent);}
+.sb-x{display:flex;flex-direction:column;align-items:center;gap:3px;
+  text-decoration:none;color:var(--sbText,#d4c4a8);padding:4px 4px;width:100%;
+  border-radius:7px;transition:all .25s;}
+.sb-x:hover{background:rgba(184,134,11,.14);transform:translateY(-1px);}
+.sb-x-glyph{width:30px;height:30px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  border:1.2px solid rgba(212,196,168,.55);
+  color:var(--goldL,#d4a84b);font-family:"Noto Sans TC",sans-serif;font-size:14px;
+  background:rgba(184,134,11,.08);transition:all .25s;}
+.sb-x:hover .sb-x-glyph{border-color:var(--gold,#b8860b);color:#fff;
+  background:linear-gradient(135deg,var(--gold,#b8860b),var(--goldL,#d4a84b));
+  box-shadow:0 0 10px rgba(184,134,11,.5);}
+.sb-x-label{font-family:"Noto Sans TC",sans-serif;font-size:10.5px;
+  letter-spacing:1.2px;color:var(--sbText,#d4c4a8);opacity:.78;text-align:center;
+  line-height:1.25;}
+.sb-x:hover .sb-x-label{color:var(--goldL,#d4a84b);opacity:1;}
+.sb-x-hub .sb-x-glyph{background:linear-gradient(135deg,
+  rgba(184,134,11,.22),rgba(212,168,75,.18));
+  border-color:rgba(212,168,75,.55);color:var(--goldL,#d4a84b);font-size:13px;
+  font-weight:700;letter-spacing:1px;}
+
 </style><meta name="wy-full-protection" content="v2-silent">
 
 <meta name="googlebot" content="index, follow">
@@ -242,7 +277,22 @@ border-radius:8px;border:none;background:var(--sbBg);color:var(--goldL);font-siz
 <a class="sb-item" href="#chapter-17"><span class="sb-circle">17</span><span class="sb-label" data-wytext="kuKzgszCj9vanOzH"></span></a>
 <a class="sb-item" href="#chapter-18"><span class="sb-circle">18</span><span class="sb-label" data-wytext="kMuTjeHIjtLbndrG"></span></a>
 <a class="sb-item" href="#chapter-19"><span class="sb-circle">19</span><span class="sb-label" data-wytext="n8OGg9PEgenW"></span></a>
-<a class="sb-item" href="#chapter-20"><span class="sb-circle">20</span><span class="sb-label" data-wytext="kP2Mg/rbjcbmk9fw"></span></a></nav></aside><main class="main"><div class="site-hero"><h1 class="hero-title" data-wytext="kt2KgvjAjdPCncfjTu+GFsranZL0rIHk143k0w=="></h1><div class="hero-subtitle" data-wytext="kda1gsPSgOnSk9/XiZO03rHqEbXODYzG+ozR7ZL5+Yaml9ONxxG1zg2D08SB6daQ8OaIlo4="></div><div class="hero-sub" data-wytext="nseggsnDgObNnfrch62RFu/BEZLHoYPG3IHazZP93ImTtNKW9tna1g=="></div><div class="hero-range" data-wytext="kvyFgNv2jeTlkP/0Tu+GFsnIrJL0mobn6I365Zfq54mGkdSr5NbY+cj/+p3c84PCxJ33shH0mlbUyuDL8dWT/tiM2+yT8oE="></div><div data-wy-notice-hero="v3" data-wytext="keWBgvf9j+vekOz+ipeL0Y3i2dn5yNn4nP3di8ngk8OM2Ymjnoz+nrTYhs/4jtPWg8n1xYy/yu+Nn9KmgN7nj/z9nOzWiZih3qXx1crlxeTkk8jSjfT/SQ8NWURIEAxVEVkQEQlSRksCGwJAVF5DWQNTEldOCwxVKCoMEAISGUhYQUgYHgcWXhASWEgbARlRVwBCXkZIGFQFWw0XFQMEDFlXDxoCQkMMDhIFFkEZBloODREQWAgQDUJDV1kfXhlDQwsPH1MLCwcIEBwAU1lZAl4aQxwUGVoMBhABCRFODlMOFUABFUJABRMdAQdeRUxBHlUKFA0CUAUeSBBcWDcLCBQCHkwTWUJZBkJNVgITFg1GEAsAGAAMSB9VQhseNzpFAQ8dHwwNAgkbQV1eRVkFDVgYE4fh+FQLFlpSSR1dUFgNBUUOFUhZQxkHBQsHVlZWTwZSG0AKVUfJ3Oyd/PaAz8qR1qDXjaiZjfudlemEwtCN3tOIzePLp4HCyqpLG19LX57Q5IDN7JHUi9WOoJGkx5aR6IXC5Y3a84jPyMmJu8jxi5T5r1gDCEdXjPbRncSH166Ck6rXnprHjsbkjPLxis7rxZqOy/6Dn9K7i93hVAsWWlKT5rzWnpCfl+Gei8qFx/OG2PmE3tbFm5zJzpyQ1YGA2fqL6eZJQwYeTF8I" style="margin:28px auto 0;padding:18px 24px;max-width:720px;background:rgba(30,26,20,.55);border:1px solid rgba(184,134,11,.45);border-radius:12px;backdrop-filter:blur(4px);text-align:center;font-family:'Noto Sans TC','Microsoft JhengHei',sans-serif;font-size:13px;line-height:1.95;color:#c4a76c;letter-spacing:1px;"></div></div><div class="preface"><h2 class="preface-title" data-wytext="kM6FjOH/jeDpncT1"></h2><p data-wytext="lPmngcXdjvDekNbThoan1a391tvVyOngn+3EgfjbkdWI0rahkJ7vn4/Mifrehtj9GrHFX0hXwsq4kcqPg9//gPX4luz4jK2l1K3i1sXHxOTTn9LPhvX4l+651rSXkonMkZbcgvrqjOHdifjZyYu6yPuwkuqsge7VjeHiku7PipW404nR19nMxfTcldTlg+fckvyd1q2VkLjUn4rvh/L4jdz1itfzyJ+6y+OFkOOpgN7UgMjonO76hpGe2ZHs1PLxys/qmejlg8fSnO6f1Y+mkY/emq3pjsbkj8jUiM7LzrG6xdGxn/KLh+H3j8TynOzHgZG90Zj019rBzuTtndrXjfXekdem1Kq+kIrImq3pgvrq"></p><p data-wytext="kNWBgNn6jsfRmtD9iYGd0pX20vf4yd7tn/voi8nlkvuh1Ji3kYPJkK3Wh8nKjtrwhOnyyquyy8WkkOKVjOn9gM/ek+7qhpOe3oD/3sviysjNntLlgtvZmtKl1pqBkon+karXhPfpjOHYiebvwo2/y+6ekvyFgezNj8bjkNXwiLGx36r71u39zuTtks/pjP7Klu6g2LWFk7nxm63wg/r8gePfiM3nyqS6xf2Xktmch+H7jNPenO3mi4KY3oX+0vf4yvH9nfz2jfT/mtKh2bGekovjkKz3icbCgdvBg8niyLe7y8GAkvyIgeTRjc3DkPDFiaC12ZH+18PCzuTgk9P4g8zFlu6s1KalkK30mq3lhPXDjPLvj/XvyreHzvawkP2Mjffph9XtneTyi6Cw06jb1Mf2yPjRneXti8ngktuv16CRlbH7nKvUifLvgffbj/Xjyquyxcien9Ski932jdjAkN3RiaiW3ov92cvTxdvVntHijP7KmtKh1Y2IkZzhnrTYhcLlgOT1hMjnyquyysSPnvmfjOn9jc3Dk+7HgZGq0YHa1c/wy8rUldThg9nAkOOs1Y6unrbEnZfohPfpjPf0g8nnyKqoy9uJkMuTjeHIgMjonPr1gZG90bnH1sXHxOTTnNPWjMPflu6s2YyGkYPJkK3Wjsbkj/DDiujxy6eKzva9kP2Mg/rbj/PgkMP3iJa01a371c7yys3XncP2h/Xu"></p></div><div class="toc-section"><h2 class="toc-title" data-wytext="kMGQRIbhxkmN+eg="></h2><div class="toc-desc" data-wytext="kNWBgez7jezJkOHCTu+GFsjzmZPDoYHs+4365VWuwk7ItIfJzrGQ4JOA2fON5OWQ9+6JhpE="></div><div class="toc-grid"><div class="toc-card-wrap"><a class="toc-card" href="#chapter-1"><span class="toc-num" data-wytext="Rg=="></span><span class="toc-body"><span class="toc-name" data-wytext="kvGwgfL7SKvTVYra9suTnsX2h5HKj4Pf/4D1+JLS3A=="></span><span class="toc-sub" data-wytext="kMuTjeHIjtrGktLwhrGt0bfy18Tsyv/Znf3lgdv2neaq1JKKkojvkZDthOr5"></span></span></a><a class="toc-video" data-wytext="le+bRITH2YD7xg==" href="https://youtu.be/Hn5_I2SZVSU" rel="noopener" target="_blank" title="觀看第1品影音說明"></a></div>
+<a class="sb-item" href="#chapter-20"><span class="sb-circle">20</span><span class="sb-label" data-wytext="kP2Mg/rbjcbmk9fw"></span></a></nav>  <!-- wy-cross-nav v1 -->
+  <div class="sb-cross">
+    <a class="sb-x" href="https://weiwen0925.github.io/dazhidulun-15/" title="第十五卷">
+      <span class="sb-x-glyph">←</span>
+      <span class="sb-x-label">卷十五</span>
+    </a>
+    <a class="sb-x sb-x-hub" href="https://weiwen0925.github.io/dazhidulun-0/" title="大智度論門頁">
+      <span class="sb-x-glyph">智</span>
+      <span class="sb-x-label">門頁</span>
+    </a>
+    <a class="sb-x" href="https://weiwen0925.github.io/dazhidulun-17/" title="第十七卷">
+      <span class="sb-x-glyph">→</span>
+      <span class="sb-x-label">卷十七</span>
+    </a>
+  </div>
+</aside><main class="main"><div class="site-hero"><h1 class="hero-title" data-wytext="kt2KgvjAjdPCncfjTu+GFsranZL0rIHk143k0w=="></h1><div class="hero-subtitle" data-wytext="kda1gsPSgOnSk9/XiZO03rHqEbXODYzG+ozR7ZL5+Yaml9ONxxG1zg2D08SB6daQ8OaIlo4="></div><div class="hero-sub" data-wytext="nseggsnDgObNnfrch62RFu/BEZLHoYPG3IHazZP93ImTtNKW9tna1g=="></div><div class="hero-range" data-wytext="kvyFgNv2jeTlkP/0Tu+GFsnIrJL0mobn6I365Zfq54mGkdSr5NbY+cj/+p3c84PCxJ33shH0mlbUyuDL8dWT/tiM2+yT8oE="></div><div data-wy-notice-hero="v3" data-wytext="keWBgvf9j+vekOz+ipeL0Y3i2dn5yNn4nP3di8ngk8OM2Ymjnoz+nrTYhs/4jtPWg8n1xYy/yu+Nn9KmgN7nj/z9nOzWiZih3qXx1crlxeTkk8jSjfT/SQ8NWURIEAxVEVkQEQlSRksCGwJAVF5DWQNTEldOCwxVKCoMEAISGUhYQUgYHgcWXhASWEgbARlRVwBCXkZIGFQFWw0XFQMEDFlXDxoCQkMMDhIFFkEZBloODREQWAgQDUJDV1kfXhlDQwsPH1MLCwcIEBwAU1lZAl4aQxwUGVoMBhABCRFODlMOFUABFUJABRMdAQdeRUxBHlUKFA0CUAUeSBBcWDcLCBQCHkwTWUJZBkJNVgITFg1GEAsAGAAMSB9VQhseNzpFAQ8dHwwNAgkbQV1eRVkFDVgYE4fh+FQLFlpSSR1dUFgNBUUOFUhZQxkHBQsHVlZWTwZSG0AKVUfJ3Oyd/PaAz8qR1qDXjaiZjfudlemEwtCN3tOIzePLp4HCyqpLG19LX57Q5IDN7JHUi9WOoJGkx5aR6IXC5Y3a84jPyMmJu8jxi5T5r1gDCEdXjPbRncSH166Ck6rXnprHjsbkjPLxis7rxZqOy/6Dn9K7i93hVAsWWlKT5rzWnpCfl+Gei8qFx/OG2PmE3tbFm5zJzpyQ1YGA2fqL6eZJQwYeTF8I" style="margin:28px auto 0;padding:18px 24px;max-width:720px;background:rgba(30,26,20,.55);border:1px solid rgba(184,134,11,.45);border-radius:12px;backdrop-filter:blur(4px);text-align:center;font-family:'Noto Sans TC','Microsoft JhengHei',sans-serif;font-size:13px;line-height:1.95;color:#c4a76c;letter-spacing:1px;"></div></div><div class="preface"><h2 class="preface-title" data-wytext="kM6FjOH/jeDpncT1"></h2><p data-wytext="lPmngcXdjvDekNbThoan1a391tvVyOngn+3EgfjbkdWI0rahkJ7vn4/Mifrehtj9GrHFX0hXwsq4kcqPg9//gPX4luz4jK2l1K3i1sXHxOTTn9LPhvX4l+651rSXkonMkZbcgvrqjOHdifjZyYu6yPuwkuqsge7VjeHiku7PipW404nR19nMxfTcldTlg+fckvyd1q2VkLjUn4rvh/L4jdz1itfzyJ+6y+OFkOOpgN7UgMjonO76hpGe2ZHs1PLxys/qmejlg8fSnO6f1Y+mkY/emq3pjsbkj8jUiM7LzrG6xdGxn/KLh+H3j8TynOzHgZG90Zj019rBzuTtndrXjfXekdem1Kq+kIrImq3pgvrq"></p><p data-wytext="kNWBgNn6jsfRmtD9iYGd0pX20vf4yd7tn/voi8nlkvuh1Ji3kYPJkK3Wh8nKjtrwhOnyyquyy8WkkOKVjOn9gM/ek+7qhpOe3oD/3sviysjNntLlgtvZmtKl1pqBkon+karXhPfpjOHYiebvwo2/y+6ekvyFgezNj8bjkNXwiLGx36r71u39zuTtks/pjP7Klu6g2LWFk7nxm63wg/r8gePfiM3nyqS6xf2Xktmch+H7jNPenO3mi4KY3oX+0vf4yvH9nfz2jfT/mtKh2bGekovjkKz3icbCgdvBg8niyLe7y8GAkvyIgeTRjc3DkPDFiaC12ZH+18PCzuTgk9P4g8zFlu6s1KalkK30mq3lhPXDjPLvj/XvyreHzvawkP2Mjffph9XtneTyi6Cw06jb1Mf2yPjRneXti8ngktuv16CRlbH7nKvUifLvgffbj/Xjyquyxcien9Ski932jdjAkN3RiaiW3ov92cvTxdvVntHijP7KmtKh1Y2IkZzhnrTYhcLlgOT1hMjnyquyysSPnvmfjOn9jc3Dk+7HgZGq0YHa1c/wy8rUldThg9nAkOOs1Y6unrbEnZfohPfpjPf0g8nnyKqoy9uJkMuTjeHIgMjonPr1gZG90bnH1sXHxOTTnNPWjMPflu6s2YyGkYPJkK3Wjsbkj/DDiujxy6eKzva9kP2Mg/rbj/PgkMP3iJa01a371c7yys3XncP2h/Xu"></p></div><div class="toc-section"><h2 class="toc-title" data-wytext="kMGQRIbhxkmN+eg="></h2><div class="toc-desc" data-wytext="kNWBgez7jezJkOHCTu+GFsjzmZPDoYHs+4365VWuwk7ItIfJzrGQ4JOA2fON5OWQ9+6JhpE="></div><div class="toc-grid"><div class="toc-card-wrap"><a class="toc-card" href="#chapter-1"><span class="toc-num" data-wytext="Rg=="></span><span class="toc-body"><span class="toc-name" data-wytext="kvGwgfL7SKvTVYra9suTnsX2h5HKj4Pf/4D1+JLS3A=="></span><span class="toc-sub" data-wytext="kMuTjeHIjtrGktLwhrGt0bfy18Tsyv/Znf3lgdv2neaq1JKKkojvkZDthOr5"></span></span></a><a class="toc-video" data-wytext="le+bRITH2YD7xg==" href="https://youtu.be/Hn5_I2SZVSU" rel="noopener" target="_blank" title="觀看第1品影音說明"></a></div>
 <div class="toc-card-wrap"><a class="toc-card" href="#chapter-2"><span class="toc-num" data-wytext="RQ=="></span><span class="toc-body"><span class="toc-name" data-wytext="kNWBgNv2jfrlVa7CTsqDiMT2g5HKj4Pf/4D1+A=="></span><span class="toc-sub" data-wytext="n9+XguPlj/PgndLahoC40J7j"></span></span></a><a class="toc-video" data-wytext="le+bRITH2YD7xg==" href="https://youtu.be/nqXZLMrXMho" rel="noopener" target="_blank" title="觀看第2品影音說明"></a></div>
 <div class="toc-card-wrap"><a class="toc-card" href="#chapter-3"><span class="toc-num" data-wytext="RA=="></span><span class="toc-body"><span class="toc-name" data-wytext="kNWBgNnzjfrlVa7CTsWWtsnOuJDsoYzq3I3J1Q=="></span><span class="toc-sub" data-wytext="k8KIjMb6gOLCksHjibSN0Z/I2PfLyv7lkt3ejc7y"></span></span></a><a class="toc-video" data-wytext="le+bRITH2YD7xg==" href="https://youtu.be/_XsJXf6T8ro" rel="noopener" target="_blank" title="觀看第3品影音說明"></a></div>
 <div class="toc-card-wrap"><a class="toc-card" href="#chapter-4"><span class="toc-num" data-wytext="Qw=="></span><span class="toc-body"><span class="toc-name" data-wytext="kNWBgfrhjfrlVa7CTsmJv8rjvZHcgIHr4Y/a35LZxIm3tdCax9TN38jLyJLA4Q=="></span><span class="toc-sub" data-wytext="k8OXjeDpgOLCncfTipS60pXb2dD5xObuktTGjP3rnci72ZCXno/YkYDt"></span></span></a><a class="toc-video" data-wytext="le+bRITH2YD7xg==" href="https://youtu.be/Lh66wDznZwA" rel="noopener" target="_blank" title="觀看第4品影音說明"></a></div>
