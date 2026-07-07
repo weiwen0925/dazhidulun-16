@@ -825,4 +825,57 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-C16P6:END-->
+<!--WY-C16P7:BEGIN-->
+<style id="wy-c16p7-css">
+.c16p7-fabbox{position:fixed;right:22px;bottom:78px;z-index:121;display:none;}
+.c16p7-fabbox.show{display:block;}
+.c16p7-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#573f38,#2e2420);padding:8px 15px;border-radius:22px;border:1px solid rgba(184,134,11,.6);box-shadow:0 4px 16px rgba(0,0,0,.3);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.c16p7-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(184,134,11,.5);}
+.c16p7-ic{font-size:15px;line-height:1;color:#ecc978;}
+.c16p7-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.c16p7-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.c16p7-l2{font-size:13px;font-weight:700;color:#faf1d8;white-space:nowrap;}
+.c16p7-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(28,20,12,.58);padding:16px;}
+.c16p7-modal.open{display:flex;}
+.c16p7-card{position:relative;background:#fbf7ee;max-width:900px;width:100%;max-height:88vh;overflow:auto;border:1px solid #d8c8ac;border-radius:14px;padding:30px 24px 22px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.c16p7-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#8b5e3c;}
+.c16p7-card .sub{margin:0 0 14px;font-family:"Noto Sans TC",sans-serif;font-size:13px;color:#6b5b4b;}
+.c16p7-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#efe6d4;color:#8b5e3c;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.c16p7-close:hover{background:#e3d5b8;}
+.c16p7-tbl{width:100%;border-collapse:collapse;font-family:"Noto Sans TC",sans-serif;font-size:13px;margin:.3em 0 1.2em;}
+.c16p7-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#8b5e3c;font-size:14.5px;text-align:left;margin:.6em 0 .35em;line-height:1.5;}
+.c16p7-tbl th,.c16p7-tbl td{border:1px solid #d8c8ac;padding:.45em .6em;text-align:left;vertical-align:top;line-height:1.6;}
+.c16p7-tbl thead th{background:#8b5e3c;color:#f7ecd2;font-weight:700;}
+.c16p7-tbl td:first-child{white-space:nowrap;color:#8b5e3c;font-weight:700;background:#f0e8d8;}
+.c16p7-tbl tbody tr:nth-child(even) td{background:#f6efe0;}
+.c16p7-tbl b{color:#8b2500;}
+.c16p7-note{font-size:12px;color:#5a4e3a;line-height:1.9;background:#f6efe0;border-left:3px solid #c4956a;border-radius:0 6px 6px 0;padding:10px 13px;margin:4px 0 0;}
+.c16p7-note b{color:#8b2500;}
+@media(max-width:900px){.c16p7-fabbox{right:14px;}.c16p7-tbl{font-size:11.5px;}.c16p7-card{padding:26px 14px 16px;}}
+</style>
+<div class="c16p7-fabbox" id="c16p7Box"><button class="c16p7-btn" id="c16p7Btn" type="button" aria-label="開啟全景總表"><span class="c16p7-ic">▦</span><span class="c16p7-ls"><span class="c16p7-l1">本品 · 餓鬼道</span><span class="c16p7-l2">相識空悲 · 一水四見</span></span></button></div><div class="c16p7-modal" id="c16p7Modal" role="dialog" aria-modal="true" aria-label="全景總表"><div class="c16p7-card"><button class="c16p7-close" id="c16p7Close" type="button" aria-label="關閉">×</button><h3>卷十六·第七品 餓鬼道 · 全景總表</h3><p class="sub">卷十六・第七品｜相識空悲四階・內外夾擊・一水四見・破自性見・理觀生悲・守護口業</p><table class="c16p7-tbl"><caption>一、相→識→空→悲 四階（本品主骨架）</caption><thead><tr><th>階</th><th>內容</th></tr></thead><tbody><tr><td>相（苦難結構）</td><td>外障（護水鬼鐵杖逆打/水自然竭）＋內障（形如燒樹咽如針孔·入口即化火）雙向封死——「<b>給了也受用不了</b>」的絕對隔絕</td></tr><tr><td>識（業力扭曲現實）</td><td>「<b>一水四見</b>」——同一水因業識頻率不同，顯現為甘露/清水/膿血/炭火；環境是內心投影</td></tr><tr><td>空（緣起無自性）</td><td>破自性見——水若有「水性」應恆常可飲，然「水自然竭、雨化為炭」→無自性（緣起）</td></tr><tr><td>悲（理觀生悲）</td><td>從空自然流出的大悲——非會耗竭的情感，而是觀照越深越堅固的誓願</td></tr></tbody></table><table class="c16p7-tbl"><caption>二、業力唯識與破自性見（識變·緣起）</caption><thead><tr><th>環節</th><th>內容</th></tr></thead><tbody><tr><td>一水四見</td><td>物質屬性依業識而顯——同一滴雨因業識不同，顯現的物理屬性就不同（不是宇宙物理定律暫停，而是識變）</td></tr><tr><td>破自性見</td><td>水到底是不是水？——命題甲（自性論：水有水性應恆濕潤）與命題乙（經文：水自然竭雨化炭）不可兼得 → 無自性</td></tr><tr><td>即空即假圓融中道</td><td>苦難本質為空，但因緣和合下的痛楚<b>真實存在</b>——空不廢假、悲不廢智</td></tr></tbody></table><table class="c16p7-tbl"><caption>三、大悲與口業防護（實踐·清淨因緣）</caption><thead><tr><th>環節</th><th>內容</th></tr></thead><tbody><tr><td>理觀生悲</td><td>觀眾生連「喝水」的最基本生存權都被自身業力剝奪（若與其水千歲不足）→ 生起強烈救度之心；此悲非情緒，而是徹見緣起後的必然回應</td></tr><tr><td>守護口業</td><td>原典「先世惡口，好以麁語加彼眾生…墮餓鬼中」——內心清淨才是決定外在物質屬性的絕對關鍵，<b>守護口業即守護未來世界</b></td></tr><tr><td>諸法因緣生</td><td>唯識識變（不執外物是樂源）＋中觀無自性（不被概念固化）＋實踐清淨因緣（每一心念口業都在為未來下單）</td></tr></tbody></table><p class="c16p7-note">本品以餓鬼苦相八句原典為思維錨點，展開「相→識→空→悲」四重結構的符號投影。何以收於卷十六（精進度）：唯精進力能使理觀轉為打破鎖鏈的行動——大悲並非單純情感同情，而是建立在「了達諸法實相（無自性）」之上的誓願；情感同情會疲憊耗竭，從空性流出的大悲反因觀照越深而越堅固。追逐境相，如渴鹿追逐陽焰。</p></div></div>
+<script id="wy-c16p7-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("c16p7Btn"),BOX=document.getElementById("c16p7Box"),MODAL=document.getElementById("c16p7Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=6;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+var FSEL="#wyVideoBtn,#wyFab,#vid-floating,#floatingYt,.wy-vbtn,.wy-video-fab,.floating-yt",_fab,_ft=false;
+function fab(){if(_fab&&_fab.isConnected)return _fab;if(_ft)return _fab;_ft=true;_fab=document.querySelector(FSEL);return _fab;}
+function place(){
+  var base=null,eb=document.querySelector(".wy-ebox");
+  if(eb){var r=eb.getBoundingClientRect();if(r.height>4)base=Math.round(window.innerHeight-r.top)+8;}
+  if(base===null){var fEl=fab();if(fEl){var fr=fEl.getBoundingClientRect(),st=getComputedStyle(fEl);if(fr.height>0&&st.display!=="none"&&st.visibility!=="hidden")base=Math.round(window.innerHeight-fr.top)+10;}}
+  if(base===null)base=78;
+  BOX.style.bottom=base+"px";
+}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="c16p7Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-C16P7:END-->
 </body></html>
