@@ -1461,4 +1461,57 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-C16P18:END-->
+<!--WY-C16P19:BEGIN-->
+<style id="wy-c16p19-css">
+.c16p19-fabbox{position:fixed;right:22px;bottom:78px;z-index:121;display:none;}
+.c16p19-fabbox.show{display:block;}
+.c16p19-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#573f38,#2e2420);padding:8px 15px;border-radius:22px;border:1px solid rgba(184,134,11,.6);box-shadow:0 4px 16px rgba(0,0,0,.3);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.c16p19-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(184,134,11,.5);}
+.c16p19-ic{font-size:15px;line-height:1;color:#ecc978;}
+.c16p19-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.c16p19-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.c16p19-l2{font-size:13px;font-weight:700;color:#faf1d8;white-space:nowrap;}
+.c16p19-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(28,20,12,.58);padding:16px;}
+.c16p19-modal.open{display:flex;}
+.c16p19-card{position:relative;background:#fbf7ee;max-width:900px;width:100%;max-height:88vh;overflow:auto;border:1px solid #d8c8ac;border-radius:14px;padding:30px 24px 22px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.c16p19-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#8b5e3c;}
+.c16p19-card .sub{margin:0 0 14px;font-family:"Noto Sans TC",sans-serif;font-size:13px;color:#6b5b4b;}
+.c16p19-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#efe6d4;color:#8b5e3c;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.c16p19-close:hover{background:#e3d5b8;}
+.c16p19-tbl{width:100%;border-collapse:collapse;font-family:"Noto Sans TC",sans-serif;font-size:13px;margin:.3em 0 1.2em;}
+.c16p19-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#8b5e3c;font-size:14.5px;text-align:left;margin:.6em 0 .35em;line-height:1.5;}
+.c16p19-tbl th,.c16p19-tbl td{border:1px solid #d8c8ac;padding:.45em .6em;text-align:left;vertical-align:top;line-height:1.6;}
+.c16p19-tbl thead th{background:#8b5e3c;color:#f7ecd2;font-weight:700;}
+.c16p19-tbl td:first-child{white-space:nowrap;color:#8b5e3c;font-weight:700;background:#f0e8d8;}
+.c16p19-tbl tbody tr:nth-child(even) td{background:#f6efe0;}
+.c16p19-tbl b{color:#8b2500;}
+.c16p19-note{font-size:12px;color:#5a4e3a;line-height:1.9;background:#f6efe0;border-left:3px solid #c4956a;border-radius:0 6px 6px 0;padding:10px 13px;margin:4px 0 0;}
+.c16p19-note b{color:#8b2500;}
+@media(max-width:900px){.c16p19-fabbox{right:14px;}.c16p19-tbl{font-size:11.5px;}.c16p19-card{padding:26px 14px 16px;}}
+</style>
+<div class="c16p19-fabbox" id="c16p19Box"><button class="c16p19-btn" id="c16p19Btn" type="button" aria-label="開啟全景總表"><span class="c16p19-ic">▦</span><span class="c16p19-ls"><span class="c16p19-l1">本品 · 身精進·三本生譚</span><span class="c16p19-l2">悲智願 · 借假修真</span></span></button></div><div class="c16p19-modal" id="c16p19Modal" role="dialog" aria-modal="true" aria-label="全景總表"><div class="c16p19-card"><button class="c16p19-close" id="c16p19Close" type="button" aria-label="關閉">×</button><h3>卷十六·第十九品 身精進·三本生譚 · 全景總表</h3><p class="sub">卷十六・第十九品｜受諸懃苦終不懈廢・鹿王捨命・梵志捨身・雉鳥捨力・悲智願・借假修真</p><table class="c16p19-tbl"><caption>一、三大本生譚·悲智願（本品主骨架）</caption><thead><tr><th>本生</th><th>對象 · 手段 · 成就</th></tr></thead><tbody><tr><td>波羅奈鹿王</td><td>眾生｜捨命（代懷孕母鹿送死）｜<b>大悲</b>——見人王殺其部黨起大悲心、逕到王前、以身代死</td></tr><tr><td>愛法梵志</td><td>真理｜捨身（剝皮為紙、身骨為筆、血書偈）｜<b>大智</b>——無佛之世遍求聖法十二年，以「有壞之身換不壞之法」</td></tr><tr><td>雉鳥救火</td><td>器世間｜捨力（濡濕羽毛來回灑火、以死為期）｜<b>大願</b>——「火大水少往來疲乏不以為苦」，至誠感淨居天為之滅火</td></tr></tbody></table><table class="c16p19-tbl"><caption>二、身精進的核心定義（超越生存本能）</caption><thead><tr><th>環節</th><th>內容</th></tr></thead><tbody><tr><td>受諸懃苦</td><td>物理極限的承受——直面肉體痛苦、飢渴、傷殘乃至死亡，把身體推到生理所能承載的盡頭</td></tr><tr><td>終不懈廢</td><td>意志對抗生物本能的最終勝利——趨樂避苦是一切生命的本能，菩薩意志已凌駕於這套本能程式（不因苦而退、不因死而止）</td></tr><tr><td>論證結構</td><td>定義→舉例（三譚極端實證）→結論；「身精進者，受諸懃苦，終不懈廢」</td></tr></tbody></table><table class="c16p19-tbl"><caption>三、借假修真·空假中三觀（形滅而願無盡）</caption><thead><tr><th>環節</th><th>內容</th></tr></thead><tbody><tr><td>借假修真</td><td>色身是「必不免死」的貶值資產（遲早朽壞留之無益）——將虛妄不實的色身（假）毫無保留投入救生/求法/護生，淬鍊出永恆的菩提心（真）</td></tr><tr><td>空假中三觀</td><td>身精進奠基於「觀身如幻（空）、假身行真（假）、悲智不二（中）」</td></tr><tr><td>形滅而願無盡</td><td>三譚共享終極詰問「為何菩薩要忍受如此極端的物理毀滅？」答案凝為「借假修真」的演算法則——形相本空、唯心是實</td></tr></tbody></table><p class="c16p19-note">三譚並非孤立故事，而是一張嚴密矩陣：橫看「對象—手段—成就」，縱看則覆蓋菩薩道三大核心向度——<b>悲</b>（鹿王）、<b>智</b>（梵志）、<b>願</b>（雉鳥）。鹿王「絕對的自他交換」以二諦與無我平靜代死；梵志在真理絕對匱乏的時代以「有壞之身換不壞之法」（以幻易真）；雉鳥當「精勤」達絕對至誠與無私，竟能撼動物質世界的運作（引動淨居天滅火）。</p></div></div>
+<script id="wy-c16p19-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("c16p19Btn"),BOX=document.getElementById("c16p19Box"),MODAL=document.getElementById("c16p19Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=18;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+var FSEL="#wyVideoBtn,#wyFab,#vid-floating,#floatingYt,.wy-vbtn,.wy-video-fab,.floating-yt",_fab,_ft=false;
+function fab(){if(_fab&&_fab.isConnected)return _fab;if(_ft)return _fab;_ft=true;_fab=document.querySelector(FSEL);return _fab;}
+function place(){
+  var base=null,eb=document.querySelector(".wy-ebox");
+  if(eb){var r=eb.getBoundingClientRect();if(r.height>4)base=Math.round(window.innerHeight-r.top)+8;}
+  if(base===null){var fEl=fab();if(fEl){var fr=fEl.getBoundingClientRect(),st=getComputedStyle(fEl);if(fr.height>0&&st.display!=="none"&&st.visibility!=="hidden")base=Math.round(window.innerHeight-fr.top)+10;}}
+  if(base===null)base=78;
+  BOX.style.bottom=base+"px";
+}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="c16p19Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-C16P19:END-->
 </body></html>
