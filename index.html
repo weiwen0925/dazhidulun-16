@@ -2623,4 +2623,55 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH16P11:END-->
+<!--WY-BH16P12:BEGIN-->
+<style id="wy-bh16p12-css">
+.bh16p12-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh16p12-fabbox.show{display:block;}
+.bh16p12-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh16p12-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh16p12-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh16p12-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh16p12-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh16p12-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh16p12-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh16p12-modal.open{display:flex;}
+.bh16p12-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh16p12-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh16p12-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh16p12-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh16p12-close:hover{background:#dde2e6;}
+.bh16p12-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh16p12-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh16p12-tbl th,.bh16p12-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh16p12-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh16p12-tbl thead th:nth-child(1){width:32%;}.bh16p12-tbl thead th:nth-child(2){width:41%;}.bh16p12-tbl thead th:nth-child(3){width:27%;}
+.bh16p12-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh16p12-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh16p12-guan{background:#eef2f5;color:#37505f;}
+.bh16p12-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh16p12-tbl tbody tr:nth-child(even) td.bh16p12-guan{background:#e8eef2;}
+.bh16p12-tbl tbody tr:nth-child(even) td.bh16p12-qa{background:#e7ecdb;}
+.bh16p12-tbl b{color:#8b2500;}
+.bh16p12-guan b{color:#2f6b5a;}
+.bh16p12-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh16p12-note b{color:#8b2500;}
+@media(max-width:900px){.bh16p12-fabbox{right:14px;}.bh16p12-tbl{font-size:11px;}.bh16p12-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh16p12-fabbox" id="bh16p12Box"><button class="bh16p12-btn" id="bh16p12Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh16p12-ic">譯</span><span class="bh16p12-ls"><span class="bh16p12-l1">本品 · 原文·白話·中觀</span><span class="bh16p12-l2">白話翻譯表</span></span></button></div><div class="bh16p12-modal" id="bh16p12Modal" role="dialog" aria-modal="true"><div class="bh16p12-card"><button class="bh16p12-close" id="bh16p12Close" type="button" aria-label="關閉">×</button><h3>卷十六 · 第12品 白話翻譯表（熱地獄）</h3><p class="sub">大智度論卷十六·熱大熱地獄業報 · 原文↔白話↔中觀概念 逐段對照</p><table class="bh16p12-tbl"><caption>黑繩大地獄 白話翻譯表·原文｜白話翻譯｜中觀概念（共2段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh16p12-src">第六、第七，熱、大熱地獄中，有二大銅鑊：一名難陀，二名跋難陀（秦言喜、大喜也）。醎沸水滿中，羅剎鬼獄卒以罪人投中，如廚士烹肉；人在鑊中，腳上頭下，譬如煮豆熟爛，骨節解散，皮肉相離；知其已爛，以叉叉出，行業因緣，冷風吹活。復投炭坑中，或著沸屎中，譬如魚出於水而著熱沙中；又以濃血而自煎熬。從炭坑中出，投之焰床，強驅令坐，眼、耳、鼻、口及諸毛孔，一切火出。</td><td>第六層、第七層，熱地獄、大熱地獄中，有兩口大銅鑊：一個名叫難陀，一個名叫跋難陀（秦地的話說就是「喜」、「大喜」的意思）。鑊中裝滿了鹹苦滾沸的水，羅剎鬼、獄卒把罪人投入鑊中，就像廚師烹煮肉食一樣；人在鑊裡，腳朝上頭朝下，就像煮豆子煮到熟爛一樣，骨節都解散開來，皮肉彼此分離；獄卒知道罪人已經煮爛了，便用叉子把他叉出來，由於業力因緣的緣故，一陣冷風吹來竟使他重新復活。接著又把他投入炭坑之中，或者放進滾沸的糞便之中，就像魚離開了水卻被放進滾燙的熱沙裡一樣；又用濃稠的血漿反覆煎熬自己。從炭坑中被拉出後，又被投到火焰做成的床上，被強行驅趕按坐在上面，眼睛、耳朵、鼻子、口，以及全身所有的毛孔，都噴出火焰。</td><td class="bh16p12-guan"><b>冷風吹活·苦報無縫接軌</b>——「行業因緣，冷風吹活」一句最堪玩味：罪人骨節已解、皮肉已離，理應死盡，然業力尚未耗盡，一陣冷風便令其復生，再受下一輪煎熬。這說明地獄之苦並非某個外在獄卒刻意延長懲罰，而是業力本身如同能量守恆一般，在因緣未盡之前絕不允許「解脫式的死亡」出現；銅鑊、炭坑、焰床皆是空幻緣生之相，其恐怖正在於業力運作的精確與無漏，而非有一位嗜血的主宰刻意設計。</td></tr><tr><td class="bh16p12-src">此人宿世惱亂父母、師長、沙門、婆羅門，於諸好人福田中惱令心熱；以此罪故，受熱地獄罪。或有宿世煮生繭，或生炙猪羊，或以木貫人而生炙之，或焚燒山野及諸聚落、佛圖、精舍，及天神等，或推眾生著火坑中。如是等種種因緣，生此地獄中。</td><td>這些人是因為過去世惱亂父母、師長、沙門、婆羅門，在這些堪為福田的善人心中，惱得他們心生熱惱；因為這樣的罪業緣故，所以要承受熱地獄的罪報。又有的人是因為過去世活活地烹煮蠶繭、活活地炙烤豬羊、或是用木棍貫穿活人來燒烤他，或是焚燒山野以及各個村落聚落、佛塔寺院、僧眾精舍，以及天神所居之處，或是把眾生推入火坑之中。因為造作這種種因緣的緣故，所以出生在這座地獄之中。</td><td class="bh16p12-guan"><b>心火與物火·一內一外的同構業因</b>——惱亂父母師長、令善人心熱，造的是「無形的心火」；煮繭炙生、焚燒聚落，造的是「有形的物火」，兩類看似不同的業因，本質上都是以「熱惱」加諸於他人身心之上；死後所受的內燃外烹，正是這兩類熱惱業因在緣起法界中如實顯現的鏡像，火本無自性，能燒之火與所燒之身，皆是業力假合之相，並非實有一個獨立的「火」在懲罰誰。</td></tr></tbody></table><p class="bh16p12-note">大智度論卷十六第12品原文·白話·中觀三欄對照。菩薩天眼觀熱、大熱地獄：二大銅鑊難陀跋難陀醎沸水烹煮罪人，冷風吹活無縫接軌再受炭坑焰床之苦；其因在於宿世惱亂父母師長沙門婆羅門令心熱、煮繭炙生、焚燒聚落、推人入火坑。　中觀關鍵詞：冷風吹活　心火物火同構　業力無縫接軌　緣起假合</p></div></div>
+<script id="wy-bh16p12-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh16p12Btn"),BOX=document.getElementById("bh16p12Box"),MODAL=document.getElementById("bh16p12Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=11;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+/*BHPLACE*/function place(){var cands=[document.getElementById("c16p12Box")],eb=document.querySelector(".wy-ebox");if(eb)cands.push(eb);var best=null;for(var i=0;i<cands.length;i++){var el=cands[i];if(!el)continue;var cs=getComputedStyle(el);if(cs.display==="none")continue;var r=el.getBoundingClientRect();if(r.height<=4)continue;var v=Math.round(window.innerHeight-r.top)+8;if(best===null||v>best)best=v;}if(best!==null)BOX.style.bottom=best+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh16p12Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH16P12:END-->
 </body></html>
