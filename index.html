@@ -2674,4 +2674,55 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH16P12:END-->
+<!--WY-BH16P13:BEGIN-->
+<style id="wy-bh16p13-css">
+.bh16p13-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh16p13-fabbox.show{display:block;}
+.bh16p13-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh16p13-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh16p13-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh16p13-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh16p13-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh16p13-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh16p13-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh16p13-modal.open{display:flex;}
+.bh16p13-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh16p13-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh16p13-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh16p13-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh16p13-close:hover{background:#dde2e6;}
+.bh16p13-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh16p13-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh16p13-tbl th,.bh16p13-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh16p13-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh16p13-tbl thead th:nth-child(1){width:32%;}.bh16p13-tbl thead th:nth-child(2){width:41%;}.bh16p13-tbl thead th:nth-child(3){width:27%;}
+.bh16p13-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh16p13-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh16p13-guan{background:#eef2f5;color:#37505f;}
+.bh16p13-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh16p13-tbl tbody tr:nth-child(even) td.bh16p13-guan{background:#e8eef2;}
+.bh16p13-tbl tbody tr:nth-child(even) td.bh16p13-qa{background:#e7ecdb;}
+.bh16p13-tbl b{color:#8b2500;}
+.bh16p13-guan b{color:#2f6b5a;}
+.bh16p13-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh16p13-note b{color:#8b2500;}
+@media(max-width:900px){.bh16p13-fabbox{right:14px;}.bh16p13-tbl{font-size:11px;}.bh16p13-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh16p13-fabbox" id="bh16p13Box"><button class="bh16p13-btn" id="bh16p13Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh16p13-ic">譯</span><span class="bh16p13-ls"><span class="bh16p13-l1">本品 · 原文·白話·中觀</span><span class="bh16p13-l2">白話翻譯表</span></span></button></div><div class="bh16p13-modal" id="bh16p13Modal" role="dialog" aria-modal="true"><div class="bh16p13-card"><button class="bh16p13-close" id="bh16p13Close" type="button" aria-label="關閉">×</button><h3>卷十六 · 第13品 白話翻譯表（阿鼻地獄）</h3><p class="sub">大智度論卷十六·阿鼻地獄業報 · 原文↔白話↔中觀概念 逐段對照</p><table class="bh16p13-tbl"><caption>阿鼻地獄 白話翻譯表·原文｜白話翻譯｜中觀概念（共5段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh16p13-src">見阿鼻地獄，縱廣四千里，周迴鐵壁，於七地獄，其處最深。獄卒羅剎以大鐵椎椎諸罪人，如鍛師打鐵，從頭剝皮，乃至其足；以五百釘釘挓其身，如挓牛皮，互相掣挽，應手破裂。熱鐵火車，以轢其身。驅入火坑，令抱炭出。熱沸屎河，驅令入中；有鐵嘴毒虫，從鼻中入腳底出，從足下入口中出。</td><td>（菩薩天眼）看見阿鼻地獄，縱橫四千里，四周圍繞著鐵壁，在七層地獄之中，它的所在最為幽深。獄卒羅剎用巨大的鐵椎捶打各個罪人，就像鍛造師打鐵一樣，從頭部開始剝皮，一直剝到腳底；又用五百根釘子把他的身體釘開撐張，就像撐開牛皮一樣，彼此拉扯，一經觸手皮肉便應聲破裂。滾燙的鐵製火車，在他身上輾壓而過。又被驅趕進入火坑，命令他抱著炭火走出來。滾燙的糞尿河，也驅趕著他進入其中；河裡有鐵嘴毒蟲，從他的鼻孔鑽入、從腳底鑽出，又從腳底鑽入、從口中鑽出。</td><td class="bh16p13-guan"><b>阿鼻·最深非實有一「深」</b>——經文極言阿鼻地獄「其處最深」，鐵椎剝皮、鐵釘挓身、鐵嘴穿身，種種酷刑層層疊加，看似有一個客觀存在、由外而來的極致苦處；然而「最深」只是相對於其餘七獄業報輕重而立的假名，鐵壁、鐵椎、火車、毒蟲皆是罪人自身業力所感的緣生之相，並無一個獨立於業力之外、恆常不變的「阿鼻」在等待任何人，苦報之極致仍不離緣起。</td></tr><tr><td class="bh16p13-src">竪劍道中，驅令馳走，足下破碎，如廚膾肉；利刀劍槊，飛入身中，譬如霜樹落葉，隨風亂墜；罪人手、足、耳、鼻、支節，皆被斫剝割截在地，流血成池。二大惡狗：一名賒摩，二名賒婆羅。鐵口猛毅，破人筋骨，力踰虎豹，猛如師子。</td><td>在直立著刀劍的道路上，獄卒驅趕罪人奔跑，他的腳掌被割得破碎，就像廚師切碎的肉一樣；鋒利的刀劍矛槊，紛紛飛射進入他的身體，就像秋霜打過的樹上落葉，隨風亂飛散落一樣；罪人的手、腳、耳朵、鼻子、四肢關節，全都被砍斫剝割截斷，散落在地上，流出的血匯聚成血池。又有兩隻巨大的惡狗：一隻名叫賒摩，一隻名叫賒婆羅。牠們的鐵嘴又猛又狠，能咬破人的筋骨，力氣勝過虎豹，兇猛如同獅子。</td><td class="bh16p13-guan"><b>刀劍如落葉·苦具即心相</b>——利刀劍槊「譬如霜樹落葉，隨風亂墜」，經文用最輕盈飄零的意象比喻最慘烈的殺傷，正暗示這些刀劍並非某種堅實不變的兵器實體，而是隨罪人業風飄墜聚散的假合之相；二惡狗名相俱足、力踰虎豹，看似極其真實，實則與林中鐵刺、河中毒蟲同一機理——皆是自心業力投射所現，並非有一外在造物者專門打造這些刑具來加害於人。</td></tr><tr><td class="bh16p13-src">有大刺林，驅逼罪人，強令上樹。罪人上時，刺便下向，下時刺便上向。大身毒蛇，蝮蝎惡虫，競來齧之。大鳥長嘴，破頭噉腦。入醎河中，隨流上下；出則蹈熱鐵地，行鐵刺上；或坐鐵杙，杙從下入。</td><td>又有一大片長滿尖刺的樹林，獄卒逼迫罪人，強行命令他爬上樹去。罪人往上爬時，樹刺便轉朝下方；他往下爬時，樹刺又轉朝上方，無論如何都逃不過刺穿。巨大的毒蛇、蝮蛇蠍子等各種毒蟲，爭相前來咬囓他。長著長嘴的大鳥，啄破他的頭顱、啄食他的腦漿。他又被趕入鹹苦的河水中，隨著水流忽上忽下漂浮；一出河面，就要踩踏滾燙的鐵地，行走在遍布鐵刺的路上；有時又被按坐在鐵樁上，鐵樁從下方直穿而入。</td><td class="bh16p13-guan"><b>刺樹上下逆向·順逆本無定向</b>——「上時刺下向，下時刺上向」一語道盡地獄苦具最詭譎的一面：並非樹刺本身有固定的朝向，而是罪人業力所至，無論趨上趨下，感受到的都是同一份逼迫穿刺之苦；這正說明所謂「順境」「逆境」並無自性方向，一切苦樂境相皆隨心念業力而轉現，並非外境先天已定，讓人無所逃於天地之間。</td></tr><tr><td class="bh16p13-src">以鉗開口，灌以洋銅，吞熱鐵丸，入口口焦，入咽咽爛，入腹腹然，五藏皆焦，直過墮地。但見惡色，恒聞臭氣，常觸麁澁，遭諸苦痛，迷悶委頓；或狂逸唐突，或藏竄投擲，或顛匐墮落。</td><td>獄卒用鐵鉗撬開罪人的口，灌入熔化的銅汁，命他吞下滾燙的鐵丸；銅汁鐵丸一入口，口就被燒焦；一入咽喉，咽喉就潰爛；一入腹中，腹部就燃燒起來，五臟六腑全被燒焦，直接穿透落到地上。他所看見的只有醜惡的顏色，所聽聞的永遠是腥臭的氣味，所接觸的常是粗糙磨人之物，遭受著種種苦痛，昏迷悶絕、疲憊委頓；有時瘋狂奔逸、橫衝直撞，有時躲藏竄逃、跳擲亂竄，有時跌倒趴伏、墜落在地。</td><td class="bh16p13-guan"><b>六根皆苦·境由業感非由外定</b>——「但見惡色，恒聞臭氣，常觸麁澁」正是六根對境全面苦化的寫照：不是世間本有一種絕對的「惡色」「臭氣」等著誰去承受，而是罪人業力所感，使得眼耳鼻舌身意所對之境無一不苦；由此可見器世間的美惡淨穢並非客觀恆定的性質，而是能感之心與所感業力共同緣起的顯現，離開業感的心識，境相本身並無獨立的苦樂可言。</td></tr><tr><td class="bh16p13-src">此人宿行，多造大惡五逆重罪，斷諸善根，法言非法，非法言法，破因破果，憎嫉善人。以是罪故，入此地獄，受罪最劇。</td><td>這個人過去世的行為，大多造作了極重大的惡業、五逆重罪，斷絕了一切善根，把如法的事說成非法，把非法的事說成如法，破壞因果的道理，憎恨嫉妒善良的人。因為這樣的罪業緣故，所以墮入這座地獄，承受最為劇烈的罪報。</td><td class="bh16p13-guan"><b>破因破果·顛倒即是最深業障</b>——五逆、斷善根、法非法顛倒、破因破果、憎嫉善人，五者之中，「破因破果」尤其關鍵：其餘罪業是行為上的極惡，唯有否定因果本身，是從根本上斬斷了眾生趣向解脫的可能性，等於在認知上封閉了緣起法則運作的通道；阿鼻地獄之所以「受罪最劇」，並非懲罰的量最重，而是因為造業者連「因果緣起」這條返回善道的橋樑都親手拆毀，苦報自然綿延無盡。</td></tr></tbody></table><p class="bh16p13-note">大智度論卷十六第13品原文·白話·中觀三欄對照。菩薩天眼觀阿鼻地獄：鐵壁鐵椎剝皮、五百釘挓身、熱鐵火車、火坑沸屎河鐵嘴毒蟲、竪劍道二惡狗、大刺林毒蛇醎河鐵杙、鉗口灌洋銅吞鐵丸五藏皆焦；其因在於五逆重罪、斷諸善根、法言非法非法言法、破因破果憎嫉善人。　中觀關鍵詞：阿鼻最深非實有一深　刀劍如落葉　刺樹逆向無定向　六根皆苦境由業感　破因破果即最深業障</p></div></div>
+<script id="wy-bh16p13-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh16p13Btn"),BOX=document.getElementById("bh16p13Box"),MODAL=document.getElementById("bh16p13Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=12;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+/*BHPLACE*/function place(){var cands=[document.getElementById("c16p13Box")],eb=document.querySelector(".wy-ebox");if(eb)cands.push(eb);var best=null;for(var i=0;i<cands.length;i++){var el=cands[i];if(!el)continue;var cs=getComputedStyle(el);if(cs.display==="none")continue;var r=el.getBoundingClientRect();if(r.height<=4)continue;var v=Math.round(window.innerHeight-r.top)+8;if(best===null||v>best)best=v;}if(best!==null)BOX.style.bottom=best+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh16p13Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH16P13:END-->
 </body></html>
