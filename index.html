@@ -2929,4 +2929,55 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH16P17:END-->
+<!--WY-BH16P18:BEGIN-->
+<style id="wy-bh16p18-css">
+.bh16p18-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh16p18-fabbox.show{display:block;}
+.bh16p18-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh16p18-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh16p18-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh16p18-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh16p18-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh16p18-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh16p18-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh16p18-modal.open{display:flex;}
+.bh16p18-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh16p18-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh16p18-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh16p18-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh16p18-close:hover{background:#dde2e6;}
+.bh16p18-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh16p18-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh16p18-tbl th,.bh16p18-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh16p18-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh16p18-tbl thead th:nth-child(1){width:32%;}.bh16p18-tbl thead th:nth-child(2){width:41%;}.bh16p18-tbl thead th:nth-child(3){width:27%;}
+.bh16p18-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh16p18-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh16p18-guan{background:#eef2f5;color:#37505f;}
+.bh16p18-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh16p18-tbl tbody tr:nth-child(even) td.bh16p18-guan{background:#e8eef2;}
+.bh16p18-tbl tbody tr:nth-child(even) td.bh16p18-qa{background:#e7ecdb;}
+.bh16p18-tbl b{color:#8b2500;}
+.bh16p18-guan b{color:#2f6b5a;}
+.bh16p18-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh16p18-note b{color:#8b2500;}
+@media(max-width:900px){.bh16p18-fabbox{right:14px;}.bh16p18-tbl{font-size:11px;}.bh16p18-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh16p18-fabbox" id="bh16p18Box"><button class="bh16p18-btn" id="bh16p18Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh16p18-ic">譯</span><span class="bh16p18-ls"><span class="bh16p18-l1">本品 · 原文·白話·中觀</span><span class="bh16p18-l2">白話翻譯表</span></span></button></div><div class="bh16p18-modal" id="bh16p18Modal" role="dialog" aria-modal="true"><div class="bh16p18-card"><button class="bh16p18-close" id="bh16p18Close" type="button" aria-label="關閉">×</button><h3>卷十六 · 第18品 白話翻譯表（精進滿足義）</h3><p class="sub">大智度論卷十六·釋毘梨耶波羅蜜「滿足義」 · 原文↔白話↔中觀概念 逐段對照</p><table class="bh16p18-tbl"><caption>精進滿足義 白話翻譯表·原文｜白話翻譯｜中觀概念（共8段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh16p18-qa">問曰：云何為精進滿足？</td><td>有人問道：「怎樣才叫做精進圓滿呢？」</td><td class="bh16p18-guan"><b>總綱設問·全品由此一問開展</b>——此問是全品的總綱，看似單純，實則預設了「精進」並非一蹴可幾的靜態達標，而涉及「何謂圓滿」這一深層的判準問題；論主不直接給出量化的答案（例如修滿多久、多少功德），而是以下文「身、心精進，不廢息故」作答，暗示「滿足」本身即是一個需要層層拆解名相、階位、二諦才能真正理解的中觀式問題，而非世俗意義上的「完成」。</td></tr><tr><td class="bh16p18-qa">答曰：菩薩生身、法性身，能具功德，是為精進波羅蜜滿足。滿足義，如上說。身、心精進，不廢息故。</td><td>回答說：「菩薩無論是在生身階段，還是證得法性身之後，都能夠具足種種功德，這就是精進波羅蜜的圓滿。『圓滿』的意義，如同前面所說的一樣。因為身精進與心精進，都能持續不廢、永不止息的緣故。」</td><td class="bh16p18-guan"><b>不廢息·貫穿有為無為的永動狀態</b>——答語的核心落在「不廢息」三字：精進的圓滿不是修到某個定額便可歇止，也不是證得法身後便一勞永逸，而是橫跨生身、法性身兩個階段、貫穿有為與無為兩界，永無間斷的持續狀態；這說明「滿足」與「終止」是兩個截然不同的概念——真正的圓滿恰恰在於永不停止的動態相續，而非達到某個終點後的靜止，此中蘊含著大乘精進不住生死、不住涅槃的中道意趣。</td></tr><tr><td class="bh16p18-qa">問曰：精進是心數法，經何以名身精進？</td><td>有人問道：「精進本是心所法（心理作用），經文中為什麼又稱它為『身精進』呢？」</td><td class="bh16p18-guan"><b>本體論悖論之提出·心法何以名身</b>——此問精準點出阿毘達磨分類框架下的矛盾：精進（vīrya）在五十一心所中被歸為純粹的心理運作，本體上與物質色身無涉；然而經文卻反覆使用「身精進」「身口精進」等帶有物質意涵的稱謂，這一發問並非咬文嚼字的名相糾纏，而是逼顯出「假名安立」與「本體實有」之間的張力，是全品「隨用立名」義理得以展開的關鍵樞紐。</td></tr><tr><td class="bh16p18-qa">答曰：精進雖是心數法，從身力出，故名為身精進。如受是心數法，而有五識相應受，是名身受；有意識相應受，是為心受。精進亦如是，身力懃修，若手布施，口誦法言，若講說法，如是等名為身口精進。</td><td>回答說：「精進雖然屬於心所法，但當它是透過身體之力顯發出來的時候，就稱為『身精進』。這就好比『受』（感受）也是心所法，但若是與眼耳鼻舌身五識相應而生起的受，就稱為『身受』；若是與意識相應而生起的受，就稱為『心受』。精進的道理也是一樣：透過身體之力勤奮修行，例如用手布施、用口誦讀法語、用口講說佛法，像這樣的種種，就稱為『身口精進』。」</td><td class="bh16p18-guan"><b>隨用立名·同一心力依發動之門而假立名字</b>——論主以「受」為喻，說明同一心所法，可因其現起所依循的途徑不同（五識或意識）而被賦予不同的世俗假名（身受、心受）；精進亦復如是，其自性本自是心，並無「身精進」與「心精進」兩種截然不同的實體，只是當這股心力透過身體之力（手布施、口誦法）顯發時，便隨其顯發之「用」而假名為身精進；這正是「假名有」的典範示現——名字隨緣起之用而立，並不意味著名字所指涉之物具有獨立自存的本質。</td></tr><tr><td class="bh16p18-src">復次，行布施、持戒，是為身精進；忍辱、禪定、智慧，是名心精進。復次，外事懃修，是為身精進；內自專精，是為心精進。麁精進名為身，細精進名為心。為福德精進名為身，為智慧精進是為心。</td><td>再者，修行布施、持戒，這稱為身精進；修行忍辱、禪定、智慧，這稱為心精進。再者，對外在事務勤奮修持，這稱為身精進；對內在自心專一精研，這稱為心精進。粗顯的精進稱為身，細密的精進稱為心。為了求得福德而精進稱為身，為了求得智慧而精進稱為心。</td><td class="bh16p18-guan"><b>三軸並陳·同一精進的多維判攝</b>——本段連用三個「復次」，依序從行為項目（布施持戒／忍辱禪定智慧）、修持性質（外事懃修／內自專精，麁／細）、終極目標（福德／智慧）三條互不重疊的軸線，將「身精進」與「心精進」重新定義；三軸疊合，形成一個立體的判攝矩陣，說明「精進」這一單一辭彙，在菩薩道的不同操作層面，被精確地映射為不同的具體樣態，然而無論如何劃分，判攝的三軸終究只是就同一股精進動能所作的不同角度描述，並非意味著身、心之間存在著本質的割裂。</td></tr><tr><td class="bh16p18-src">若菩薩初發心，乃至得無生忍，於是中間名身精進，生身未捨故。得無生忍，捨肉身得法性身，乃至成佛，是為心精進。</td><td>如果菩薩從最初發心開始，一直到證得無生法忍之間，這段期間所修的精進都稱為身精進，因為這時尚未捨離父母所生的業報肉身的緣故。等到證得無生法忍之後，捨棄了肉身、獲得清淨的法性身，一直到成佛為止，這段期間所修的精進就稱為心精進。</td><td class="bh16p18-guan"><b>無生法忍為本體質變的絕對分水嶺</b>——此句以「無生法忍」一刀切下，將菩薩道劃分為「生身」與「法性身」兩個階段：未證無生忍之前，心仍受制於業報肉身的疲勞病苦，故心隨身轉；證得無生忍之後，捨離肉身束縛而得清淨法性身，心不再受色身所累；這一分判不僅是修證次第上的階段劃分，更揭示了「身」與「心」的關係並非固定不變的鎖鏈，而是隨著對緣起實相的證悟程度而不斷鬆動、轉化，直至證入無生，物我對待的執著徹底消融，心才真正從色身的桎梏中解脫出來。</td></tr><tr><td class="bh16p18-src">復次，菩薩初發心時，功德未足故，種三福因緣：布施、持戒、善心，漸得福報以施眾生。眾生未足，更廣修福，發大悲心：「一切眾生不足於財，多作眾惡，我以少財不能滿足其意；其意不滿，不能懃受教誨；不受道教，不能得脫生、老、病、死。我當作大方便，給足於財，令其充滿。」便入大海，求諸異寶；登山履危，以求妙藥；入深石窟，求諸異物，石汁、珍寶，以給眾生。或作薩陀婆，冒涉嶮道、劫賊、師子、虎、狼、惡獸，為布施眾生故，懃求財寶，不以為難。</td><td>再者，菩薩最初發心的時候，因為功德還不具足，便種下三種培福的因緣：布施、持戒、修善心，漸漸獲得福報，用來布施給眾生。可是眾生的需求始終無法滿足，菩薩便更加廣泛地修福，發起大悲心，這樣想：「一切眾生都苦於財物不足，因此多造種種惡業；我如果只用微薄的財物，是無法滿足他們心意的；他們的心意得不到滿足，就不肯勤懇地接受教誨；不接受正道的教誨，就無法脫離生、老、病、死之苦。我應當運用種種善巧方便，給予眾生充足的財物，使他們的需求得到充分滿足。」於是菩薩便深入大海，尋求各種奇珍異寶；攀登危崖峻嶺，尋求珍貴妙藥；深入幽暗石窟，尋求種種奇異之物、礦脈汁液、珍貴寶藏，用來供給眾生。有時甚至扮作率領商隊遠行的商主，冒著艱險的道路、盜賊、獅子、虎狼、惡獸等重重危難，只為了布施眾生的緣故，勤懇地尋求財寶，絲毫不以為艱難。</td><td class="bh16p18-guan"><b>藉事鍊心·以有限之身挑戰無限之願</b>——本段細膩鋪陳生身菩薩「入大海、登危崖、涉嶮道」等種種艱苦求索的具體行跡，這些行為看似只是外在的物質求索，實則是菩薩以血肉之軀承載無盡悲願的具體展演：明知肉身會疲累、會受傷，仍以大悲心驅動色身完成極限任務，在這番與業報身拉扯的過程中「藉事鍊心」；這說明生身階段的精進雖然仍不離「心隨身累」的物理局限，卻正是磨鍊心性、積累福德資糧不可或缺的緣起歷程，並非可以被輕易略過或鄙棄的低階修行。</td></tr><tr><td class="bh16p18-src">藥草、呪術，能令銅變為金，如是種種變化，致諸財物，及四方無主物，以給眾生，是為身精進。得五神通，能自變化，作諸美味，或至天上取自然食，如是等，名為心精進。能集財寶以用布施，是為身精進；以是布施之德，得至佛道，是為心精進。生身菩薩行六波羅蜜，是為身精進；法性身菩薩行六波羅蜜，是為心精進（未得法身，心則隨身；已得法身，則心不隨身，身不累心也）。復次，一切法中，皆能成辦，不惜身命，是為身精進；求一切禪定、智慧時，心不懈惓，是為心精進。</td><td>運用藥草、咒術等方法，能夠使銅轉變為黃金，像這樣種種變化的方式，取得種種財物，以及四方無人擁有的財物，用來供給眾生，這稱為身精進。證得五種神通之後，能夠自在變化，變現出種種美味飲食，或是前往天上取用天然的食物，像這樣的種種，稱為心精進。能夠聚集財寶用來布施，這稱為身精進；憑藉這布施的功德，最終得以成就佛道，這稱為心精進。生身菩薩修行六波羅蜜，稱為身精進；法性身菩薩修行六波羅蜜，稱為心精進（因為尚未證得法身時，心會隨著色身而受牽累；已經證得法身之後，心便不再隨著色身流轉，色身也不再拖累心了）。再者，在一切法門之中，都能夠成就辦妥，不顧惜自己的身命，這稱為身精進；追求一切禪定、智慧的時候，心中毫不懈怠疲倦，這稱為心精進。</td><td class="bh16p18-guan"><b>心能轉物·身不累心的本體解脫</b>——本段與前段（生身菩薩入海登山求財）形成鮮明對照：法性身菩薩無需再以肉身冒險求索，而是直接運用禪定智慧之力，令銅化金、變現美食、自在取用，物質世界在證悟者面前不再是需要以血肉之驅去搏鬥的堅固障礙，而成為心力可以直接轉化運用的緣生假相；末句「未得法身，心則隨身；已得法身，則心不隨身，身不累心也」正是全品的總持句，點出身心精進看似兩截，實則是同一股精進動能，在「是否證悟諸法緣起性空」這一關鍵分水嶺前後，所呈現的兩種不同示現，而非彼此對立的兩種精進。</td></tr></tbody></table><p class="bh16p18-note">大智度論卷十六第18品原文·白話·中觀三欄對照。詳述精進滿足之義：生身法性身俱能具功德為滿足、心數法何以名身精進（隨用立名）、項目性質目標三維判攝身心精進、無生法忍為身心精進之分水嶺、生身菩薩藉事鍊心廣求財寶布施、法身菩薩心能轉物神通變化。　中觀關鍵詞：不廢息為精進滿足　隨用立名假名有　三維判攝同一心力　無生法忍本體質變　藉事鍊心心隨身累　心能轉物身不累心</p></div></div>
+<script id="wy-bh16p18-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh16p18Btn"),BOX=document.getElementById("bh16p18Box"),MODAL=document.getElementById("bh16p18Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=17;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+/*BHPLACE*/function place(){var cands=[document.getElementById("c16p18Box")],eb=document.querySelector(".wy-ebox");if(eb)cands.push(eb);var best=null;for(var i=0;i<cands.length;i++){var el=cands[i];if(!el)continue;var cs=getComputedStyle(el);if(cs.display==="none")continue;var r=el.getBoundingClientRect();if(r.height<=4)continue;var v=Math.round(window.innerHeight-r.top)+8;if(best===null||v>best)best=v;}if(best!==null)BOX.style.bottom=best+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh16p18Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH16P18:END-->
 </body></html>
