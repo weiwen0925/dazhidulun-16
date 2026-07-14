@@ -2113,4 +2113,55 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH16P1:END-->
+<!--WY-BH16P2:BEGIN-->
+<style id="wy-bh16p2-css">
+.bh16p2-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh16p2-fabbox.show{display:block;}
+.bh16p2-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh16p2-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh16p2-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh16p2-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh16p2-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh16p2-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh16p2-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh16p2-modal.open{display:flex;}
+.bh16p2-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh16p2-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh16p2-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh16p2-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh16p2-close:hover{background:#dde2e6;}
+.bh16p2-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh16p2-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh16p2-tbl th,.bh16p2-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh16p2-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh16p2-tbl thead th:nth-child(1){width:32%;}.bh16p2-tbl thead th:nth-child(2){width:41%;}.bh16p2-tbl thead th:nth-child(3){width:27%;}
+.bh16p2-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh16p2-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh16p2-guan{background:#eef2f5;color:#37505f;}
+.bh16p2-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh16p2-tbl tbody tr:nth-child(even) td.bh16p2-guan{background:#e8eef2;}
+.bh16p2-tbl tbody tr:nth-child(even) td.bh16p2-qa{background:#e7ecdb;}
+.bh16p2-tbl b{color:#8b2500;}
+.bh16p2-guan b{color:#2f6b5a;}
+.bh16p2-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh16p2-note b{color:#8b2500;}
+@media(max-width:900px){.bh16p2-fabbox{right:14px;}.bh16p2-tbl{font-size:11px;}.bh16p2-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh16p2-fabbox" id="bh16p2Box"><button class="bh16p2-btn" id="bh16p2Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh16p2-ic">譯</span><span class="bh16p2-ls"><span class="bh16p2-l1">本品 · 原文·白話·中觀</span><span class="bh16p2-l2">白話翻譯表</span></span></button></div><div class="bh16p2-modal" id="bh16p2Modal" role="dialog" aria-modal="true"><div class="bh16p2-card"><button class="bh16p2-close" id="bh16p2Close" type="button" aria-label="關閉">×</button><h3>卷十六 · 第2品 白話翻譯表（為何六度單立精進波羅蜜）</h3><p class="sub">大智度論卷十六·精進波羅蜜義 · 原文↔白話↔中觀概念 逐段對照</p><table class="bh16p2-tbl"><caption>為何六度單立精進波羅蜜 · 原文｜白話翻譯｜中觀概念（共13段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh16p2-qa">問曰：一切善法中精進多，今說精進波羅蜜，已入一切善法精進中。</td><td>問：一切善法之中都含有精進的成分，如今另外說「精進波羅蜜」，這其實早已包含在「一切善法中的精進」裡面了（何必另立名目）？</td><td class="bh16p2-guan"><b>質疑波羅蜜之獨立性</b>——此問直指概念重疊的疑點：若精進波羅蜜只是一切善法精進的子集，又何必特別安立一個新名詞？這是為下文「簡別」義理鋪路的關鍵發問，逼出精進與精進波羅蜜的分判標準。</td></tr><tr><td class="bh16p2-qa">答曰：為佛道精進，名為波羅蜜；諸餘善法中精進，但名精進，不名波羅蜜。</td><td>答：凡是為了佛道而精進，才稱為「波羅蜜」；至於在其他善法中的精進，就只稱為「精進」，不稱為「波羅蜜」。</td><td class="bh16p2-guan"><b>以歸宿分判名相·目的論簡別</b>——論主的分判標準不在「用力多少」的量上，而在「趣向何處」的質上：同樣是精進的功能運作，指向佛道究竟解脫者立名波羅蜜，指向其他世間或出世間善法者僅立名精進；可見「波羅蜜」之名並非精進本身多了什麼實體，而是同一功能因所緣目標（佛道）的差異而有的假名施設。</td></tr><tr><td class="bh16p2-qa">問曰：一切善法中懃，何以不名精進波羅蜜；而獨名菩薩精進為波羅蜜？</td><td>問：既然一切善法中的勤奮修習都可以是精進，為什麼不通通稱為「精進波羅蜜」，卻獨獨把菩薩的精進稱為波羅蜜呢？</td><td class="bh16p2-guan"><b>追問獨尊菩薩之理由</b>——承上一問（目的論的簡別）之後，此問進一步從「行者身分」角度追問：為何波羅蜜之名獨獨屬於菩薩，而不通於世間人、聲聞、辟支佛？將討論由「目標」層次推進到「格局／發心」層次。</td></tr><tr><td class="bh16p2-qa">答曰：波羅蜜名到彼岸。世間人及聲聞、辟支佛，不能具足行諸波羅蜜，是故不名為精進波羅蜜。</td><td>答：「波羅蜜」意譯為「到彼岸」。世間凡夫以及聲聞、辟支佛，都不能具足圓滿地修行種種波羅蜜，因此他們的精進不稱為「精進波羅蜜」。</td><td class="bh16p2-guan"><b>波羅蜜以「具足圓滿」為判準</b>——「到彼岸」不僅是抵達某一目標，更意味著六度須具足圓滿、彼此相攝而行；聲聞、辟支佛雖也精進，但因不具足修習六度全體（尤其缺大悲利他之行），故其精進終究只是局部功用，不能安立波羅蜜之名，顯示波羅蜜義是「整體具足」而非「單項卓越」的判準。</td></tr><tr><td class="bh16p2-src">復次，是人無大慈、大悲，棄捨眾生；不求十力、四無所畏、十八不共法、一切智，及無礙解脫、無量身、無量光明、無量音聲、無量持戒、禪定、智慧。以是故，是人精進不名波羅蜜。</td><td>再者，這些人（世間人、聲聞、辟支佛）沒有大慈大悲之心，捨棄了眾生；也不追求十力、四無所畏、十八不共法、一切智，以及無礙解脫、無量身、無量光明、無量音聲、無量持戒、禪定、智慧等佛的功德。因此，這些人的精進不能稱為波羅蜜。</td><td class="bh16p2-guan"><b>大悲利他為波羅蜜之核心判準</b>——六重「復次」的第一重，從「發心對象」立論：缺乏大慈大悲、捨棄眾生，便已從根本上與波羅蜜義相違；波羅蜜不僅是自身功德的圓滿追求（十力、一切智等），更以不捨眾生的悲願為前提，說明中觀所理解的「究竟」必然含攝利他，非孤立的自了。</td></tr><tr><td class="bh16p2-src">復次，菩薩精進，不休、不息，一心求佛道，如是行者，名為精進波羅蜜。如好施菩薩求如意珠，抒大海水，正使筋骨枯盡，終不懈廢；得如意珠，以給眾生，濟其身苦。菩薩如是難為能為，是為菩薩精進波羅蜜。</td><td>再者，菩薩的精進，永不休止、永不停息，一心一意追求佛道，像這樣修行的人，才稱為精進波羅蜜。譬如樂善好施的菩薩，為了求得如意寶珠而汲取大海之水，即使汲到筋疲骨枯，也終究不懈怠、不放棄；等到求得如意珠後，便用來布施眾生，救濟他們身體上的痛苦。菩薩能做到這種常人難以做到的事，這就是菩薩的精進波羅蜜。</td><td class="bh16p2-guan"><b>難行能行·以譬喻顯精進之極致</b>——第二重復次以「求如意珠濟眾生苦」的譬喻，說明菩薩精進波羅蜜的特質是「難為能為」——不是量的累積（做得比別人多），而是質的突破（不因艱難而退轉），且求得成果後即刻迴向眾生，環環扣住「不休不息＋利他」兩大要素。</td></tr><tr><td class="bh16p2-src">復次，菩薩以精進力為首，行五波羅蜜，是時，名為菩薩精進波羅蜜。譬如眾藥和合，能治重病；菩薩精進亦如是，但行精進，不能行五波羅蜜，是不名菩薩精進波羅蜜。</td><td>再者，菩薩以精進之力作為統領，帶動其餘五種波羅蜜一起修行，這時候才稱為菩薩的精進波羅蜜。譬如眾多藥材調和在一起，才能治好重病；菩薩的精進也是如此，如果只是單獨修習精進，卻不能同時攝持修行其餘五波羅蜜，那就不能稱為菩薩精進波羅蜜。</td><td class="bh16p2-guan"><b>精進為首·統攝五度而非孤立</b>——第三重復次以「眾藥和合治病」為喻，說明精進波羅蜜必須作為統攝布施、持戒、忍辱、禪定、智慧的樞紐才能成立，孤立單修精進並不構成波羅蜜；這呼應六度「互攝互入」的中觀式修行觀——任一度若脫離其餘五度，皆不圓滿，唯有相互滲透方能到彼岸。</td></tr><tr><td class="bh16p2-src">復次，菩薩精進，不為財利、富貴、力勢，亦不為身，不為生天、轉輪王、梵、釋、天王，亦不自為以求涅槃，但為佛道，利益眾生。如是相，名為菩薩精進波羅蜜。</td><td>再者，菩薩的精進，不是為了財富利益、富貴權勢，也不是為了自身，不是為了往生天界、成為轉輪聖王、梵天王、帝釋天王，也不是為了自己求證涅槃，而純粹是為了成就佛道、利益眾生。具備這樣相狀的精進，才稱為菩薩精進波羅蜜。</td><td class="bh16p2-guan"><b>純以利他為動機·排除一切自利目的</b>——第四重復次以一連串「不為」的否定句式，層層排除財利、富貴、生天、轉輪王，乃至個人求涅槃等一切自利動機，最終收束於「但為佛道，利益眾生」；這種徹底的動機淨化，正是波羅蜜「無所得而為」精神在因地發心層面的具體展開。</td></tr><tr><td class="bh16p2-src">復次，菩薩精進，修行一切善法，大悲為首。如慈父愛子，唯有一子而得重病，一心求藥，救療其病；菩薩精進，以慈為首，亦復如是，救療一切，心無暫捨。</td><td>再者，菩薩精進修行一切善法，是以大悲心為統領。譬如慈愛的父親疼愛獨子，這獨子若罹患重病，父親便一心一意尋求藥物，救治他的病；菩薩的精進以慈悲為首，也是同樣的道理——救治療癒一切眾生的苦難，心中沒有一刻捨棄。</td><td class="bh16p2-guan"><b>大悲為首·以慈父喻顯念念不捨</b>——第五重復次以「慈父愛獨子」為喻，凸顯菩薩精進的情感基調是「心無暫捨」的懇切大悲，而非冷靜疏離的義務履行；這說明精進波羅蜜不僅是意志力的展現，更是悲心持續在場、片刻不離眾生苦難的存在狀態。</td></tr><tr><td class="bh16p2-src">復次，菩薩精進，以實相智慧為首，行六波羅蜜，是名菩薩精進波羅蜜。</td><td>再者，菩薩的精進，是以「諸法實相」的智慧作為統領，依此而修行六波羅蜜，這才稱為菩薩精進波羅蜜。</td><td class="bh16p2-guan"><b>實相智慧為首·悲智雙運方成波羅蜜</b>——第六重復次是六重復次的總收：前五重分別強調不捨眾生、難行能行、統攝五度、純為利他、大悲為首，至此收攝於「以實相智慧為首」——唯有般若空慧照見諸法無自性，大悲精進才不落於著相取相的有為造作，悲智雙運，方是波羅蜜義究竟圓滿之處。</td></tr><tr><td class="bh16p2-qa">問曰：諸法實相無為無作；精進有為有作相，云何以實相為首？</td><td>問：諸法的實相是無為、無造作的；而精進卻是有為、有造作之相，這兩者性質相違，為什麼可以說（精進）是以實相智慧為首呢？</td><td class="bh16p2-guan"><b>無為與有為之體用悖論</b>——此問點出全品最核心的理論張力：實相無為無作，精進卻是有為有作，二者看似體性相違，如何能說有為的精進以無為的實相為「首」？這一悖論若不化解，六重復次的最後總收便無法成立，是本品思辨的最高峰。</td></tr><tr><td class="bh16p2-qa">答曰：雖知諸法實相無為無作，以本願大悲欲度眾生故，於無作中，以精進力度脫一切。</td><td>答：雖然明知諸法實相是無為無作的，但由於菩薩本願中的大悲心想要度化眾生，所以即使身處無作的實相之中，仍以精進之力去度脫一切眾生。</td><td class="bh16p2-guan"><b>即無作而作·大悲本願為樞紐</b>——化解悖論的關鍵在「本願大悲」：菩薩雖如實照見諸法無為無作的實相，卻不因此耽著寂滅、捨棄眾生，而是以大悲本願為動力，在無作性空之中仍示現精進度生之相；這正是「即體即用、無作而作」的中觀式弔詭統一——空性不障礙緣起大用，性空與精進並不相妨。</td></tr><tr><td class="bh16p2-src">復次，若諸法實相，無為無作、如涅槃相、無一無二，汝云何言「實相與精進相異」耶？汝即不解諸法相。</td><td>再者，如果諸法實相真是無為無作、如同涅槃之相、無一亦無二（不可分別對立），那麼你又怎麼能說「實相與精進是相異的兩件事」呢？你這樣說，正表示你並不真正理解諸法的實相。</td><td class="bh16p2-guan"><b>反詰破執·實相與精進本非二法</b>——論主以反詰作結：若真達「無一無二」的實相義，便不應再將實相與精進對立為截然二分的兩物；提問者之所以覺得二者相違，正因仍以二元對立的思惟在看待「無為」與「有為」，尚未真正契入「無一無二」的不二中道，這一反詰徹底瓦解了原先設問所預設的體用對立框架。</td></tr></tbody></table><p class="bh16p2-note">大智度論卷十六第2品原文·白話·中觀三欄對照。論主以三番問答層層界定「精進波羅蜜」：第一問答以「為佛道精進」與否作目的論簡別；第二問答以「六重復次」說明何以獨尊菩薩精進為波羅蜜（不捨眾生、難行能行、統攝五度、純為利他、大悲為首、實相智慧為首）；第三問答化解「無為實相」與「有為精進」的體用悖論，終以「實相與精進無一無二」的反詰收束全品。　中觀關鍵詞：目的論簡別　六重復次　大悲本願　即無作而作　無一無二</p></div></div>
+<script id="wy-bh16p2-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh16p2Btn"),BOX=document.getElementById("bh16p2Box"),MODAL=document.getElementById("bh16p2Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=1;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+/*BHPLACE*/function place(){var cands=[document.getElementById("c16p2Box")],eb=document.querySelector(".wy-ebox");if(eb)cands.push(eb);var best=null;for(var i=0;i<cands.length;i++){var el=cands[i];if(!el)continue;var cs=getComputedStyle(el);if(cs.display==="none")continue;var r=el.getBoundingClientRect();if(r.height<=4)continue;var v=Math.round(window.innerHeight-r.top)+8;if(best===null||v>best)best=v;}if(best!==null)BOX.style.bottom=best+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh16p2Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH16P2:END-->
 </body></html>
