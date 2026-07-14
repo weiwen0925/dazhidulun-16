@@ -2725,4 +2725,55 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH16P13:END-->
+<!--WY-BH16P14:BEGIN-->
+<style id="wy-bh16p14-css">
+.bh16p14-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh16p14-fabbox.show{display:block;}
+.bh16p14-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh16p14-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh16p14-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh16p14-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh16p14-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh16p14-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh16p14-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh16p14-modal.open{display:flex;}
+.bh16p14-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh16p14-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh16p14-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh16p14-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh16p14-close:hover{background:#dde2e6;}
+.bh16p14-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh16p14-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh16p14-tbl th,.bh16p14-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh16p14-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh16p14-tbl thead th:nth-child(1){width:32%;}.bh16p14-tbl thead th:nth-child(2){width:41%;}.bh16p14-tbl thead th:nth-child(3){width:27%;}
+.bh16p14-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh16p14-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh16p14-guan{background:#eef2f5;color:#37505f;}
+.bh16p14-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh16p14-tbl tbody tr:nth-child(even) td.bh16p14-guan{background:#e8eef2;}
+.bh16p14-tbl tbody tr:nth-child(even) td.bh16p14-qa{background:#e7ecdb;}
+.bh16p14-tbl b{color:#8b2500;}
+.bh16p14-guan b{color:#2f6b5a;}
+.bh16p14-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh16p14-note b{color:#8b2500;}
+@media(max-width:900px){.bh16p14-fabbox{right:14px;}.bh16p14-tbl{font-size:11px;}.bh16p14-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh16p14-fabbox" id="bh16p14Box"><button class="bh16p14-btn" id="bh16p14Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh16p14-ic">譯</span><span class="bh16p14-ls"><span class="bh16p14-l1">本品 · 原文·白話·中觀</span><span class="bh16p14-l2">白話翻譯表</span></span></button></div><div class="bh16p14-modal" id="bh16p14Modal" role="dialog" aria-modal="true"><div class="bh16p14-card"><button class="bh16p14-close" id="bh16p14Close" type="button" aria-label="關閉">×</button><h3>卷十六 · 第14品 白話翻譯表（十六小地獄眷屬）</h3><p class="sub">大智度論卷十六·十六小地獄眷屬 · 原文↔白話↔中觀概念 逐段對照</p><table class="bh16p14-tbl"><caption>十六小地獄眷屬 白話翻譯表·原文｜白話翻譯｜中觀概念（共3段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh16p14-src">如是等種種八大地獄。周圍其外，復有十六小地獄為眷屬：八寒氷，八炎火，其中罪毒，不可見聞。</td><td>像這樣種種共有八座大地獄。在它們的外圍四周，又還有十六座小地獄作為眷屬：八座寒冰地獄、八座炎火地獄，其中的罪苦毒害，慘烈到令人不忍見聞。</td><td class="bh16p14-guan"><b>主城與郊區·眷屬非附屬而是同構</b>——八大地獄如主城，十六小地獄如郊區眷屬，經文以「眷屬」為喻，暗示大小地獄之間並非各自獨立、輕重懸殊的兩套系統，而是同一套業力法則在不同尺度上的重複顯現；郊區之苦不因規模較小而較輕，正如支分業與根本業同樣依因緣而感果，法界中並無一處「較不真實」的角落可以逃避緣起法則的運作。</td></tr><tr><td class="bh16p14-src">八炎火地獄者：一名炭坑，二名沸屎，三名燒林，四名劍林，五名刀道，六名鐵刺林，七名醎河，八名銅橛，是為八。</td><td>八座炎火地獄分別是：第一名叫炭坑地獄，第二名叫沸屎地獄，第三名叫燒林地獄，第四名叫劍林地獄，第五名叫刀道地獄，第六名叫鐵刺林地獄，第七名叫醎河地獄，第八名叫銅橛地獄，總共是這八座。</td><td class="bh16p14-guan"><b>以火配苦·名相即是業因索引</b>——八炎火地獄的命名，無一不是直接取自刑罰的具體形相：炭、屎、林、劍、刀、刺、河、橛，每個名字背後都對應著特定的宿世惡業（詳見下一品業因業報）；可見地獄之名並非隨意安立，而是業因與果報之間如影隨形的準確對應，名相本身就是一份業力索引表，提醒觀者：果報之相如何呈現，全繫於因地造作之心，而非有外力隨機分派。</td></tr><tr><td class="bh16p14-src">八寒氷地獄者：一名頞浮陀（少多有孔），二名尼羅浮陀（無孔），三名阿羅羅（寒戰聲也），四名阿婆婆（亦患寒聲），五名睺睺（亦是患寒聲），六名漚波羅（此地獄外壁似青蓮花也），七名波頭摩（紅蓮花罪人生中受苦也），八名摩訶波頭摩，是為八。</td><td>八座寒冰地獄分別是：第一名叫頞浮陀（意思是身上稍微裂開一些孔洞），第二名叫尼羅浮陀（身上完全沒有裂開孔洞），第三名叫阿羅羅（這是罪人受凍打顫發出的聲音），第四名叫阿婆婆（同樣是受寒發出的聲音），第五名叫睺睺（也是受寒發出的聲音），第六名叫漚波羅（因為這座地獄的外壁看起來像青蓮花一樣），第七名叫波頭摩（紅蓮花，罪人生在其中承受苦楚），第八名叫摩訶波頭摩，總共是這八座。</td><td class="bh16p14-guan"><b>凍裂聲、蓮花色·苦相皆假名安立</b>——寒冰八獄的命名兼取三種進路：或依身體凍裂的程度（有孔、無孔），或依受苦時不自主發出的顫抖聲響（阿羅羅、阿婆婆、睺睺），或依外壁形色的譬喻（青蓮、紅蓮），三種命名方式看似客觀描述，實則皆是後人依罪人業感所現之相，隨順安立的假名；連最寒冷酷烈的裂膚之痛，也要藉「蓮花」這般清淨美好的譬喻來指稱，恰恰顯示名言與實相之間的落差——名字只是指月之指，並非苦相本身有其固定不變的體性。</td></tr></tbody></table><p class="bh16p14-note">大智度論卷十六第14品原文·白話·中觀三欄對照。八大地獄之外復有十六小地獄為眷屬：八炎火地獄（炭坑、沸屎、燒林、劍林、刀道、鐵刺林、醎河、銅橛）與八寒氷地獄（頞浮陀、尼羅浮陀、阿羅羅、阿婆婆、睺睺、漚波羅、波頭摩、摩訶波頭摩）。　中觀關鍵詞：主城與郊區同構　名相即業因索引　凍裂聲蓮花色皆假名安立</p></div></div>
+<script id="wy-bh16p14-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh16p14Btn"),BOX=document.getElementById("bh16p14Box"),MODAL=document.getElementById("bh16p14Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=13;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+/*BHPLACE*/function place(){var cands=[document.getElementById("c16p14Box")],eb=document.querySelector(".wy-ebox");if(eb)cands.push(eb);var best=null;for(var i=0;i<cands.length;i++){var el=cands[i];if(!el)continue;var cs=getComputedStyle(el);if(cs.display==="none")continue;var r=el.getBoundingClientRect();if(r.height<=4)continue;var v=Math.round(window.innerHeight-r.top)+8;if(best===null||v>best)best=v;}if(best!==null)BOX.style.bottom=best+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh16p14Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH16P14:END-->
 </body></html>
