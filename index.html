@@ -2572,4 +2572,55 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH16P10:END-->
+<!--WY-BH16P11:BEGIN-->
+<style id="wy-bh16p11-css">
+.bh16p11-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh16p11-fabbox.show{display:block;}
+.bh16p11-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh16p11-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh16p11-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh16p11-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh16p11-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh16p11-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh16p11-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh16p11-modal.open{display:flex;}
+.bh16p11-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh16p11-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh16p11-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh16p11-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh16p11-close:hover{background:#dde2e6;}
+.bh16p11-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh16p11-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh16p11-tbl th,.bh16p11-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh16p11-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh16p11-tbl thead th:nth-child(1){width:32%;}.bh16p11-tbl thead th:nth-child(2){width:41%;}.bh16p11-tbl thead th:nth-child(3){width:27%;}
+.bh16p11-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh16p11-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh16p11-guan{background:#eef2f5;color:#37505f;}
+.bh16p11-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh16p11-tbl tbody tr:nth-child(even) td.bh16p11-guan{background:#e8eef2;}
+.bh16p11-tbl tbody tr:nth-child(even) td.bh16p11-qa{background:#e7ecdb;}
+.bh16p11-tbl b{color:#8b2500;}
+.bh16p11-guan b{color:#2f6b5a;}
+.bh16p11-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh16p11-note b{color:#8b2500;}
+@media(max-width:900px){.bh16p11-fabbox{right:14px;}.bh16p11-tbl{font-size:11px;}.bh16p11-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh16p11-fabbox" id="bh16p11Box"><button class="bh16p11-btn" id="bh16p11Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh16p11-ic">譯</span><span class="bh16p11-ls"><span class="bh16p11-l1">本品 · 原文·白話·中觀</span><span class="bh16p11-l2">白話翻譯表</span></span></button></div><div class="bh16p11-modal" id="bh16p11Modal" role="dialog" aria-modal="true"><div class="bh16p11-card"><button class="bh16p11-close" id="bh16p11Close" type="button" aria-label="關閉">×</button><h3>卷十六 · 第11品 白話翻譯表（叫喚大叫喚地獄）</h3><p class="sub">大智度論卷十六·叫喚大叫喚地獄業報 · 原文↔白話↔中觀概念 逐段對照</p><table class="bh16p11-tbl"><caption>黑繩大地獄 白話翻譯表·原文｜白話翻譯｜中觀概念（共5段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh16p11-src">第四、第五，名叫喚、大叫喚。此大地獄，其中罪人，羅剎、獄卒頭黃如金，眼中火出，著赤色衣，身肉堅勁，走疾如風，手足長大，口出惡聲，捉三股叉，箭墮如雨，刺射罪人。罪人狂怖，叩頭求哀，小見放捨，小見憐愍。即時將入熱鐵地獄，縱廣百由旬，驅打馳走，足皆焦然，脂髓流出，如笮蘇油。鐵棒棒頭，頭破腦出，如破酪瓶。斫剉割剝，身體糜爛。而復將入鐵閣屋間，黑烟來熏，互相推壓，更相怨毒，皆言何以壓我？纔欲求出，其門以閉；大聲嘷呼，音常不絕。</td><td>第四層、第五層，名叫叫喚地獄、大叫喚地獄。這座大地獄中，羅剎、獄卒的頭黃得像金子一樣，眼中噴出火焰，穿著紅色的衣服，身上的肌肉堅硬結實，奔跑起來快如疾風，手腳長大，口中發出惡毒的聲音，手持三叉戟，如雨點般的箭矢落下，刺射罪人。罪人驚狂恐怖，叩頭哀求，卻絲毫得不到釋放，也絲毫得不到憐憫。獄卒立刻將他們押入熱鐵地獄，這座地獄縱橫廣達一百由旬，罪人被驅趕鞭打奔逃，雙腳都被燒得焦黑，脂肪骨髓流出，就像榨蘇油一樣。鐵棒敲打他們的頭，頭破腦裂而出，就像打破裝酪的瓶子一樣。被斬砍剉割、割剝身體，全身糜爛。接著又被押入鐵造的閣樓房間中，黑煙不斷燻來，罪人們彼此互相推擠擁壓，更加彼此怨恨憤毒，都在說：「你為什麼要擠壓我？」才想要奪門而出，那扇門卻已經關閉；於是大聲哀號呼叫，叫聲不曾間斷。</td><td class="bh16p11-guan"><b>聲音的地獄·怨毒的回聲場</b>——此段以視覺（黃頭、火眼、赤衣）、聽覺（惡聲、嘷呼）、觸覺（焦然、糜爛）多重感官，構築出一座「聲音不絕」的密閉煉獄；箭矢如雨、鐵棒鐵閣看似獄卒外加的刑具，實則是罪人生前造作的怨毒之聲、傷人之語，在緣起法界中凝聚顯現的鏡像，並非有一個真實存在的「聲音地獄」在懲罰誰，而是心念的回聲場自身。</td></tr><tr><td class="bh16p11-src">此人宿行因緣，皆由斗秤欺誑，非法斷事，受寄不還，侵陵下劣，惱諸窮貧，令其號哭；破他城郭，壞人聚落，傷害劫剝，室家怨毒，舉城叫喚；有時譎詐欺誑，誘之令出而復害之。如是等種種因緣故，受如此罪。</td><td>這些人過去世造作的行為因緣，都是由於在斗秤上欺騙誑騙他人，不依法度判斷是非曲直，接受他人寄託的財物卻不歸還，欺凌侵犯地位卑下的人，惱害種種窮困貧苦的人使他們號啕哭泣；又破壞他人的城郭，毀壞他人的聚落村莊，傷害他人、劫奪剝削財物，使家家戶戶怨恨憤毒，全城的人都在哀號叫喚；有時候還用譎詐欺誑的手段，誘騙他人走出安全之處，再加以傷害。因為造作這種種因緣的緣故，所以承受這樣的罪報。</td><td class="bh16p11-guan"><b>欺誑之業·招感號哭之報</b>——斗秤欺詐、非法斷事、譎詐誘害，其共同本質是以語言與心機的「不實」，逼迫他人發出號哭叫喚之聲；此業因與前段「叫喚地獄」中「音常不絕」的果報，恰成同類相應的鏡像對稱——並非外力強加的懲罰，而是自心所造的欺誑習氣，成熟後在緣起網絡中如實反照。</td></tr><tr><td class="bh16p11-src">大叫喚地獄中人，皆坐熏殺穴居之類，幽閉囹圄，或闇烟窟中而熏殺之；或投井中，劫奪他財。如是等種種因緣，受大叫喚地獄罪。</td><td>墮入大叫喚地獄中的人，都是因為過去世用煙燻殺害穴居的動物一類的行為，將牠們幽禁囚困在牢籠之中，或是在黑暗的煙燻洞窟中將牠們燻殺；或是把人投入井中，劫奪他人的財物。因為造作這種種因緣的緣故，所以承受大叫喚地獄的罪報。</td><td class="bh16p11-guan"><b>幽閉囚禁·封閉共感的果報</b>——熏殺穴居、幽閉囹圄的行為，本質是切斷了對其他生命的憐憫與共感，將對方視為可以任意封閉、燻殺的「他者」；死後所受的「鐵閣屋間、其門以閉」，正是這種「封閉自心」的業習，在法界中反轉為封閉自身、無路可出的空間果報。</td></tr><tr><td class="bh16p11-qa">問：為什麼是「聲音」而不是其他形式？答：因為宿世所造之業主要以「使他人發聲」為形態──哭、號、叫、喚。業的「樣貌」決定了果的「形貌」；聲業招聲報，這是最樸素的同類性原則。</td><td>問：為什麼這座地獄選擇用「聲音」作為主要的刑罰特徵，而不是別的東西？答：因為這些罪人過去世所造的業，主要就是「讓別人發出聲音」的形態——讓人哭泣、讓人號叫、讓人喊叫、讓人呼喚。業因是什麼樣子，果報就顯現什麼樣子；用聲音造的業，就招感聲音的果報，這是最樸素、最直接的「同類相應」原則。</td><td class="bh16p11-guan"><b>聲業招聲報·同類相應非有主宰</b>——此問答點出業力運作的基本法則：果報的具體形式與業因的性質同構對應，並非有一位主宰者依道德標準隨意分派刑罰；聲音本身緣生無自性，之所以「音常不絕」，正是造業者自心習氣相續不斷的顯現，並非有一個實體的聲音地獄獨立存在。</td></tr><tr><td class="bh16p11-qa">問：為何侵陵必封閉自心？答：因為如果憐憫心打開，加害行為即難以持續。要持續施加壓迫，必須先築起心理上的隔牆：對方不是和我同體的生命，是一個可以被我的刀槍越過的他者。這堵隔牆就是宿世的「鐵閣屋間」。</td><td>問：為什麼欺凌侵犯他人的人，必定要先封閉自己的心？答：因為如果心中的憐憫一旦打開，加害的行為就難以繼續下去。想要持續施加壓迫，就必須先在心理上築起一道隔牆：告訴自己「對方跟我不是同一種生命」，是一個可以被我用刀槍跨越、傷害的「他者」。這道心理上的隔牆，正是罪人過去世所種下、如今顯現為「鐵造閣樓房間」的業因。</td><td class="bh16p11-guan"><b>封閉自心即自造牢獄</b>——欲加害他人，必先在心中切斷與對方的同體共感，將對方物化為「他者」；此一「封閉」的心念本身即是業因，死後所受「鐵閣屋間、其門以閉」的果報，只是這道心理隔牆在緣起法界中的物理顯現，並非外在監獄囚禁罪人，而是罪人自心的封閉性反照為空間的封閉性。</td></tr></tbody></table><p class="bh16p11-note">大智度論卷十六第11品原文·白話·中觀三欄對照。菩薩天眼觀叫喚、大叫喚地獄：羅剎獄卒以三股叉刺射罪人，驅入熱鐵地獄、鐵閣屋間封閉不得出，音常不絕；其因在於宿世斗秤欺誑、非法斷事、侵陵下劣令人號哭、譎詐誘害、熏殺穴居、投井劫財。　中觀關鍵詞：聲業招聲報　封閉自心即自造牢獄　同類相應　業力鏡像</p></div></div>
+<script id="wy-bh16p11-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh16p11Btn"),BOX=document.getElementById("bh16p11Box"),MODAL=document.getElementById("bh16p11Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=10;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+/*BHPLACE*/function place(){var cands=[document.getElementById("c16p11Box")],eb=document.querySelector(".wy-ebox");if(eb)cands.push(eb);var best=null;for(var i=0;i<cands.length;i++){var el=cands[i];if(!el)continue;var cs=getComputedStyle(el);if(cs.display==="none")continue;var r=el.getBoundingClientRect();if(r.height<=4)continue;var v=Math.round(window.innerHeight-r.top)+8;if(best===null||v>best)best=v;}if(best!==null)BOX.style.bottom=best+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh16p11Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH16P11:END-->
 </body></html>
