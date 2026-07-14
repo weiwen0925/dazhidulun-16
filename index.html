@@ -2776,4 +2776,55 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH16P14:END-->
+<!--WY-BH16P15:BEGIN-->
+<style id="wy-bh16p15-css">
+.bh16p15-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh16p15-fabbox.show{display:block;}
+.bh16p15-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh16p15-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh16p15-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh16p15-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh16p15-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh16p15-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh16p15-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh16p15-modal.open{display:flex;}
+.bh16p15-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh16p15-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh16p15-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh16p15-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh16p15-close:hover{background:#dde2e6;}
+.bh16p15-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh16p15-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh16p15-tbl th,.bh16p15-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh16p15-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh16p15-tbl thead th:nth-child(1){width:32%;}.bh16p15-tbl thead th:nth-child(2){width:41%;}.bh16p15-tbl thead th:nth-child(3){width:27%;}
+.bh16p15-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh16p15-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh16p15-guan{background:#eef2f5;color:#37505f;}
+.bh16p15-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh16p15-tbl tbody tr:nth-child(even) td.bh16p15-guan{background:#e8eef2;}
+.bh16p15-tbl tbody tr:nth-child(even) td.bh16p15-qa{background:#e7ecdb;}
+.bh16p15-tbl b{color:#8b2500;}
+.bh16p15-guan b{color:#2f6b5a;}
+.bh16p15-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh16p15-note b{color:#8b2500;}
+@media(max-width:900px){.bh16p15-fabbox{right:14px;}.bh16p15-tbl{font-size:11px;}.bh16p15-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh16p15-fabbox" id="bh16p15Box"><button class="bh16p15-btn" id="bh16p15Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh16p15-ic">譯</span><span class="bh16p15-ls"><span class="bh16p15-l1">本品 · 原文·白話·中觀</span><span class="bh16p15-l2">白話翻譯表</span></span></button></div><div class="bh16p15-modal" id="bh16p15Modal" role="dialog" aria-modal="true"><div class="bh16p15-card"><button class="bh16p15-close" id="bh16p15Close" type="button" aria-label="關閉">×</button><h3>卷十六 · 第15品 白話翻譯表（八種小地獄業因業報）</h3><p class="sub">大智度論卷十六·八炎火地獄業因業報 · 原文↔白話↔中觀概念 逐段對照</p><table class="bh16p15-tbl"><caption>八種小地獄業因業報 白話翻譯表·原文｜白話翻譯｜中觀概念（共9段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh16p15-src">若破清淨戒出家法，令白衣輕賤佛道；或排眾生著火坑中，或眾生命未盡頃於火上炙之。如是等種種因緣，墮炭坑地獄中。大火炎炭至膝，燒罪人身。</td><td>如果有人破壞清淨戒律和出家人的法度，使得在家白衣輕視佛法之道；或是把眾生推入火坑之中，或是趁眾生壽命還沒有結束的時候就在火上炙烤他。因為造作這種種因緣的緣故，就會墮入炭坑地獄之中。地獄裡熊熊燃燒的炭火高達膝蓋，不斷燒炙罪人的身體。</td><td class="bh16p15-guan"><b>破戒累教·損害教法即是損害眾生慧命</b>——破清淨戒、令白衣輕賤佛道，表面上只是個人行為失檢，實則毀壞了眾生依止佛法離苦得樂的信心根基，其害甚於直接的肢體傷害，故與「排眾生入火坑」「命未盡而炙之」並列同科；果報以「大火炎炭至膝」呈現——火不及頂、僅止於膝，恰似警示：教法一旦受損，眾生慧命之根便如同被燒炙者的雙足，寸步難行，此中因果相應，絲毫不爽，並無實有一位判官量刑輕重，一切只是業力如實顯現。</td></tr><tr><td class="bh16p15-src">若沙門、婆羅門福田食，以不淨手觸，或先噉，或以不淨物著中；或以熱沸屎灌他身，破淨命，以邪命自活。如是等種種因緣，墮沸屎地獄中。沸屎深廣如大海水，中有虫，以鐵為嘴，破罪人頭噉腦，破骨食髓。</td><td>如果有人對沙門、婆羅門這樣堪為福田的供養飲食，用不乾淨的手去觸碰，或是自己搶先吞食，或是把不乾淨的東西摻入其中；或是用滾熱的糞水澆灌他人身體，破壞了清淨的正命，靠不正當的邪命方式養活自己。因為造作這種種因緣的緣故，就會墮入沸屎地獄之中。沸騰的糞水又深又廣，如同大海一般，其中有蟲，用鐵做成的嘴，啄破罪人的頭顱、啄食他的腦漿，咬破骨頭、吸食骨髓。</td><td class="bh16p15-guan"><b>福田不淨·邪命自活即自壞根基</b>——沙門婆羅門的飲食本是清淨供養、廣植福德之田，以不淨手觸、先噉、雜以不淨物，等於將本可增長功德的因緣轉為染污之因；「邪命自活」四字尤其深刻——生存本身並無罪過，罪在以欺瞞不正之法謀取生存所需，這與沸屎地獄中鐵嘴蟲「破骨食髓」的果報桴鼓相應：以不淨污染他人清淨之命，果報便是自身清淨之軀被不淨徹底侵蝕，因果同構，並非兩件不相干之事的偶然湊合。</td></tr><tr><td class="bh16p15-src">若焚燒草木，傷害諸虫，或燒林大獵，為害彌廣。如是等種種因緣，墮燒林地獄中。草木火然，以燒罪人。</td><td>如果有人焚燒草木，因而傷害了其中棲息的各種蟲類生命，或是燒山焚林進行大規模狩獵，造成的傷害極其廣泛。因為造作這種種因緣的緣故，就會墮入燒林地獄之中。地獄裡草木燃燒著熊熊烈火，用來焚燒罪人。</td><td class="bh16p15-guan"><b>殃及池魚·廣害之因感廣害之果</b>——焚林狩獵所傷者，未必是狩獵者本意鎖定的獵物，更多是林中無以計數、無辜受累的蟲類眾生，「為害彌廣」四字點出此業之重不在於單一惡念的強度，而在於波及範圍的廣度；果報同樣以「草木火然」的無差別燃燒呈現，罪人所受之火不揀擇部位、遍身而燒，恰如當初火勢不揀擇對象、遍林而燒，因果之間量與質的對應，正顯示業力法則精確如鏡，並非模糊籠統的報應。</td></tr><tr><td class="bh16p15-src">若執持刀劍，鬪諍傷殺；若斫樹壓人，以報宿怨；若人以忠信誠告，而密相中陷。如是等種種因緣，墮劍林地獄中。此地獄罪人入中，風吹劍葉，割截手足、耳鼻，皆令墮落；是時，林中有烏鷲、惡狗，來食其肉。</td><td>如果有人手持刀劍，爭鬥廝殺、傷人害命；或是砍伐樹木使其倒下壓死人，藉此報復宿世的怨仇；或是有人以忠誠信實之言相告，自己卻暗中設計陷害他。因為造作這種種因緣的緣故，就會墮入劍林地獄之中。罪人進入這座地獄，風一吹動，樹葉便化為利劍，把他的手、腳、耳朵、鼻子統統割截，使其紛紛墜落；這時，林中還有烏鴉、老鷹、惡狗，前來吞食他的血肉。</td><td class="bh16p15-guan"><b>明爭與暗算同科·顯隱二業同一果</b>——執刀鬪殺是「顯業」，斫樹壓人報怨、忠告而密陷是「隱業」，經文將兩者並列同墮一獄，說明業力法則並不因手段是明目張膽或暗中設計而有輕重之別，關鍵只在於是否對他人身心造成傷害的意圖與結果；風吹劍葉、烏鷲惡狗分食，正是「表面友善暗藏殺機」這一暗算模式的果報投影，顯示連自然景物在業力顯現中都失去了中性，成為業力如實映照因地心念的鏡子。</td></tr><tr><td class="bh16p15-src">若以利刀刺人，若橛若槍傷人；若斷截道路，撥徹橋樑，破正法道，示以非法道，如是等種種因緣，墮利刀道地獄中。利刀道地獄者，於絕壁狹道中竪利刀，令罪人行上而過。</td><td>如果有人用鋒利的刀刺傷別人，或是用木橛、長槍傷害別人；或是切斷道路、拆毀橋樑，又或是破壞了正確的法道，卻指示他人走上錯誤的非法道路。因為造作這種種因緣的緣故，就會墮入利刀道地獄之中。這座利刀道地獄，是在懸崖峭壁間的狹窄小道上豎立著鋒利的刀刃，命令罪人必須從上面走過去。</td><td class="bh16p15-guan"><b>路徑之惡·斷人去路即斷己去路</b>——斷截道路、撥毀橋樑，破壞的是眾生行走於世間的具體通路；「破正法道，示以非法道」則是破壞眾生行走於解脫道上的抽象通路，二者一實一虛，卻同判入此獄，顯示大智度論對「道路」的理解不僅止於物理意義，更延伸至法義的指引方向；果報中「絕壁狹道竪利刀，令罪人行上而過」，恰是把當初被斷絕、被引岔的「路」原樣奉還——你曾使他人無路可走，業力便讓你自己無路可退，唯有一條佈滿利刃的窄路。</td></tr><tr><td class="bh16p15-src">若犯邪婬，侵他婦女，貪受樂觸，如是等種種因緣墮鐵刺林地獄中。刺樹高一由旬，上有大毒蛇，化作美女身，喚此罪人上來，共汝作樂；獄卒驅之令上，刺皆下向，貫刺罪人，身被刺害，入骨徹髓。既至林上，化女還復蛇身，破頭入腹，處處穿穴，皆悉破爛。忽復還活，身體平復；化女復在樹下喚之，獄卒以箭仰射，呼之令下，刺復仰刺；既得到地，化女身復毒蛇，破罪人身。</td><td>如果有人犯下邪淫之罪，侵犯他人的妻女，貪求領受淫樂之觸受，因為造作這種種因緣的緣故，就會墮入鐵刺林地獄之中。地獄裡的刺樹高達一由旬，樹上有巨大的毒蛇，化作美女的身形，招喚這個罪人上樹來，說：一起來與你尋歡作樂。獄卒便驅趕他往上爬，這時樹刺全都朝下方倒伏，貫穿刺入罪人的身體，使他遍體鱗傷、痛入骨髓。等他好不容易爬到樹頂，那化身美女的蛇便又恢復蛇形，咬破他的頭顱、鑽入他的腹中，全身上下處處都被咬穿，破爛不堪。他忽然又重新復活過來，身體恢復平復如初；那化身美女又在樹下呼喚他，獄卒便用箭朝上射他，逼他下樹，這時樹刺又轉朝上方，同樣貫穿刺入；等他好不容易到了地面，那美女的身形又化為毒蛇，再度咬噬他的身體。</td><td class="bh16p15-guan"><b>美女即毒蛇·貪愛所執境本無實體</b>——這是本卷最鮮明的意象之一：勾引罪人的「美女」與吞噬罪人的「毒蛇」原是同一體，只是隨罪人貪愛之心的趨向而變現不同表相；貪愛熾盛時，業力便顯現為誘人的樂境，一旦身心陷入、貪愛滿足的剎那，樂境隨即翻轉為噬人的苦境——這正是「所貪愛的對境本無自性、隨心而轉」最直白的演示：邪淫之苦不在外物本身有毒，而在於能貪之心把緣生的幻影，錯認成了可以恆常擁有的美好對象。</td></tr><tr><td class="bh16p15-src">如是久久，從熱鐵刺林出，遙見河水清涼快樂，走往趣之；入中變成熱沸醎水，罪人在中，須臾之頃，皮肉離散，骨立水中；獄卒羅剎以叉鉤出之，持著岸上。此人宿行因緣，傷殺水性魚鼈之屬，或時排人及諸眾生令沒水中，或投之沸湯，或投之氷水。如是等種種惡業因緣，故受此罪。</td><td>就這樣經過了很長久的時間，罪人終於從滾燙的鐵刺林中脫身出來，遠遠望見一條清涼快樂的河水，便奔跑著前去投靠；沒想到一進入水中，河水立刻變成滾沸的鹹水，罪人身在其中，短短片刻之間，皮肉便剝離散落，只剩下森然的白骨立在水裡；獄卒羅剎便用叉子把他鉤起來，帶到岸上。這個人是因為過去世的行為因緣，曾經傷害殺死水中的魚鱉等生物，或是曾經把人或其他眾生推入水中淹沒，或是把他們投入滾湯，或是把他們投入冰水之中。因為造作這種種惡業因緣的緣故，所以要承受這樣的罪報。</td><td class="bh16p15-guan"><b>望梅止渴·清涼相原是苦相的偽裝</b>——罪人才脫離火苦，遙見河水便信以為清涼，這一「錯認」正是全獄業報中最具中觀意味的一幕：外境的「清涼」相與「滾沸」相並無固定不變的自性，同一條河，在業盡之前顯現為誘人的清涼，靠近之後即顯現為灼人的滾沸，境相隨業力與心念的靠近而翻轉；這說明眾生對境界的判斷（樂／苦、清涼／灼熱）並非依於外境本具的性質，而是依於能感之業識，一切境界唯是緣起假合，並無獨立於認知之外、恆定不變的「清涼之水」可以依靠。</td></tr><tr><td class="bh16p15-src">若在銅橛地獄，獄卒羅剎問諸罪人：「汝何處來？」答言：「我苦悶不知來處，但患飢渴。」若言渴，是時，獄卒即驅逐罪人，令坐熱銅橛上，以鐵鉗開口，灌以洋銅；若言飢，坐之銅橛，吞以鐵丸。入口口焦，入咽咽爛，入腹腹然，五藏爛壞，直過墮地。</td><td>在銅橛地獄裡，獄卒羅剎會問各個罪人：「你是從哪裡來的？」罪人回答說：「我苦悶得記不清自己是從哪裡來的，只是正被飢渴所苦。」如果罪人說口渴，這時獄卒就立刻驅趕罪人，命令他坐在滾燙的銅橛上，用鐵鉗撬開他的口，灌入熔化的銅汁；如果罪人說肚子餓，就同樣讓他坐在銅橛上，命他吞下鐵丸。無論是銅汁還是鐵丸，一入口，口就被燒焦；一入咽喉，咽喉就潰爛；一入腹中，腹部就燃燒起來，五臟六腑全都潰爛，直接穿透落到地上。</td><td class="bh16p15-guan"><b>飢渴一問·求索之心即是受苦之因</b>——獄卒的問話看似給了罪人一個選擇（說渴或說飢），實則無論如何回答，結果都同樣是灌銅、吞丸、五藏俱焦，這正是「劫盜邪命」業報最辛辣的寫照：生前貪求財物以解飢渴，死後這份未歇止的求索之心仍驅使他脫口說出飢渴，業力便順水推舟，讓他所求得的正是燒穿己身之物；可見苦報不假外求，眾生但凡尚存貪求之念，業力自會如響斯應，並無一個外在的審判者刻意設局戲弄。</td></tr><tr><td class="bh16p15-src">此人宿行因緣，劫盜他財以自供口。諸出家人，或時詐病，多求酥油、石蜜；或無戒、無禪、無有智慧，而多受人施；或惡口傷人。如是等種種宿業因緣，墮銅橛地獄。</td><td>這個人是因為過去世的行為因緣，搶劫偷盜他人的財物來供養自己的口腹。出家人之中，有的人有時假裝生病，藉此大量索求酥油、石蜜這類美食；有的人自己既沒有持守戒律，也沒有修習禪定，更沒有智慧，卻大量接受他人的布施供養；有的人則是用惡毒的言語傷害他人。因為造作這種種過去世的惡業因緣，所以墮入銅橛地獄之中。</td><td class="bh16p15-guan"><b>無德受施·空受供養即是隱形劫盜</b>——本段特別將「劫盜他財」與出家人「無戒無禪無智慧而多受人施」並列同罪，深刻指出：搶奪是有形的劫盜，而無德無修卻安受他人恭敬供養，則是無形的劫盜——同樣是取用了不相稱於己身福德的資糧；經文以此提醒修行人，供養之物本身並無過失，過失在於受供之心是否與所修之德相稱，若德不配位而坐享其成，其業之重，與街頭明搶並無二致，皆是「取非己有」這同一因所感的同一類果。</td></tr></tbody></table><p class="bh16p15-note">大智度論卷十六第15品原文·白話·中觀三欄對照。詳述八炎火地獄業因業報：破戒累教墮炭坑、污穢福田邪命自活墮沸屎、焚林傷蟲墮燒林、鬪殺報怨密陷墮劍林、斷路破法道墮利刀道、邪婬貪樂墮鐵刺林（美女即毒蛇）、傷殺水族墮醎河（清涼即滾沸）、劫盜無德受施惡口墮銅橛。　中觀關鍵詞：福田不淨自壞根基　殃及池魚廣害感廣果　美女即毒蛇貪愛境無自性　望梅止渴境隨業轉　無德受施即隱形劫盜</p></div></div>
+<script id="wy-bh16p15-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh16p15Btn"),BOX=document.getElementById("bh16p15Box"),MODAL=document.getElementById("bh16p15Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=14;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+/*BHPLACE*/function place(){var cands=[document.getElementById("c16p15Box")],eb=document.querySelector(".wy-ebox");if(eb)cands.push(eb);var best=null;for(var i=0;i<cands.length;i++){var el=cands[i];if(!el)continue;var cs=getComputedStyle(el);if(cs.display==="none")continue;var r=el.getBoundingClientRect();if(r.height<=4)continue;var v=Math.round(window.innerHeight-r.top)+8;if(best===null||v>best)best=v;}if(best!==null)BOX.style.bottom=best+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh16p15Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH16P15:END-->
 </body></html>
