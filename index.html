@@ -2980,4 +2980,55 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH16P18:END-->
+<!--WY-BH16P19:BEGIN-->
+<style id="wy-bh16p19-css">
+.bh16p19-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh16p19-fabbox.show{display:block;}
+.bh16p19-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh16p19-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh16p19-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh16p19-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh16p19-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh16p19-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh16p19-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh16p19-modal.open{display:flex;}
+.bh16p19-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh16p19-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh16p19-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh16p19-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh16p19-close:hover{background:#dde2e6;}
+.bh16p19-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh16p19-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh16p19-tbl th,.bh16p19-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh16p19-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh16p19-tbl thead th:nth-child(1){width:32%;}.bh16p19-tbl thead th:nth-child(2){width:41%;}.bh16p19-tbl thead th:nth-child(3){width:27%;}
+.bh16p19-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh16p19-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh16p19-guan{background:#eef2f5;color:#37505f;}
+.bh16p19-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh16p19-tbl tbody tr:nth-child(even) td.bh16p19-guan{background:#e8eef2;}
+.bh16p19-tbl tbody tr:nth-child(even) td.bh16p19-qa{background:#e7ecdb;}
+.bh16p19-tbl b{color:#8b2500;}
+.bh16p19-guan b{color:#2f6b5a;}
+.bh16p19-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh16p19-note b{color:#8b2500;}
+@media(max-width:900px){.bh16p19-fabbox{right:14px;}.bh16p19-tbl{font-size:11px;}.bh16p19-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh16p19-fabbox" id="bh16p19Box"><button class="bh16p19-btn" id="bh16p19Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh16p19-ic">譯</span><span class="bh16p19-ls"><span class="bh16p19-l1">本品 · 原文·白話·中觀</span><span class="bh16p19-l2">白話翻譯表</span></span></button></div><div class="bh16p19-modal" id="bh16p19Modal" role="dialog" aria-modal="true"><div class="bh16p19-card"><button class="bh16p19-close" id="bh16p19Close" type="button" aria-label="關閉">×</button><h3>卷十六 · 第19品 白話翻譯表（身精進三本生譚）</h3><p class="sub">大智度論卷十六·釋毘梨耶波羅蜜「身精進三本生譚」 · 原文↔白話↔中觀概念 逐段對照</p><table class="bh16p19-tbl"><caption>身精進三本生譚 白話翻譯表·原文｜白話翻譯｜中觀概念（共6段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh16p19-src">「復次，身精進者，受諸懃苦，終不懈廢。」</td><td>「再者，所謂身精進，是指菩薩承受種種辛勞困苦，始終不曾懈怠廢止。」</td><td class="bh16p19-guan"><b>總綱起句·身精進的兩層意志操作</b>——本句是全品總綱：一是「受諸懃苦」，直面肉體極限痛苦的承受力；二是「終不懈廢」，意志凌駕生物趨樂避苦本能之上的持續力。下文三則本生譚（鹿王代死、剝皮寫偈、雉鳥滅火）皆是此句的具體展演，說明身精進非抽象概念，而是可以在色身層面被真實踐履、被觀察驗證的德目。</td></tr><tr><td class="bh16p19-src">波羅柰國梵摩達王，遊獵於野林中。見二鹿群，群各有主，一主有五百群鹿。一主身七寶色，是釋迦牟尼菩薩；一主是提婆達多。菩薩鹿王見人王大眾殺其部黨，起大悲心，逕到王前。王人競射，飛矢如雨；王見此鹿直進趣已，無所忌憚，勅諸從人：「攝汝弓矢，無得斷其來意！」鹿王既至，跪白人王：「君以嬉遊逸樂小事故，群鹿一時皆受死苦；若以供膳，輒當差次，日送一鹿，以供王廚。」王善其言，聽如其意。</td><td>波羅柰國的梵摩達王，到野外山林中打獵遊玩。看見兩群鹿，各有一位鹿王統領：一群五百隻，由渾身呈現七寶色澤的鹿王率領，那便是釋迦牟尼菩薩的前身；另一群的鹿王，則是提婆達多的前身。菩薩鹿王眼見人王率領大批人馬屠殺自己的部眾，生起大悲心，直接走到王的面前。王的隨從爭相射箭，箭如雨下；王見這頭鹿毫無所懼、直直走向自己，便命令隨從：「收起你們的弓箭，不要斷絕牠前來的心意！」鹿王來到近前，跪下向人王稟告：「您只因一時遊獵取樂的小事，就讓成群的鹿一起遭受死亡之苦；若是為了供應膳食，不如按次序輪流，每天送一隻鹿，供應王的廚房。」王認為這話有道理，便依照牠的意思答應了。</td><td class="bh16p19-guan"><b>以言易命·慈悲取代恐懼的談判</b>——菩薩鹿王面對亂箭毫無所懼、直趨王前，此「無所忌憚」並非匹夫之勇，而是大悲心徹底壓倒求生本能後自然流露的鎮定；牠以「輪流供膳」取代「亂殺無序」，看似只是延緩死亡的權宜之計，實則是在無法立即終止殺戮的現實條件下，以最小的代價換取最大的秩序與尊嚴，展現菩薩道隨緣度眾、不捨眾生的善巧方便。</td></tr><tr><td class="bh16p19-src">於是二鹿群主，大集差次，各當一日，送應次者。是時，提婆達多鹿群中，有一鹿懷子，來白其主：「我身今日當應送死，而我懷子，子非次也；乞垂料理，使死者得次，生者不濫！」鹿王怒之言：「誰不惜命？次來但去，何得辭也？」鹿母思惟：「我王不仁，不以理恕……」即至菩薩王所，以情具白。菩薩思惟：「此甚可愍！……唯有我當代之。」即自送身，遣鹿母還：「我今代汝，汝勿憂也！」</td><td>於是兩群鹿的首領，便集合起來按次序排定，各自輪到一天，就送出該輪到的鹿。這時，提婆達多那一群鹿當中，有一隻母鹿懷了小鹿，牠來稟告自己的鹿王：「我今天應該輪到送死，可是我懷著小鹿，這孩子並不在輪值的次序之內；懇求您酌情處理，讓該死的死、讓活著的不要被牽連而枉死！」鹿王聽了發怒說：「誰不愛惜自己的性命？輪到了就該去，怎麼可以推辭！」母鹿心想：「我的王這樣不講仁義，不肯以情理寬待……」便去到菩薩鹿王那裡，把實情詳細稟告。菩薩心想：「這實在太可憐了！……只有我來代替牠。」於是親自前去送死，並讓母鹿回去，對牠說：「我現在代替你，你不必再憂慮了！」</td><td class="bh16p19-guan"><b>捨身代死·無條件的自他交換</b>——菩薩鹿王的「代死」，與人王「以財物換命」的制度性妥協不同，牠沒有任何條件、任何回報可言，純粹是以自身生命填補制度的漏洞、承接他者的苦難；此處對比提婆達多鹿王「誰不惜命，次來但去」的冷酷制度理性，凸顯菩薩道超越規則本身、直接以身作則彌補規則之不足的悲心，是「自他交換」（施身代苦）在世間法層面最具體的示現。</td></tr><tr><td class="bh16p19-src">復次，如愛法梵志，十二歲遍閻浮提求知聖法而不能得；時世無佛，佛法亦盡。有一婆羅門言：「我有聖法一偈，若實愛法，當以與汝！」答言：「實愛法！」婆羅門言：「若實愛法，當以汝皮為紙，以身骨為筆，以血書之，當以與汝！」即如其言，破骨、剝皮，以血寫偈。</td><td>再者，就像愛法梵志的故事：他花了十二年時間走遍整個閻浮提大陸，尋求真正的聖法卻始終求不到；當時世間沒有佛出世，佛法也已經滅盡。有一位婆羅門對他說：「我有一首聖法偈頌，如果你真心愛慕正法，我就把它傳授給你！」他回答：「我真心愛慕正法！」婆羅門便說：「如果你真心愛慕正法，就要用你的皮做紙，用你的骨頭做筆，用你的血來書寫，我才把偈頌傳授給你！」他便依照婆羅門所說的去做，剖開骨頭、剝下皮膚，用血書寫下那首偈頌。</td><td class="bh16p19-guan"><b>以身為器·求法代價與法的絕對價值</b>——愛法梵志十二年遍求而不得，說明聖法在無佛出世的年代極度稀缺，其稀缺性反過來凸顯它的珍貴；婆羅門要求「皮為紙、骨為筆、血為墨」，是將肉身徹底工具化、材料化，這看似殘酷的交換條件，實則揭示了一個中觀式的價值判斷：色身終將壞滅、本自無常，而法（真理）若能因此得以流傳，便是以「有壞之身」換取「不壞之法」，兩者價值判然有別，這正是重法輕身的邏輯起點。</td></tr><tr><td class="bh16p19-src">復次，昔野火燒林，林中有一雉，懃身自力，飛入水中，漬其毛羽，來滅大火；火大水少，往來疲乏，不以為苦。是時，天帝釋來問之言：「汝作何等？」答言：「我救此林，愍眾生故！此林蔭育處廣，清涼快樂，我諸種類，及諸宗親，并諸眾生，皆依仰此。我有身力，云何懈怠而不救之？」天帝問言：「汝乃精懃，當至幾時？」雉言：「以死為期！」天帝言：「汝心雖爾，誰證知者？」即自立誓：「我心至誠，信不虛者，火即當滅！」是時，淨居天知菩薩弘誓，即為滅火。自古及今，唯有此林，常獨蔚茂，不為火燒。</td><td>再者，從前有一場野火燒山林，林中有一隻野雉，牠奮力盡自己的能力，飛入水中沾濕自己的羽毛，飛回來想撲滅這場大火；但火勢猛烈、水量微小，牠來來回回飛得筋疲力盡，卻絲毫不以為苦。這時，天帝釋前來問牠：「你在做什麼？」野雉回答：「我在搶救這片山林，是因為憐憫其中的眾生啊！這片樹林庇蔭養育的範圍很廣，清涼又快樂，我的同類，以及我的親族，還有其他種種眾生，都仰賴這片樹林生存。我既然還有一點力氣，怎麼可以懈怠而不去搶救呢？」天帝又問：「你這樣勤懇不懈，打算堅持到什麼時候？」野雉說：「我以死為期限！」天帝說：「你的心意雖然如此，可是誰能證明你說的是真的？」野雉當下便立下誓言：「我這顆心至誠懇切，如果我所說的話不是虛假的，願這場大火立刻熄滅！」這時，淨居天知道菩薩發下的宏大誓願，便替牠把火撲滅了。從古到今，唯獨這片山林，始終獨自繁茂蒼翠，不曾再被大火焚燒過。</td><td class="bh16p19-guan"><b>以卵擊石·至誠之心感通法界</b>——野雉以極其懸殊的力量對抗野火（「往來疲乏，不以為苦」），從世俗理性衡量幾乎是徒勞無功；然而牠並不以成敗機率作為是否精進的判準，而是以「有身力便不應懈怠」的絕對律令驅動自身；末後立誓以明其誠，而感得淨居天代為滅火，說明至誠之心一旦與大悲願力相應，便能超越物理因果的表層限制，這正是不可思議業力在中觀緣起觀下的合理呈現：因緣和合無定法，至誠之因自能感得殊勝之緣。</td></tr><tr><td class="bh16p19-src">如是等種種宿世所行，難為能為，不惜身命、國財、妻子、象馬、七珍、頭目骨髓，懃施不惓。如說菩薩為諸眾生，一日之中千死千生……菩薩本生經中種種因緣相，是為身精進。</td><td>像這樣種種過去世所修行的種種事蹟，都是難行能行之事，不顧惜自己的身命、國家財富、妻子兒女、象馬車乘、七種珍寶，乃至頭目骨髓，都懇切布施，從不厭倦疲憊。正如經上所說，菩薩為了一切眾生，一天之中可以經歷千次生死……大智度論所記載的菩薩本生經中種種因緣事相，這些都稱為身精進。</td><td class="bh16p19-guan"><b>總收三譚·身精進的敘事總攝</b>——本段以「一日之中千死千生」總收前述三則本生譚：鹿王以身代死、梵志剝皮寫偈、雉鳥以死明誓，三者形式各異，卻共通指向同一義理——菩薩不將色身視為需要被珍惜保護的終極財產，而是視作可隨緣布施、承載大悲願力的工具；「難為能為」四字既是對修行難度的如實承認，也暗示此等極限行持是菩薩累劫熏修、悲願深厚後才能自然流露的果證，宜體會其中「不惜」二字所指向的、對色身執著徹底放下的中觀心要，而非生搬硬套的行為範本。</td></tr></tbody></table><p class="bh16p19-note">身精進三本生譚</p></div></div>
+<script id="wy-bh16p19-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh16p19Btn"),BOX=document.getElementById("bh16p19Box"),MODAL=document.getElementById("bh16p19Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=18;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+/*BHPLACE*/function place(){var cands=[document.getElementById("c16p19Box")],eb=document.querySelector(".wy-ebox");if(eb)cands.push(eb);var best=null;for(var i=0;i<cands.length;i++){var el=cands[i];if(!el)continue;var cs=getComputedStyle(el);if(cs.display==="none")continue;var r=el.getBoundingClientRect();if(r.height<=4)continue;var v=Math.round(window.innerHeight-r.top)+8;if(best===null||v>best)best=v;}if(best!==null)BOX.style.bottom=best+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh16p19Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH16P19:END-->
 </body></html>
