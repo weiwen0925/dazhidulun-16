@@ -2317,4 +2317,55 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH16P5:END-->
+<!--WY-BH16P6:BEGIN-->
+<style id="wy-bh16p6-css">
+.bh16p6-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh16p6-fabbox.show{display:block;}
+.bh16p6-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh16p6-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh16p6-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh16p6-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh16p6-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh16p6-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh16p6-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh16p6-modal.open{display:flex;}
+.bh16p6-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh16p6-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh16p6-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh16p6-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh16p6-close:hover{background:#dde2e6;}
+.bh16p6-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh16p6-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh16p6-tbl th,.bh16p6-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh16p6-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh16p6-tbl thead th:nth-child(1){width:32%;}.bh16p6-tbl thead th:nth-child(2){width:41%;}.bh16p6-tbl thead th:nth-child(3){width:27%;}
+.bh16p6-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh16p6-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh16p6-guan{background:#eef2f5;color:#37505f;}
+.bh16p6-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh16p6-tbl tbody tr:nth-child(even) td.bh16p6-guan{background:#e8eef2;}
+.bh16p6-tbl tbody tr:nth-child(even) td.bh16p6-qa{background:#e7ecdb;}
+.bh16p6-tbl b{color:#8b2500;}
+.bh16p6-guan b{color:#2f6b5a;}
+.bh16p6-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh16p6-note b{color:#8b2500;}
+@media(max-width:900px){.bh16p6-fabbox{right:14px;}.bh16p6-tbl{font-size:11px;}.bh16p6-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh16p6-fabbox" id="bh16p6Box"><button class="bh16p6-btn" id="bh16p6Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh16p6-ic">譯</span><span class="bh16p6-ls"><span class="bh16p6-l1">本品 · 原文·白話·中觀</span><span class="bh16p6-l2">白話翻譯表</span></span></button></div><div class="bh16p6-modal" id="bh16p6Modal" role="dialog" aria-modal="true"><div class="bh16p6-card"><button class="bh16p6-close" id="bh16p6Close" type="button" aria-label="關閉">×</button><h3>卷十六 · 第6品 白話翻譯表（天眼觀五道三界無安）</h3><p class="sub">大智度論卷十六·五道輪轉 · 原文↔白話↔中觀概念 逐段對照</p><table class="bh16p6-tbl"><caption>天眼觀五道三界無安 白話翻譯表·原文｜白話翻譯｜中觀概念（共9段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh16p6-src">菩薩得天眼，觀眾生輪轉五道，迴旋其中：天中死，人中生；人中死，天中生；天中死，生地獄中；地獄中死，生天上；天上死，生餓鬼中；餓鬼中死，還生天上；天上死，生畜生中；畜生中死，生天上；天上死，還生天上。地獄、餓鬼、畜生亦如是。</td><td>菩薩證得天眼通，觀見眾生在五道之中輪轉流轉、迴旋不已：有的在天上死去、投生為人；有的在人間死去、投生到天上；有的在天上死去、卻墮入地獄之中；有的在地獄中死去、又生到天上；有的在天上死去、投生為餓鬼；有的在餓鬼道中死去、又生回天上；有的在天上死去、投生為畜生；有的在畜生道中死去、又生回天上；也有的在天上死去、還是再生於天上。地獄道、餓鬼道、畜生道之中彼此的輪轉遷流，也都是同樣的道理。</td><td class="bh16p6-guan"><b>五道迴旋·並無恆常之道可安住</b>——天、人、地獄、餓鬼、畜生五道之間，任一道死已可轉生任一道，全無固定的升降次第或必然歸宿，這正顯示六道果報是「隨業流轉」而非「隨位固定」，沒有一道具有自性上的優越或恆常安全性，即使貴為天人，業盡仍可能墮入地獄——這是對「天界亦可恃」的錯覺最有力的破斥。</td></tr><tr><td class="bh16p6-src">欲界中死，色界中生；色界中死，欲界中生；欲界中死，無色界中生；無色界中死，欲界中生；欲界中死，欲界中生。色界、無色界亦如是。</td><td>有的在欲界死去、投生到色界；有的在色界死去、又投生回欲界；有的在欲界死去、投生到無色界；有的在無色界死去、又投生回欲界；也有的在欲界死去、還是再生於欲界之中。色界與無色界之間互相輪轉遷流，也是同樣的道理。</td><td class="bh16p6-guan"><b>三界之間亦無單向階梯</b>——一般人以為修定可從欲界一路上升至色界、無色界，是一條不退的階梯；此段卻指出三界之間可以雙向往返、甚至逆向流轉，說明禪定之樂若非以般若智慧攝持，仍屬有漏有為，福盡還墮，並非究竟安穩之處，唯有超越三界的涅槃常樂才是真正的終點。</td></tr><tr><td class="bh16p6-src">活地獄中死，黑繩地獄中生；黑繩地獄中死，活地獄中生；活地獄中死，還生活地獄中；合會地獄乃至阿鼻地獄，亦如是。炭坑地獄中死，沸屎地獄中生；沸屎地獄中死，炭坑地獄中生；炭坑地獄中死，還生炭坑地獄中。燒林地獄乃至摩訶波頭摩地獄，亦如是展轉生其中。</td><td>有的在活地獄中死去、又投生到黑繩地獄；有的在黑繩地獄中死去、又生回活地獄；也有的在活地獄中死去、還是再生於活地獄之中；合會地獄乃至阿鼻地獄之間的輾轉輪轉，也是同樣的情況。有的在炭坑地獄中死去、投生到沸屎地獄；有的在沸屎地獄中死去、又生回炭坑地獄；也有的在炭坑地獄中死去、還是再生於炭坑地獄之中；燒林地獄乃至摩訶波頭摩地獄之間的輾轉輪轉，也都是同樣如此，在其中流轉不已。</td><td class="bh16p6-guan"><b>地獄內部亦無出期的固定序列</b>——即使在諸大地獄、十六小地獄之間，也是隨業輾轉、彼此互生，沒有一個「服滿刑期便自動出獄」的固定機制；這突顯地獄苦報之所以難以出離，並非因為它是一座物理監獄，而是因為能感其苦果的惡業心行尚未止息——業因不斷，果報便持續流轉，唯有藉由懺悔、精進斷惡修善，才能真正阻斷此一相續。</td></tr><tr><td class="bh16p6-src">卵生中死，胎生中生；胎生中死，卵生中生；卵生中死，還生卵生中。胎生、濕生、化生亦如是。</td><td>有的從卵生之中死去、又投生為胎生；有的從胎生之中死去、又投生為卵生；也有的從卵生之中死去、還是再生於卵生之中。胎生、濕生、化生彼此之間互相輪轉遷流，也是同樣的道理。</td><td class="bh16p6-guan"><b>受生方式亦無固定歸屬</b>——卵、胎、濕、化四種受生方式，同樣可以互相轉換，說明「生命形式」本身也只是業力因緣暫時聚合的顯現方式，並非某個眾生「本質上」就該以某種方式出生，這進一步瓦解了對自我身分、種類的實有執著。</td></tr><tr><td class="bh16p6-src">閻浮提中死，弗婆提中生；弗婆提中死，閻浮提中生；閻浮提中死，還生閻浮提中。劬陀尼、欝怛羅越亦如是。</td><td>有的在閻浮提（南贍部洲）死去、投生到弗婆提（東勝身洲）；有的在弗婆提死去、又生回閻浮提；也有的在閻浮提死去、還是再生於閻浮提之中。瞿陀尼（西牛貨洲）、鬱單越（北俱盧洲）彼此之間，也是同樣的輪轉道理。</td><td class="bh16p6-guan"><b>空間地域亦不能保證恆常</b>——四大部洲之間眾生互相輪轉往生，說明所投生的「地方」同樣沒有恆常性可言，眾生對特定國土、環境的貪戀執著，同樣落入無常變異之中，並無一處淨土之外的世間國土是可以永久安居的。</td></tr><tr><td class="bh16p6-src">四天處死，三十三天中生；三十三天中死，四天處生；四天處死，還生四天處。三十三天乃至他化自在天亦如是。</td><td>有的在四天王天死去、投生到三十三天；有的在三十三天死去、又生回四天王天；也有的在四天王天死去、還是再生於四天王天之中。三十三天乃至他化自在天彼此之間，也都是同樣的輪轉道理。</td><td class="bh16p6-guan"><b>欲界諸天亦無上升的保證</b>——欲界六天之間同樣互相輪轉，並非修福生天之後便能節節上升、穩步高昇，天界內部同樣充滿升降起伏的不確定性，這再次呼應本卷「天界亦不可恃」的主旨：縱使已生天上，仍在生死大海之中載浮載沉。</td></tr><tr><td class="bh16p6-src">梵眾天中死，梵輔天中生；梵輔天中死，梵眾天中生；梵眾天中死，還生梵眾天中。梵輔天、少光天、無量光、光音、少淨、無量淨、遍淨、阿那跋羅伽、得生、大果、虛空處、識處、無所有處、非有想非無想處亦如是。</td><td>有的在梵眾天死去、投生到梵輔天；有的在梵輔天死去、又生回梵眾天；也有的在梵眾天死去、還是再生於梵眾天之中。梵輔天、少光天、無量光天、光音天、少淨天、無量淨天、遍淨天、阿那跋羅伽（無雲天）、得生（福生天）、大果天、虛空處、識處、無所有處、非有想非無想處，彼此之間也都是同樣輾轉輪轉的道理。</td><td class="bh16p6-guan"><b>色界·無色界高深禪天亦不例外</b>——即使深入色界、無色界層層高遠的禪定天，直至非想非非想處這三界頂端，同樣逃不出彼此輾轉往生的模式，說明「定樂」無論多麼深細綿長，仍屬有為、有漏、生滅法所攝，並非解脫的終點，這是對「以定為究竟」之見最徹底的破斥。</td></tr><tr><td class="bh16p6-src">非有想非無想天中死，阿鼻地獄中生。</td><td>即使是位居三界最高處、看似最接近解脫的非有想非無想天，天福享盡命終之後，仍可能直接墮入三界最底層、最痛苦的阿鼻地獄之中受生。</td><td class="bh16p6-guan"><b>三界頂端與地獄底端的驚人對照</b>——此句是全段最具震撼力的一筆：三界之巔與三界之底竟可以直接相連，絲毫沒有中間的緩衝或保障，徹底打破「福報越大、地位越高、就越安全」的世俗直覺，正顯示三界之內無論高下，只要仍是有漏之法，皆同屬一個封閉的生死系統，無一處可以真正安身立命。</td></tr><tr><td class="bh16p6-src">如是展轉生五道中。菩薩見是已，生大悲心：「我於眾生為無所益，雖與世樂，樂極則苦；當以佛道涅槃常樂益於一切。云何而益？當懃大精進，乃得實智慧；得實智慧，知諸法實相，以餘波羅蜜助成，以益眾生。」是為菩薩精進波羅蜜。</td><td>眾生就是這樣輾轉不已地流轉於五道之中。菩薩見到這樣的情形之後，生起了廣大的悲憫之心，心想：「我對於眾生其實沒有真實的利益可給，即使給予他們世間的快樂，樂到極致終究還是轉為痛苦；應當要用成就佛道、證得涅槃的恆常安樂，來利益一切眾生。要如何才能利益他們呢？應當勤修廣大的精進，才能證得真實的智慧；證得真實的智慧之後，便能了知諸法的真實相貌，再以其餘的波羅蜜輔助成就，藉此利益眾生。」這就是菩薩的精進波羅蜜。</td><td class="bh16p6-guan"><b>大悲心與精進波羅蜜的因果結穴</b>——菩薩遍觀五道輾轉無有出期，深知世間之樂終究是「壞苦」的暫時掩蓋，由此生起真實大悲；而大悲心若無實踐方法便只是空談，故此段明確指出唯一出路是「懃大精進→得實智慧→知諸法實相→益眾生」，將全品乃至全卷對三界流轉的深度審計，收攝為一句話：精進波羅蜜正是連結悲心與智慧、連結眾生與涅槃常樂的根本橋樑。</td></tr></tbody></table><p class="bh16p6-note">大智度論卷十六第6品原文·白話·中觀三欄對照。菩薩天眼觀眾生於天、人、地獄、餓鬼、畜生五道之間輾轉互生，欲、色、無色三界之間亦可雙向流轉，乃至地獄內部、四洲之間、諸天之間亦無固定升降次第；終見「非有想非無想天中死，阿鼻地獄中生」——三界之巔與三界之底竟可直接相連，由此生起大悲：「我於眾生為無所益，雖與世樂，樂極則苦；當以佛道涅槃常樂益於一切」，收束於「懃大精進→得實智慧→知諸法實相→益眾生」的菩薩精進波羅蜜。　中觀關鍵詞：五道無定　三界無安　樂極則苦　大悲精進</p></div></div>
+<script id="wy-bh16p6-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh16p6Btn"),BOX=document.getElementById("bh16p6Box"),MODAL=document.getElementById("bh16p6Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=5;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+/*BHPLACE*/function place(){var cands=[document.getElementById("c16p6Box")],eb=document.querySelector(".wy-ebox");if(eb)cands.push(eb);var best=null;for(var i=0;i<cands.length;i++){var el=cands[i];if(!el)continue;var cs=getComputedStyle(el);if(cs.display==="none")continue;var r=el.getBoundingClientRect();if(r.height<=4)continue;var v=Math.round(window.innerHeight-r.top)+8;if(best===null||v>best)best=v;}if(best!==null)BOX.style.bottom=best+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh16p6Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH16P6:END-->
 </body></html>
