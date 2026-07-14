@@ -2164,4 +2164,55 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH16P2:END-->
+<!--WY-BH16P3:BEGIN-->
+<style id="wy-bh16p3-css">
+.bh16p3-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh16p3-fabbox.show{display:block;}
+.bh16p3-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh16p3-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh16p3-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh16p3-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh16p3-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh16p3-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh16p3-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh16p3-modal.open{display:flex;}
+.bh16p3-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh16p3-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh16p3-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh16p3-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh16p3-close:hover{background:#dde2e6;}
+.bh16p3-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh16p3-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh16p3-tbl th,.bh16p3-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh16p3-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh16p3-tbl thead th:nth-child(1){width:32%;}.bh16p3-tbl thead th:nth-child(2){width:41%;}.bh16p3-tbl thead th:nth-child(3){width:27%;}
+.bh16p3-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh16p3-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh16p3-guan{background:#eef2f5;color:#37505f;}
+.bh16p3-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh16p3-tbl tbody tr:nth-child(even) td.bh16p3-guan{background:#e8eef2;}
+.bh16p3-tbl tbody tr:nth-child(even) td.bh16p3-qa{background:#e7ecdb;}
+.bh16p3-tbl b{color:#8b2500;}
+.bh16p3-guan b{color:#2f6b5a;}
+.bh16p3-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh16p3-note b{color:#8b2500;}
+@media(max-width:900px){.bh16p3-fabbox{right:14px;}.bh16p3-tbl{font-size:11px;}.bh16p3-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh16p3-fabbox" id="bh16p3Box"><button class="bh16p3-btn" id="bh16p3Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh16p3-ic">譯</span><span class="bh16p3-ls"><span class="bh16p3-l1">本品 · 原文·白話·中觀</span><span class="bh16p3-l2">白話翻譯表</span></span></button></div><div class="bh16p3-modal" id="bh16p3Modal" role="dialog" aria-modal="true"><div class="bh16p3-card"><button class="bh16p3-close" id="bh16p3Close" type="button" aria-label="關閉">×</button><h3>卷十六 · 第3品 白話翻譯表（菩薩天眼觀三界各失所樂）</h3><p class="sub">大智度論卷十六·三界五道各失所樂 · 原文↔白話↔中觀概念 逐段對照</p><table class="bh16p3-tbl"><caption>菩薩天眼觀三界各失所樂 · 原文｜白話翻譯｜中觀概念（共2段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh16p3-src">復次，爾時菩薩觀三界、五道眾生，各失所樂。無色界天，樂定心著，不覺命盡，墮在欲界中，受禽獸形。色界諸天，亦復如是，從清淨處墮，還受婬欲，在不淨中。欲界六天，樂著五欲，還墮地獄，受諸苦痛。</td><td>再者，這時菩薩以天眼觀察三界、五道一切眾生，發現大家最終都會失去各自所耽著的快樂。無色界的天人，耽著禪定之樂，執著不捨，以致不知不覺天壽已盡，便墮落到欲界之中，承受禽獸的形貌。色界諸天也是同樣的道理，從清淨無染之處墮落，重新落入婬欲之中，處在污穢不淨之境。欲界六天的天人，耽著五欲之樂，命終後還會墮入地獄，承受種種苦痛。</td><td class="bh16p3-guan"><b>三界皆壞苦·樂極必墮的結構性觀察</b>——菩薩以天眼縱觀三界五道，見無色界的定樂、色界的淨樂、欲界的欲樂，最終無一不歸於墮落與苦痛；這正是中觀「壞苦」義的具體展演：凡依因緣和合而有的「樂」，其本質即是無常變異，樂境本身即潛藏著壞滅的種子，並無恆常不變的真實安樂可得，唯有看破此一結構，方能生起出離與大精進之心。</td></tr><tr><td class="bh16p3-src">當以佛道涅槃常樂，益於一切眾生。</td><td>應當以成就佛道、證得涅槃的恆常安樂，來利益一切眾生。</td><td class="bh16p3-guan"><b>究竟安樂為唯一究竟解藥</b>——與上一段「三界皆壞苦」相對照，此句是菩薩觀察苦報之後所立的正確方向：唯有佛道涅槃的「常樂」——不生不滅、不隨因緣壞散的真實安樂——才是真正能饒益眾生的究竟解藥；世間一切禪悅、淨樂、欲樂皆屬有漏易壞，唯此常樂不落壞苦之網，這正是全品「從樂極生悲到究竟安樂」的核心指歸與收束句。</td></tr></tbody></table><p class="bh16p3-note">大智度論卷十六第3品原文·白話·中觀三欄對照。經文以菩薩天眼觀三界、五道眾生「各失所樂」起：無色界耽定不覺命盡而墮欲界受禽獸形，色界從清淨墮而還受婬欲，欲界耽著五欲而還墮地獄受苦；終以「當以佛道涅槃常樂，益於一切眾生」收束，點出唯有究竟安樂能出離三界壞苦之網。　中觀關鍵詞：三界皆壞苦　樂極生悲　究竟常樂</p></div></div>
+<script id="wy-bh16p3-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh16p3Btn"),BOX=document.getElementById("bh16p3Box"),MODAL=document.getElementById("bh16p3Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=2;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+/*BHPLACE*/function place(){var cands=[document.getElementById("c16p3Box")],eb=document.querySelector(".wy-ebox");if(eb)cands.push(eb);var best=null;for(var i=0;i<cands.length;i++){var el=cands[i];if(!el)continue;var cs=getComputedStyle(el);if(cs.display==="none")continue;var r=el.getBoundingClientRect();if(r.height<=4)continue;var v=Math.round(window.innerHeight-r.top)+8;if(best===null||v>best)best=v;}if(best!==null)BOX.style.bottom=best+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh16p3Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH16P3:END-->
 </body></html>
