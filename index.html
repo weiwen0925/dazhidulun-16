@@ -2062,4 +2062,55 @@ if(toc&&"IntersectionObserver" in window){
 }else{var ref=function(){var t=toc?toc.getBoundingClientRect().bottom:600;show(t>60);};window.addEventListener("scroll",ref,{passive:true});ref();}
 })();</script>
 <!--WY-BHALL16:END-->
+<!--WY-BH16P1:BEGIN-->
+<style id="wy-bh16p1-css">
+.bh16p1-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh16p1-fabbox.show{display:block;}
+.bh16p1-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh16p1-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh16p1-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh16p1-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh16p1-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh16p1-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh16p1-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh16p1-modal.open{display:flex;}
+.bh16p1-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh16p1-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh16p1-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh16p1-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh16p1-close:hover{background:#dde2e6;}
+.bh16p1-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh16p1-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh16p1-tbl th,.bh16p1-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh16p1-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh16p1-tbl thead th:nth-child(1){width:32%;}.bh16p1-tbl thead th:nth-child(2){width:41%;}.bh16p1-tbl thead th:nth-child(3){width:27%;}
+.bh16p1-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh16p1-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh16p1-guan{background:#eef2f5;color:#37505f;}
+.bh16p1-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh16p1-tbl tbody tr:nth-child(even) td.bh16p1-guan{background:#e8eef2;}
+.bh16p1-tbl tbody tr:nth-child(even) td.bh16p1-qa{background:#e7ecdb;}
+.bh16p1-tbl b{color:#8b2500;}
+.bh16p1-guan b{color:#2f6b5a;}
+.bh16p1-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh16p1-note b{color:#8b2500;}
+@media(max-width:900px){.bh16p1-fabbox{right:14px;}.bh16p1-tbl{font-size:11px;}.bh16p1-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh16p1-fabbox" id="bh16p1Box"><button class="bh16p1-btn" id="bh16p1Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh16p1-ic">譯</span><span class="bh16p1-ls"><span class="bh16p1-l1">本品 · 原文·白話·中觀</span><span class="bh16p1-l2">白話翻譯表</span></span></button></div><div class="bh16p1-modal" id="bh16p1Modal" role="dialog" aria-modal="true"><div class="bh16p1-card"><button class="bh16p1-close" id="bh16p1Close" type="button" aria-label="關閉">×</button><h3>卷十六 · 第1品 白話翻譯表（精進相）</h3><p class="sub">大智度論卷十六·精進相 · 原文↔白話↔中觀概念 逐段對照</p><table class="bh16p1-tbl"><caption>精進相 · 原文｜白話翻譯｜中觀概念（共9段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh16p1-qa">問曰：云何名精進相？</td><td>問：什麼叫做「精進之相」？</td><td class="bh16p1-guan"><b>設問標定範疇</b>——論主開篇即以問答形式界定討論對象，先問「精進相」是什麼，為全品建立法相學的起點：精進不是模糊的道德讚詞，而是有具體可辨識標準的法相。</td></tr><tr><td class="bh16p1-qa">答曰：於事必能，起發無難，志意堅強，心無疲惓，所作究竟，以此五事為精進相。</td><td>答：對於所做的事必定能夠成辦，發起時毫無困難，心志意念堅定強韌，內心沒有疲倦厭惓之感，所做的事必能徹底完成——以這五件事作為「精進」的法相。</td><td class="bh16p1-guan"><b>五事為相·以功能定義法相</b>——中觀對法相的界定不訴諸抽象本質，而以「必能、無難、堅強、無惓、究竟」五項可觀察的功能表現作判準；這正是「假名安立」的實例：精進之「相」只是緣起功能的聚合顯現，非有一個獨立自存的「精進性」可得。</td></tr><tr><td class="bh16p1-src">復次，如佛所說：「精進相者，身、心不息故。」譬如釋迦牟尼佛，先世曾作賈客主，將諸賈人入嶮難處；是中有羅剎鬼，以手遮之言：「汝住莫動，不聽汝去！」賈客主即以右拳擊之，拳即著鬼，挽不可離；復以左拳擊之，亦不可離；以右足蹴之，足復粘著；復以左足蹴之，亦復如是；以頭衝之，頭即復著。鬼問言：「汝今如是，欲作何等？心休息未？」答言：「雖復五事被繫，我心終不為汝息也。當以精進力與汝相擊，要不懈退！」鬼時歡喜，心念此人，膽力極大，即語人言：「汝精進力大，必不休息，放汝令去！」行者如是，於善法中，初夜、中夜、後夜，誦經、坐禪，求諸法實相，不為諸結使所覆，身心不懈，是名精進相。</td><td>再者，如佛所說：「精進之相，就是身、心永不止息。」譬如釋迦牟尼佛過去世曾做過商隊的主人，帶領眾商人進入險難之地；途中有一羅剎鬼伸手攔住他們說：「你們站住不許動，不許你們過去！」商主便以右拳擊打牠，拳頭一擊便黏在鬼身上，怎麼拔也拔不開；又用左拳去打，也同樣被黏住；再用右腳去踢，腳也被黏住；又用左腳去踢，同樣如此；最後用頭去撞，頭也黏住了。羅剎鬼問道：「你現在這樣，是想做什麼？心是不是已經願意休息了？」商主答道：「即使我五處肢體都被你黏住，我的心也終究不會因此而停息！我要以精進之力與你相搏，絕不懈怠退卻！」羅剎鬼這時反而心生歡喜，心想此人膽識魄力極大，便對他說：「你精進之力如此強大，必定不會停止，我放你們走吧！」修行人也是如此：在初夜、中夜、後夜中誦經、坐禪，追求諸法實相，不被種種煩惱結使所覆蓋，身心毫不懈怠——這就叫做精進之相。</td><td class="bh16p1-guan"><b>身心不息·以譬喻示現不退轉</b>——賈客主與羅剎鬼纏鬥的譬喻，具象化「身心不息」的內涵：外境的糾纏（羅剎的黏著）恰如煩惱結使的糾纏，唯有意志不因障礙而止息，才能轉化違緣為道用；這是把抽象法相落實於「不為結使所覆」的實際修證，呼應中觀「即障即道」的精神——障礙本身不是終點，執取才是。</td></tr><tr><td class="bh16p1-src">是精進名心數法，懃行不住相；隨心行，共心生；或有覺有觀，或無覺有觀，或無覺無觀。如阿毘曇法廣說。</td><td>這種精進屬於「心數法」（心所法），其相狀是勤奮運作而不停滯；它隨著心一起運行，與心同時生起；有時伴隨「有覺有觀」（尋伺具足），有時「無覺有觀」，有時「無覺無觀」——詳細內容如阿毘曇論中所廣說。</td><td class="bh16p1-guan"><b>精進為心所法·依他而起</b>——精進被定位為「心數法」（心所），必然隨心王同起同滅、無獨立體性；其與尋（覺）、伺（觀）三種禪定層次相應變化，正說明精進的顯現形態隨因緣（定境層次）而轉易，並無固定不變的「精進自性」，只是心識運作中一個依他起的功能面向。</td></tr><tr><td class="bh16p1-src">於一切善法中懃修不懈，是名精進相。於五根中，名精進根；根增長名精進力；心能開悟，名精進覺；能到佛道涅槃城，是名正精進；四念處中，能懃繫心，是精進分；四正懃，是精進門；四如意足中，欲、精進即是精進；六波羅蜜中，名精進波羅蜜。</td><td>在一切善法中勤奮修習而不懈怠，這就叫做精進之相。在五根之中，稱為「精進根」；此根增長便稱為「精進力」；心因此而能開悟，稱為「精進覺」（七覺支之一）；能夠到達佛道涅槃之城，稱為「正精進」（八正道之一）；在四念處中，能勤懇繫心於所觀之境，稱為「精進分」；四正勤，其體性即是精進之門；四如意足中的「欲」與「精進」，其實也就是精進；在六波羅蜜之中，則稱為「精進波羅蜜」。</td><td class="bh16p1-guan"><b>一法貫通諸道品·假名隨位而異</b>——同一個「精進」之體，在三十七道品與六波羅蜜的不同修道次第中，隨其功能定位分別被安立為根、力、覺、正道、念處分、正勤門、如意足、波羅蜜等不同名相；這正顯示「法」本身無定名定相，一切名相皆是隨緣立名的假施設，唯有「精進」這一功能的相續運作才是實際內容，名字則依語境而轉，不可執名為實。</td></tr><tr><td class="bh16p1-qa">問曰：汝先讚精進，今說精進相，是名何精進？</td><td>問：您先前讚歎精進，如今又說精進之相，這裡所說的究竟是哪一種精進？</td><td class="bh16p1-guan"><b>追問精進之名實範圍</b>——此問承接上文對精進的種種讚歎與定義，追問「精進」一詞所指涉的具體範圍是什麼，避免讀者將泛泛讚詞誤認為已窮盡精進的內涵，是釐清概念層次的重要一問。</td></tr><tr><td class="bh16p1-qa">答曰：是一切善法中精進相。</td><td>答：這是指在一切善法之中普遍具備的精進之相。</td><td class="bh16p1-guan"><b>先立共相·後顯別相</b>——論主先確立「精進」是貫通一切善法的共通功能相，而非某一特定法門所獨有；這為下文區分「一般精進」與「精進波羅蜜」預留了層次，體現中觀論式常見的「先總後別」推演次第。</td></tr><tr><td class="bh16p1-qa">問曰：今說摩訶般若波羅蜜論議中，應說精進波羅蜜，何以故說一切善法中精進？</td><td>問：如今是在講說《摩訶般若波羅蜜論》，理應直接論說「精進波羅蜜」，為什麼卻先說「一切善法中的精進」呢？</td><td class="bh16p1-guan"><b>質疑論述次第</b>——此問切中要害：既然全論主題是般若波羅蜜，為何不直接以波羅蜜義起論，卻先繞道說明世間、聲聞共通的一切善法精進？這一質疑正是引出下文「漸次修證」義理的關鍵契機。</td></tr><tr><td class="bh16p1-qa">答曰：初發心菩薩，於一切善法中精進，漸漸次第得精進波羅蜜。</td><td>答：初發心的菩薩，是先在一切善法之中精進修習，然後漸漸依循次第，才證得「精進波羅蜜」。</td><td class="bh16p1-guan"><b>漸次而入·波羅蜜非頓成</b>——菩薩由凡夫共通的一切善法精進起修，經由漸次修證的積累過程才轉化、昇華為「精進波羅蜜」；這說明波羅蜜並非另立一套與世間善法無關的特殊修法，而是同一精進功能在悲智漸次增上下的成熟顯現，呼應「不壞假名而說實相」的中觀立場——世俗漸修與勝義證得，本是同一因緣流中的兩個階段，並非截然對立。</td></tr></tbody></table><p class="bh16p1-note">大智度論卷十六第1品「精進相」原文·白話·中觀三欄對照。論主以四組問答界定「精進相」：先以五事（於事必能、起發無難、志意堅強、心無疲惓、所作究竟）判準精進，再以賈客主鬥羅剎鬼的譬喻示現身心不息之相；復以阿毘曇心數法界定精進的心理構造，並貫通五根、五力、七覺、八正、四念處、四正懃、四如意足、六波羅蜜八種修道座標；終以「初發心菩薩於一切善法中精進，漸漸次第得精進波羅蜜」收束全品。　中觀關鍵詞：五事為相　心數法　假名隨位而異　漸次而入</p></div></div>
+<script id="wy-bh16p1-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh16p1Btn"),BOX=document.getElementById("bh16p1Box"),MODAL=document.getElementById("bh16p1Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=0;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+/*BHPLACE*/function place(){var cands=[document.getElementById("c16p1Box")],eb=document.querySelector(".wy-ebox");if(eb)cands.push(eb);var best=null;for(var i=0;i<cands.length;i++){var el=cands[i];if(!el)continue;var cs=getComputedStyle(el);if(cs.display==="none")continue;var r=el.getBoundingClientRect();if(r.height<=4)continue;var v=Math.round(window.innerHeight-r.top)+8;if(best===null||v>best)best=v;}if(best!==null)BOX.style.bottom=best+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh16p1Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH16P1:END-->
 </body></html>
