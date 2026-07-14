@@ -2266,4 +2266,55 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH16P4:END-->
+<!--WY-BH16P5:BEGIN-->
+<style id="wy-bh16p5-css">
+.bh16p5-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh16p5-fabbox.show{display:block;}
+.bh16p5-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh16p5-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh16p5-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh16p5-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh16p5-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh16p5-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh16p5-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh16p5-modal.open{display:flex;}
+.bh16p5-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh16p5-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh16p5-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh16p5-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh16p5-close:hover{background:#dde2e6;}
+.bh16p5-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh16p5-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh16p5-tbl th,.bh16p5-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh16p5-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh16p5-tbl thead th:nth-child(1){width:32%;}.bh16p5-tbl thead th:nth-child(2){width:41%;}.bh16p5-tbl thead th:nth-child(3){width:27%;}
+.bh16p5-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh16p5-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh16p5-guan{background:#eef2f5;color:#37505f;}
+.bh16p5-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh16p5-tbl tbody tr:nth-child(even) td.bh16p5-guan{background:#e8eef2;}
+.bh16p5-tbl tbody tr:nth-child(even) td.bh16p5-qa{background:#e7ecdb;}
+.bh16p5-tbl b{color:#8b2500;}
+.bh16p5-guan b{color:#2f6b5a;}
+.bh16p5-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh16p5-note b{color:#8b2500;}
+@media(max-width:900px){.bh16p5-fabbox{right:14px;}.bh16p5-tbl{font-size:11px;}.bh16p5-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh16p5-fabbox" id="bh16p5Box"><button class="bh16p5-btn" id="bh16p5Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh16p5-ic">譯</span><span class="bh16p5-ls"><span class="bh16p5-l1">本品 · 原文·白話·中觀</span><span class="bh16p5-l2">白話翻譯表</span></span></button></div><div class="bh16p5-modal" id="bh16p5Modal" role="dialog" aria-modal="true"><div class="bh16p5-card"><button class="bh16p5-close" id="bh16p5Close" type="button" aria-label="關閉">×</button><h3>卷十六 · 第5品 白話翻譯表（畜生道業報）</h3><p class="sub">大智度論卷十六·畜生道業報 · 原文↔白話↔中觀概念 逐段對照</p><table class="bh16p5-tbl"><caption>畜生道業報 白話翻譯表·原文｜白話翻譯｜中觀概念（共13段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh16p5-src">見諸畜生，受諸苦惱，鞭杖驅馳，負重涉遠，項領穿壞，熱鐵燒炙。此人宿行因緣，以繫縛眾生，鞭杖苦惱；如是等種種因緣故，受象、馬、牛、羊、麞、鹿畜獸之形。</td><td>見到種種畜生，承受著種種苦惱：被鞭子棍杖驅趕役使，背負重物長途跋涉，頸項被繩索磨穿破損，甚至被燒紅的鐵器烙燙。這是因為此人過去世曾以繩索繫縛眾生、以鞭杖使眾生受苦；由於這樣種種的業因緣故，於是感得大象、馬、牛、羊、獐、鹿等畜獸的形貌。</td><td class="bh16p5-guan"><b>業因與果報的對應性·非偶然亦非必然</b>——鞭杖繫縛他者之業，感得被鞭杖繫縛之身，顯示業果不是外力懲罰，而是同類因緣的自然顯現；然此因果相續亦非有一個常一主宰者在操控，只是緣起法則如響應聲，此正顯業性本空而業報不失的中道義。</td></tr><tr><td class="bh16p5-src">婬欲情重，無明偏多，受鵝、鴨、孔雀、鴛鴦、鳩、鴿、鷄、鶩、鸚鵡、百舌之屬，受此眾鳥，種類百千。婬行罪故，身生毛羽，隔諸細滑，嘴麁䩕，不別觸味。</td><td>貪著婬欲之情特別深重、無明煩惱又特別偏多的人，會感得鵝、鴨、孔雀、鴛鴦、斑鳩、鴿子、雞、鶩、鸚鵡、百舌鳥等等種類，投生為這許許多多、上百上千種類的飛禽。由於婬行之罪的緣故，身上長出羽毛，將細膩滑潤的觸覺阻隔於外，嘴喙變得粗厚僵硬，也無法分辨細緻的觸感與滋味。</td><td class="bh16p5-guan"><b>煩惱厚薄與果報粗細的相應</b>——婬欲、無明偏重者，果報身連基本的觸覺、味覺都變得遲鈍粗糙，這說明煩惱本身即是一種「遮蔽」，使有情離真實的覺知愈來愈遠；反顯清淨覺性若不被煩惱染著，本自具足細膩明了的知覺功能，並非要等到成佛才有，而是煩惱蓋覆使其不顯。</td></tr><tr><td class="bh16p5-src">瞋恚偏多，受毒蛇、蝮蝎、蚑蜂、百足，含毒之虫。</td><td>瞋恚心特別偏重深厚的人，會感得毒蛇、蝮蛇、蠍子、蜈蚣、馬蜂、百足蟲等等含有毒性的蟲類之身。</td><td class="bh16p5-guan"><b>瞋毒外顯為身毒·心念與果報同構</b>——內心的瞋恚毒素，外顯為肉身的毒液，這是「依心造業，依業感身」最直接的例證：身相不過是心念的具體化顯現，並無獨立於心念之外的「毒性本質」，一旦瞋心止息，毒身之因便無從生起，可見身相亦是緣生無自性之法。</td></tr><tr><td class="bh16p5-src">愚癡多故，受蚓蛾、蜣蜋、蟻螻、鵂鷖、角鵄之屬，諸騃虫鳥。</td><td>愚癡心特別深重的人，會感得蚯蚓、飛蛾、蜣螂、螞蟻、螻蛄、鵂鶹、角鴟等等愚笨遲鈍的蟲類鳥類之身。</td><td class="bh16p5-guan"><b>癡闇覆心·果報亦昏昧</b>——愚癡是不明因果、不辨真妄的根本煩惱，其果報自然是感官遲鈍、心識昏昧的形類；由此可見三毒（貪瞋癡）與六道果報之間存在著結構性的鏡射關係，這正是「萬法唯心所造」的具體演示，而非宿命論式的外在懲罰。</td></tr><tr><td class="bh16p5-src">憍慢、瞋恚多故，受師子、虎、豹諸猛獸身。</td><td>憍慢自大、瞋恚心又特別深重的人，會感得獅子、老虎、豹子等等兇猛野獸之身。</td><td class="bh16p5-guan"><b>慢與瞋的合流·猛獸相的業因</b>——憍慢是自我膨脹之見，瞋恚是排斥異己之心，兩者合流，便顯現為強悍好鬥的猛獸之相；這說明果報形貌其實是內心結使（煩惱）樣態的外化投影，並無一個固定不變的「獸性」存在，只是因緣聚合的暫時顯相。</td></tr><tr><td class="bh16p5-src">邪慢緣故，受生驢、猪、駱駝之中。</td><td>因為懷有邪僻憍慢之心的緣故，會投生到驢、豬、駱駝等等之中。</td><td class="bh16p5-guan"><b>邪慢與愚重的果報連結</b>——此處「邪慢」指帶著顛倒知見的傲慢，其果報形貌笨重、任人驅使，恰與其「外表自恃、實則盲目」的心行相應，再次印證果報是心行的如實映現，而非隨機降臨的懲罰。</td></tr><tr><td class="bh16p5-src">慳貪、嫉妬、輕躁、短促故，受獼猴、玃、熊、羆之形。</td><td>因為慳吝貪婪、嫉妒他人、輕浮急躁、性情短淺急促的緣故，會感得獼猴、大猿、熊、羆等等的形貌。</td><td class="bh16p5-guan"><b>躁動心相與獸形的相似性</b>——慳貪嫉妬使心不得安定，輕躁短促使心念浮動不居，這種「躁」的心行特質，恰恰顯現為獼猴、熊羆等好動不安之獸形，可見業果並非任意配對，而是心行「動相」與果報「動相」的自然對應。</td></tr><tr><td class="bh16p5-src">邪貪、憎嫉業因緣故，受猫、狸、土虎諸獸之身。</td><td>因為心懷邪僻貪求、憎恨嫉妒的業因緣故，會感得貓、狸、土虎等等野獸之身。</td><td class="bh16p5-guan"><b>潛伏之貪嫉·潛伏之獸形</b>——貓、狸一類擅長潛伏、伺機而動，恰與邪貪憎嫉「隱忍伺機、暗中算計」的心理特質相應，顯示業果的形成細膩到連行為模式都彼此對應，這正是緣起法「絲毫不爽」而又「了無自性」的兩面。</td></tr><tr><td class="bh16p5-src">無愧、無慚、饕餮因緣故，受烏鵲、鵄鷲諸鳥之形。</td><td>因為沒有慚愧心、貪吃無度（饕餮）的業因緣故，會感得烏鴉、喜鵲、鴟鴞、鷲鳥等等飛禽之形。</td><td class="bh16p5-guan"><b>無慚無愧·失去人身的道德屏障</b>——慚愧心是防非止惡的根本屏障，一旦喪失，貪求無厭之心便毫無節制地展現，果報便墮於以腐食殘屍為生的鳥類，這說明「人身難得」的可貴之處正在於慚愧心尚存，一旦此心蕩然無存，人身的資格便隨之消失。</td></tr><tr><td class="bh16p5-src">輕慢善人故，受鷄、狗、野干等身。</td><td>因為輕視怠慢善良之人的緣故，會感得雞、狗、野干（豺狼一類）等等的身形。</td><td class="bh16p5-guan"><b>輕慢善知識的業報</b>——輕慢善人等於輕慢引導自己走向解脫的助緣，其果報是淪為被人輕賤驅使的家畜或卑賤野獸，恰恰形成「因中輕賤他者、果中被他者輕賤」的對稱結構，顯示因果不爽的緣起法則。</td></tr><tr><td class="bh16p5-src">大作布施，瞋恚、曲心，以此因緣故，受諸龍身。</td><td>雖然廣行布施，但布施時心懷瞋恚、心念曲折不正直，以這樣的業因緣故，會感得龍身。</td><td class="bh16p5-guan"><b>善業與煩惱夾雜·果報亦福亦礙</b>——大作布施本是善業，卻夾雜瞋恚曲心，福與過同時具足，故感得亦具威神福德、卻仍在畜生道中受身的龍身，說明「善業」若不與正見、清淨心相應，仍不能出離輪迴，唯有智慧與福德雙運才是真正的波羅蜜行。</td></tr><tr><td class="bh16p5-src">大修布施，心高陵瘧，苦惱眾生，受金翅鳥形。</td><td>雖然大力修行布施，但心懷高慢、欺凌逼迫，使眾生受到苦惱，以此感得金翅鳥的形貌。</td><td class="bh16p5-guan"><b>福德夾雜慢心·仍墮傍生趣</b>——與上一段同一結構：布施之福感得金翅鳥的尊貴威猛，但高慢逼惱眾生之過，使其仍不脫離畜生之身，這雙重例證有力地說明「福報」本身並非解脫的保證，唯有以般若智慧觀照、離諸煩惱染著的布施，才能真正趣向波羅蜜而非輪迴的另一站。</td></tr><tr><td class="bh16p5-src">如是等種種結使業因緣故，受諸畜生禽獸之苦。</td><td>由於像這樣種種煩惱結使所造作的業因緣故，眾生便感受種種畜生禽獸之苦。</td><td class="bh16p5-guan"><b>總結：結使為因，畜生為果</b>——此句總攝上述十二種業因，點明「結使」（煩惱的黏縛作用）才是墮入畜生道的根本原因；由此可見六道果報並非命定，而是心念與行為在因緣法則中的必然投射，唯有斷除結使、修習精進波羅蜜以證實智慧，才能徹底跳脫這套業力系統。</td></tr></tbody></table><p class="bh16p5-note">大智度論卷十六第5品原文·白話·中觀三欄對照。原典以十三段文字，依「結使（煩惱）→業因緣→畜獸之形」的邏輯，逐一列舉繫縛鞭杖感象馬牛羊之形、婬欲無明感眾鳥之形、瞋恚感毒蟲之身、愚癡感騃蟲鳥之形，乃至大布施而瞋曲心感龍身、陵虐布施感金翅鳥形等十二類業報對應，終以「如是等種種結使業因緣故，受諸畜生禽獸之苦」總收。全篇展演業因與果報的結構性同構，而非宿命懲罰。　中觀關鍵詞：業因同構　假名如幻　結使為因　性格即命運</p></div></div>
+<script id="wy-bh16p5-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh16p5Btn"),BOX=document.getElementById("bh16p5Box"),MODAL=document.getElementById("bh16p5Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=4;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+/*BHPLACE*/function place(){var cands=[document.getElementById("c16p5Box")],eb=document.querySelector(".wy-ebox");if(eb)cands.push(eb);var best=null;for(var i=0;i<cands.length;i++){var el=cands[i];if(!el)continue;var cs=getComputedStyle(el);if(cs.display==="none")continue;var r=el.getBoundingClientRect();if(r.height<=4)continue;var v=Math.round(window.innerHeight-r.top)+8;if(best===null||v>best)best=v;}if(best!==null)BOX.style.bottom=best+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh16p5Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH16P5:END-->
 </body></html>
