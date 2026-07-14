@@ -2368,4 +2368,55 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH16P6:END-->
+<!--WY-BH16P7:BEGIN-->
+<style id="wy-bh16p7-css">
+.bh16p7-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh16p7-fabbox.show{display:block;}
+.bh16p7-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh16p7-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh16p7-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh16p7-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh16p7-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh16p7-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh16p7-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh16p7-modal.open{display:flex;}
+.bh16p7-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh16p7-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh16p7-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh16p7-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh16p7-close:hover{background:#dde2e6;}
+.bh16p7-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh16p7-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh16p7-tbl th,.bh16p7-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh16p7-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh16p7-tbl thead th:nth-child(1){width:32%;}.bh16p7-tbl thead th:nth-child(2){width:41%;}.bh16p7-tbl thead th:nth-child(3){width:27%;}
+.bh16p7-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh16p7-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh16p7-guan{background:#eef2f5;color:#37505f;}
+.bh16p7-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh16p7-tbl tbody tr:nth-child(even) td.bh16p7-guan{background:#e8eef2;}
+.bh16p7-tbl tbody tr:nth-child(even) td.bh16p7-qa{background:#e7ecdb;}
+.bh16p7-tbl b{color:#8b2500;}
+.bh16p7-guan b{color:#2f6b5a;}
+.bh16p7-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh16p7-note b{color:#8b2500;}
+@media(max-width:900px){.bh16p7-fabbox{right:14px;}.bh16p7-tbl{font-size:11px;}.bh16p7-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh16p7-fabbox" id="bh16p7Box"><button class="bh16p7-btn" id="bh16p7Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh16p7-ic">譯</span><span class="bh16p7-ls"><span class="bh16p7-l1">本品 · 原文·白話·中觀</span><span class="bh16p7-l2">白話翻譯表</span></span></button></div><div class="bh16p7-modal" id="bh16p7Modal" role="dialog" aria-modal="true"><div class="bh16p7-card"><button class="bh16p7-close" id="bh16p7Close" type="button" aria-label="關閉">×</button><h3>卷十六 · 第7品 白話翻譯表（餓鬼道）</h3><p class="sub">大智度論卷十六·餓鬼苦相 · 原文↔白話↔中觀概念 逐段對照</p><table class="bh16p7-tbl"><caption>餓鬼道 白話翻譯表·原文｜白話翻譯｜中觀概念（共9段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh16p7-src">見餓鬼中飢渴故，兩眼陷，毛髮長，東西馳走。若欲趣水，護水諸鬼，以鐵杖逆打；設無守鬼，水自然竭；或時天雨，雨化為炭。</td><td>菩薩以天眼觀見餓鬼道中的眾生，因為長期飢渴的緣故，兩眼深陷、毛髮散亂細長，四處奔走求食求水。如果想要奔赴水邊，看守水源的惡鬼便會用鐵杖迎面打來阻止；即使沒有鬼卒看守，水也會自然乾涸；有時天空降雨，雨水一落下便化為炭火。</td><td class="bh16p7-guan"><b>外障雙重封鎖·資源本無自性</b>——有鬼則以鐵杖逆打，無鬼則水自然竭，甚至連天降之雨也化為炭火：這說明匱乏並非單純「資源不存在」的匱乏，而是外境隨業識而顯現的封鎖；水本無定性，能否成為「可飲之水」，全依因緣（業力）而定，並非水自身具有恆常的「濕潤解渴」之自性。</td></tr><tr><td class="bh16p7-src">或有餓鬼常被火燒，如劫盡時，諸山火出。</td><td>有的餓鬼經常被烈火焚燒，就像世界毀滅、劫火燃盡之時，重重山嶽同時噴發烈焰一般。</td><td class="bh16p7-guan"><b>身心相即為苦具</b>——餓鬼身自身即成烈火燃燒之場所，並無外在縱火者，這顯示苦報的根源不在身外，而在自身業力所感召的果報體本身，此身即是業力顯現之相，無一「常」我可安住其中。</td></tr><tr><td class="bh16p7-src">或有餓鬼羸瘦狂走，毛髮蓬亂，以覆其身。</td><td>有的餓鬼形體極度羸弱瘦削，狂亂奔走，蓬鬆散亂的毛髮披覆全身。</td><td class="bh16p7-guan"><b>相由業感·非有真實常一之形</b>——羸瘦狂走之相並非偶然的外貌，而是內在飢渴業力具體展現於外的果報之相，說明色身形貌本是因緣假合，隨業流轉變異，並無固定不變的自體。</td></tr><tr><td class="bh16p7-src">或有餓鬼常食屎尿，涕唾歐吐，盪滌餘汁；或時至廁溷邊立，伺求不淨汁。</td><td>有的餓鬼經常以糞便尿液為食，甚至舔食他人涕唾、嘔吐之物，或洗滌盛裝穢物容器所殘留的汁液；有時站立在廁所旁邊，伺機尋求不淨的汁液來飲用。</td><td class="bh16p7-guan"><b>淨穢本無定相，唯業所轉</b>——同樣是「食物」，於人而言至淨至穢有別，於餓鬼業識而言卻只能以穢為食：淨與穢並非客觀恆定的屬性，而是隨眾生業感、識心分別而施設的假名，這正是「萬法唯識」的具體例證。</td></tr><tr><td class="bh16p7-src">或有餓鬼常求產婦藏血飲之，形如燒樹，咽如針孔；若與其水，千歲不足。</td><td>有的餓鬼經常尋求婦人生產時所遺留的血水來飲用，然而牠們的身形猶如被燒焦的枯樹，咽喉細小如同針孔；即使給予牠們水，縱使歷經千年也無法喝足解渴。</td><td class="bh16p7-guan"><b>內障·給予亦不能受用</b>——這是最徹底的「求不得苦」：外在資源即使唾手可得，內在身體構造（咽如針孔）卻從根本上剝奪了受用的能力，說明苦並非單純資源匱乏，而是身心（正報）與環境（依報）共業所感召的絕對隔絕結構。</td></tr><tr><td class="bh16p7-src">或有餓鬼自破其頭，以手取腦而舐。</td><td>有的餓鬼會親手打破自己的頭顱，用手取出腦漿來舔食。</td><td class="bh16p7-guan"><b>業力向內反噬·能所同體</b>——當外境求索之路完全斷絕，業力並不因此消散，而是折返向內，使自身同時成為加害者與被害者；這顯示「自」與「他」、「能食」與「所食」的分別，在業力運作的極致處終究只是同一惡業能量的兩種顯現，並無真實對立的自性可得。</td></tr><tr><td class="bh16p7-src">或有餓鬼形如黑山，鐵鎖鎖頸，叩頭求哀，歸命獄卒。</td><td>有的餓鬼形體龐大猶如黑色山嶽，頸部被鐵鎖緊緊鎖住，只能叩頭哀求、將自身性命完全託付於獄卒的擺佈。</td><td class="bh16p7-guan"><b>形大而力弱·業繫非外力所加</b>——形如黑山看似強大，卻連自身頸項的鐵鎖都無力解脫，說明果報之身的「大」與「小」皆是業感假相，真正的繫縛從來不是外在的鐵鎖本身，而是造業當時未曾斷除的貪瞋癡結使，鐵鎖只是這股內在繫縛力量的外顯之相。</td></tr><tr><td class="bh16p7-src">或有餓鬼先世惡口，好以麁語加彼眾生，眾生憎惡，見之如讎，以此罪故，墮餓鬼中。</td><td>有的餓鬼是因為過去世喜好口出惡言，經常以粗惡的言語加諸於其他眾生，使得眾生因此憎恨厭惡，見到他就如同見到仇敵一般；正是因為這樣的惡業罪報，才墮落到餓鬼道中受苦。</td><td class="bh16p7-guan"><b>語業因果如響應聲</b>——口業看似只是聲音、氣息的暫時造作，並無實體可執取，卻能感召如此深重之異熟果報，這正顯示「業力不失」的緣起法則：因緣一旦具足造作，果報必然如影隨形地現前，絲毫不因業因本身的「無自性」而落空——這正是中觀「緣起有、自性空」雙運不二的具體例證。</td></tr><tr><td class="bh16p7-src">如是等種種罪故，墮餓鬼趣中，受無量苦痛。</td><td>由於以上種種罪業的緣故，眾生墮落到餓鬼道之中，承受無量無邊的苦痛折磨。</td><td class="bh16p7-guan"><b>總結業感·苦相皆從緣生</b>——本品所列種種餓鬼苦相，看似形態各異，實則同出一源：皆是眾生自身過去業因所感召的果報顯現，並無一位外在主宰者刻意降罰；正因苦相是「緣生」而非「自性本有」，才使得懺悔斷惡、精進修善成為可能——這正是菩薩見此而生大悲、進而發起精進波羅蜜的根本依據。</td></tr></tbody></table><p class="bh16p7-note">大智度論卷十六第7品原文·白話·中觀三欄對照。菩薩天眼觀餓鬼道眾生：外有護水諸鬼以鐵杖逆打、水自然竭、雨化為炭之外障，內有形如燒樹、咽如針孔之內障，縱使予水千歲不足；乃至自破其頭以手取腦而舐、先世惡口好以麁語加彼眾生而墮餓鬼中；終結於「如是等種種罪故，墮餓鬼趣中，受無量苦痛」。　中觀關鍵詞：一水四見　外障內障　業力自噬　語業因果　緣起無自性</p></div></div>
+<script id="wy-bh16p7-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh16p7Btn"),BOX=document.getElementById("bh16p7Box"),MODAL=document.getElementById("bh16p7Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=6;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+/*BHPLACE*/function place(){var cands=[document.getElementById("c16p7Box")],eb=document.querySelector(".wy-ebox");if(eb)cands.push(eb);var best=null;for(var i=0;i<cands.length;i++){var el=cands[i];if(!el)continue;var cs=getComputedStyle(el);if(cs.display==="none")continue;var r=el.getBoundingClientRect();if(r.height<=4)continue;var v=Math.round(window.innerHeight-r.top)+8;if(best===null||v>best)best=v;}if(best!==null)BOX.style.bottom=best+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh16p7Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH16P7:END-->
 </body></html>
