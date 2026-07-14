@@ -2878,4 +2878,55 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH16P16:END-->
+<!--WY-BH16P17:BEGIN-->
+<style id="wy-bh16p17-css">
+.bh16p17-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh16p17-fabbox.show{display:block;}
+.bh16p17-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh16p17-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh16p17-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh16p17-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh16p17-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh16p17-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh16p17-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh16p17-modal.open{display:flex;}
+.bh16p17-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh16p17-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh16p17-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh16p17-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh16p17-close:hover{background:#dde2e6;}
+.bh16p17-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh16p17-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh16p17-tbl th,.bh16p17-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh16p17-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh16p17-tbl thead th:nth-child(1){width:32%;}.bh16p17-tbl thead th:nth-child(2){width:41%;}.bh16p17-tbl thead th:nth-child(3){width:27%;}
+.bh16p17-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh16p17-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh16p17-guan{background:#eef2f5;color:#37505f;}
+.bh16p17-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh16p17-tbl tbody tr:nth-child(even) td.bh16p17-guan{background:#e8eef2;}
+.bh16p17-tbl tbody tr:nth-child(even) td.bh16p17-qa{background:#e7ecdb;}
+.bh16p17-tbl b{color:#8b2500;}
+.bh16p17-guan b{color:#2f6b5a;}
+.bh16p17-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh16p17-note b{color:#8b2500;}
+@media(max-width:900px){.bh16p17-fabbox{right:14px;}.bh16p17-tbl{font-size:11px;}.bh16p17-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh16p17-fabbox" id="bh16p17Box"><button class="bh16p17-btn" id="bh16p17Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh16p17-ic">譯</span><span class="bh16p17-ls"><span class="bh16p17-l1">本品 · 原文·白話·中觀</span><span class="bh16p17-l2">白話翻譯表</span></span></button></div><div class="bh16p17-modal" id="bh16p17Modal" role="dialog" aria-modal="true"><div class="bh16p17-card"><button class="bh16p17-close" id="bh16p17Close" type="button" aria-label="關閉">×</button><h3>卷十六 · 第17品 白話翻譯表（精進波羅蜜五度之王）</h3><p class="sub">大智度論卷十六·釋初品中毘梨耶波羅蜜義 · 原文↔白話↔中觀概念 逐段對照</p><table class="bh16p17-tbl"><caption>精進波羅蜜五度之王 白話翻譯表·原文｜白話翻譯｜中觀概念（共7段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh16p17-src">復次，菩薩精進，世世勤修，求諸財寶，給施眾生，心無懈廢。自有財物，能盡施與，心亦不懈。</td><td>再者，菩薩以精進之心，世世代代勤奮修行，尋求各種財富珍寶，用來布施給眾生，心中從不懈怠、從不廢退。即使自己原本就擁有財物，也能夠全部布施出去，心中同樣毫不懈怠。</td><td class="bh16p17-guan"><b>精進助布施·動能貫注使施捨無有窮盡</b>——布施若缺乏精進的支撐，容易因一時發心而止步於偶一為之；經文特別標舉「世世勤修」「心無懈廢」，說明布施之所以能成就波羅蜜，關鍵不在單次施捨的財物多寡，而在於精進所提供的持續動能，使給施眾生的行為得以跨越生生世世、不因困難而中斷；這顯示六度彼此並非各自獨立的靜態項目，而是以精進為貫穿其中的動力軸線，缺此軸線，布施便容易退轉為有限而斷續的善行。</td></tr><tr><td class="bh16p17-src">復次，精進持戒，若大、若小，一切能受、一切能持，不毀、不犯；大如毛髮，設有違失，即時發露，初不覆藏。</td><td>再者，以精進之心持守戒律，無論是重大的戒條還是微小的戒條，都能夠完全領受、完全持守，絕不毀壞、絕不觸犯；即使是細如毛髮般微小的過失，一旦有所違犯，也會立刻發露懺悔，從來不加以隱瞞覆藏。</td><td class="bh16p17-guan"><b>發露不覆藏·精進使戒體不容自欺</b>——持戒之難，往往不在受戒之初的決心，而在日久之後對微小過失的自我寬容與掩飾；經文以「大如毛髮，設有違失，即時發露」點出精進在持戒中的作用，正是使人不與自己的煩惱習氣妥協、不因過失微小而縱容覆藏，這份即時面對過失的坦誠，本身即是照見「我執」鬆動的表現——若執著於維護一個完美無瑕的自我形象，反而容易覆藏過失；唯有不執著於「我必須完美」，才能坦然發露，這正是精進與空性相應之處。</td></tr><tr><td class="bh16p17-src">復次，懃修忍辱，若人刀杖打害，罵詈毀辱，及恭敬供養，一切能忍，不受、不著；於深法中，其心不沒，亦不疑悔。</td><td>再者，勤奮修習忍辱之行，如果有人用刀杖打擊傷害，或是用言語辱罵毀謗，乃至有人恭敬供養，對這一切境界都能夠安忍，心中不領受、不執著；對於甚深的法義，內心也不會因困惑而沉沒，更不會心生疑惑懊悔。</td><td class="bh16p17-guan"><b>順逆二境同一不著·忍辱以精進為底蘊</b>——本段將「刀杖打害、罵詈毀辱」的逆境與「恭敬供養」的順境並列同科，同樣要求「不受、不著」，這一並列極具深意：忍辱並非只是被動承受逆境的隱忍，更是對順境同樣不生貪著的清醒；能做到這雙重的不受不著，仰賴的正是精進所提供的恆常警覺與用功力道，若無精進支撐，凡夫心念極易在順境中鬆懈貪著、在逆境中退墮嗔恨，唯有精進不輟，才能使忍辱安住於甚深法義而不動搖疑悔。</td></tr><tr><td class="bh16p17-src">復次，專精一心，修諸禪定，能住能守，得五神通，及四等心、勝處、背捨、十一切處，具諸功德；得四念處及諸菩薩見佛三昧。</td><td>再者，專心一意精進不懈，修習種種禪定，能夠安住其中、能夠守持不失，因而證得五種神通，以及慈悲喜捨四無量心、八勝處、八背捨、十一切處等種種禪觀，具足種種功德；並且證得四念處以及種種菩薩見佛三昧。</td><td class="bh16p17-guan"><b>能住能守·精進是禪定得以久住之力</b>——禪定的證得固然依於方法與所緣，但能否「住」（安住不散）、能否「守」（守持不退失），關鍵仍在精進；經文將「專精一心」與「能住能守」並舉，說明散亂心與精進恰是此消彼長的關係——精進不足，禪定即使暫得也易於退失；唯有精進貫注，禪定才能穩固持續，進而開展出五通、四無量、八勝處等種種功德聚，可見所謂「甚深禪定」並非一蹴可幾的孤立事件，而是精進之力層層積累、次第現前的緣起顯現。</td></tr><tr><td class="bh16p17-src">復次，菩薩精進求法，不懈身心，懃力供養法師，種種恭敬供給給使，初不違失，亦不廢退，不惜身命，以為法故。誦讀問答，初、中、後夜，思惟憶念，籌量分別，求其因緣，選擇同異，欲知實相：一切諸法自相、異相，總相、別相，一相，有相、無相，如實相，諸佛菩薩無量智慧，心不沒不退，是名菩薩精進。</td><td>再者，菩薩以精進之心求取正法，身心從不懈怠，勤懇地供養說法的法師，以種種方式恭敬承事、供給使喚，從未有絲毫違逆過失，也從不廢棄退轉，甚至不惜自己的身命，只因為求法之故。無論是誦讀經典、問答論義，在初夜、中夜、後夜都不間斷地思惟憶念、仔細籌量分別，探求其中的因緣道理，辨別同異之處，只為了想要通達諸法實相：一切諸法的自相、異相，總相、別相，一相，有相、無相，如實之相，以及諸佛菩薩無量的智慧，內心始終不沉沒、不退轉，這就叫做菩薩的精進。</td><td class="bh16p17-guan"><b>晝夜求法不惜身命·精進為般若之先導</b>——本段是五段「復次」中篇幅最長、用力最深的一段，將精進求法的具體樣態鋪陳到極致：不惜身命、晝夜不輟、誦讀問答、思惟籌量，其終極指向卻是「欲知實相」——通達諸法自相、異相、總相、別相、一相、有相、無相的如實相；這清楚說明精進波羅蜜與般若波羅蜜並非各自孤立的兩度，精進在此扮演的正是通向般若的先導動能，若無精進求法的懇切用功，對於「一切諸法如實相」的體悟便無從生起，可見六度之間彼此增上、環環相扣，並無哪一度可以脫離其餘五度而獨自圓滿。</td></tr><tr><td class="bh16p17-src">如是等種種因緣，能生能辦種種善法，是故名為精進波羅蜜。波羅蜜義，如先說。</td><td>因為造作這種種因緣的緣故，精進能夠出生、能夠成辦種種善法，所以稱之為精進波羅蜜。「波羅蜜」的意義，如同先前所說。</td><td class="bh16p17-guan"><b>能生能辦·雙軌機制收攝五度之功</b>——「能生」與「能辦」四字看似平常，實則精確標舉了精進在六度體系中的雙重作用：「能生」是孵化義，指精進使布施、持戒、忍辱、禪定、智慧等善法的種子得以萌發現行；「能辦」是成就義，指精進使已萌發的善法得以貫徹完成、不半途而廢；這一總結定義，正是對前文五段「復次」的收攝——精進並非六度之外獨立的第六項善法，而是內在於前五度、使其能生能辦的貫穿性動能，此中並無一個獨立自存的「精進」實體，唯是緣起功能的假名安立。</td></tr><tr><td class="bh16p17-src">復次，菩薩精進，名為精進波羅蜜；餘人精進，不名波羅蜜。</td><td>再者，唯有菩薩所修的精進，才稱得上是精進波羅蜜；其餘人所修的精進，並不能稱為波羅蜜。</td><td class="bh16p17-guan"><b>簡別殊勝·同名精進而果地懸殊</b>——同樣名為「精進」，凡夫、外道乃至二乘人亦有其各自的精進用功，然而經文明確簡別：唯獨菩薩的精進才配稱為「波羅蜜（到彼岸）」；這一簡別的關鍵並不在精進的強度或形式是否相似，而在於是否與菩提心、與求一切智的大悲願力相應——精進本身只是中性的動能，其性質空無自性，最終能否成為「波羅蜜」，取決於推動精進的心念是否緣於利益一切眾生、趣向無上佛道的廣大願行，這正是大乘與其餘乘在同一「精進」名相下，果地卻懸殊天壤的根本所在。</td></tr></tbody></table><p class="bh16p17-note">大智度論卷十六第17品原文·白話·中觀三欄對照。詳述精進貫穿五度：精進助布施給施不懈、精進助持戒發露不覆藏、精進助忍辱順逆不著、精進助禪定能住能守、精進助智慧晝夜求法欲知實相，總結精進能生能辦種種善法名精進波羅蜜，並簡別唯菩薩精進得名波羅蜜。　中觀關鍵詞：精進為五度貫穿動能　發露不覆藏我執鬆動　順逆二境同一不著　能住能守禪定賴精進　精進為般若先導　能生能辦雙軌機制　目的論簡別波羅蜜</p></div></div>
+<script id="wy-bh16p17-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh16p17Btn"),BOX=document.getElementById("bh16p17Box"),MODAL=document.getElementById("bh16p17Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=16;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+/*BHPLACE*/function place(){var cands=[document.getElementById("c16p17Box")],eb=document.querySelector(".wy-ebox");if(eb)cands.push(eb);var best=null;for(var i=0;i<cands.length;i++){var el=cands[i];if(!el)continue;var cs=getComputedStyle(el);if(cs.display==="none")continue;var r=el.getBoundingClientRect();if(r.height<=4)continue;var v=Math.round(window.innerHeight-r.top)+8;if(best===null||v>best)best=v;}if(best!==null)BOX.style.bottom=best+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh16p17Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH16P17:END-->
 </body></html>
