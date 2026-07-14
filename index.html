@@ -2521,4 +2521,55 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH16P9:END-->
+<!--WY-BH16P10:BEGIN-->
+<style id="wy-bh16p10-css">
+.bh16p10-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh16p10-fabbox.show{display:block;}
+.bh16p10-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh16p10-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh16p10-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh16p10-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh16p10-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh16p10-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh16p10-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh16p10-modal.open{display:flex;}
+.bh16p10-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh16p10-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh16p10-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh16p10-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh16p10-close:hover{background:#dde2e6;}
+.bh16p10-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh16p10-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh16p10-tbl th,.bh16p10-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh16p10-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh16p10-tbl thead th:nth-child(1){width:32%;}.bh16p10-tbl thead th:nth-child(2){width:41%;}.bh16p10-tbl thead th:nth-child(3){width:27%;}
+.bh16p10-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh16p10-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh16p10-guan{background:#eef2f5;color:#37505f;}
+.bh16p10-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh16p10-tbl tbody tr:nth-child(even) td.bh16p10-guan{background:#e8eef2;}
+.bh16p10-tbl tbody tr:nth-child(even) td.bh16p10-qa{background:#e7ecdb;}
+.bh16p10-tbl b{color:#8b2500;}
+.bh16p10-guan b{color:#2f6b5a;}
+.bh16p10-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh16p10-note b{color:#8b2500;}
+@media(max-width:900px){.bh16p10-fabbox{right:14px;}.bh16p10-tbl{font-size:11px;}.bh16p10-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh16p10-fabbox" id="bh16p10Box"><button class="bh16p10-btn" id="bh16p10Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh16p10-ic">譯</span><span class="bh16p10-ls"><span class="bh16p10-l1">本品 · 原文·白話·中觀</span><span class="bh16p10-l2">白話翻譯表</span></span></button></div><div class="bh16p10-modal" id="bh16p10Modal" role="dialog" aria-modal="true"><div class="bh16p10-card"><button class="bh16p10-close" id="bh16p10Close" type="button" aria-label="關閉">×</button><h3>卷十六 · 第10品 白話翻譯表（合會大地獄）</h3><p class="sub">大智度論卷十六·合會大地獄業報 · 原文↔白話↔中觀概念 逐段對照</p><table class="bh16p10-tbl"><caption>黑繩大地獄 白話翻譯表·原文｜白話翻譯｜中觀概念（共3段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh16p10-src">見合會大地獄中，惡羅剎、獄卒作種種形：牛、馬、猪、羊、麞、鹿、狐、狗、虎、狼、師子、六駮、大鳥、鵰鷲、鶉鳥，作此種種諸鳥獸頭而來，吞噉齩嚙，䶩掣罪人。兩山相合，大熱鐵輪轢諸罪人，令身破碎；熱鐵臼中搗之令碎，如笮蒲桃，亦如壓油；譬如蹂場，聚肉成積，積頭如山，血流成池，鵰鷲、虎狼各來諍掣。</td><td>菩薩看見合會大地獄中，兇惡的羅剎、獄卒變化出種種形貌：牛、馬、豬、羊、麞、鹿、狐狸、狗、虎、狼、獅子、六駮（形似虎豹的猛獸）、大鳥、鵰鷲、鶉鳥，變化出這種種鳥獸的頭形前來，撲咬吞噬、啃齧撕扯罪人。兩座大山相互擠合，用燒得滾燙的大鐵輪輾壓罪人，使他們的身體破碎；又放進燒紅的鐵臼中搗碎，就像榨葡萄汁一樣，也像榨油一樣；如同踩踏曬穀場一般，把碎肉堆聚成堆，堆積如山，鮮血流成血池，鵰鷲、虎狼各自前來爭搶撕咬。</td><td class="bh16p10-guan"><b>眾合無自性·刑具皆是妄心投影</b>——鳥獸頭、兩山、鐵輪鐵臼並非有一套外在於心識、真實存在的刑具在懲罰罪人，而是罪人自身生前造作的惡業習氣，於業力成熟時所顯現之相；能合之山、能搗之臼、受苦之身三者皆是緣起假合，並無獨立自性，其恐怖之相「即空即幻」，並非實有一物可得。</td></tr><tr><td class="bh16p10-src">此人宿業因緣，多殺牛、馬、猪、羊、麞、鹿、狐、兔、虎、狼、師子、六駮、大鳥、眾鳥，如是等種種鳥獸多殘賊故，還為此眾鳥獸頭來害罪人；又以力勢相陵，枉壓羸弱，受兩山相合罪；慳貪、瞋恚、愚癡、怖畏故，斷事輕重，不以正理，或破正道，轉易正法，受熱鐵輪轢，熱鐵臼搗。</td><td>這些罪人是因為過去世的業因緣故：由於生前大量殺害牛、馬、豬、羊、麞、鹿、狐狸、兔子、虎、狼、獅子、六駮、大鳥等等各種鳥獸、多所殘害傷殺的緣故，所以如今反過來被這些鳥獸的頭形所加害；又因為生前仗恃權勢欺凌他人，冤枉壓迫弱小，所以受到兩山相合擠壓之罪；又因為慳吝貪婪、瞋恨惱怒、愚癡無知、心懷恐懼的緣故，判斷事情輕重時不依正理，甚至破壞正道、顛倒正法，所以要受熱鐵輪輾壓、熱鐵臼搗碎之報。</td><td class="bh16p10-guan"><b>業因業果的鏡像對稱</b>——殺生殘賊招感獸頭加害、仗勢欺弱招感兩山相合、枉法壞理招感輪輾臼搗，因果之間看似森然對應，然而這套「精確映射」本身仍是緣起法，並無一位造物主在背後主持審判；業力只是心念相續、如響應聲的自然軌則，了達此理者才能真正從「審判」的恐懼中解脫，而非停留在善惡報應的表相恐怖。</td></tr><tr><td class="bh16p10-src">心為業主，業為地獄師；　一念殘賊起，鳥獸頭已具；　一念欺壓生，兩山已相合；　一念枉法動，鐵臼已成形。　不觀心源者，已住合會獄；　能了心空者，當下出輪迴。</td><td>心是業的主人，業是地獄的塑造者；一念殘害傷殺的心生起，鳥獸頭的果報已然具足；一念欺壓他人的心生起，兩山相合的果報已然形成；一念枉曲正法的心一動，熱鐵臼的果報已然成形。不能返觀心源的人，其實當下已經住在合會地獄之中；能夠了達此心本空的人，當下便能超出輪迴。</td><td class="bh16p10-guan"><b>心空則獄空·當下即是解脫</b>——此偈點出全品要旨：地獄的實質不在遙遠的未來或他方世界，而在當下每一念殘賊、欺壓、枉法之心生起的剎那，業已「成形」；反之，若能照見此心無自性、本自空寂，則地獄的鏡像便無所依附，輪迴當下即可截斷，這正是中觀「不離生死而證涅槃」的核心觀點。</td></tr></tbody></table><p class="bh16p10-note">大智度論卷十六第10品原文·白話·中觀三欄對照。菩薩天眼觀合會大地獄：惡羅剎、獄卒化作鳥獸頭吞噬罪人，兩山相合、熱鐵輪轢、熱鐵臼搗如笮蒲桃；其因在於宿世多殺鳥獸、以力勢相陵枉壓羸弱、慳貪瞋癡斷事不以正理。終偈：心為業主，業為地獄師，心空則獄空。　中觀關鍵詞：眾合無自性　業因業果鏡像　心空獄空　緣起假合</p></div></div>
+<script id="wy-bh16p10-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh16p10Btn"),BOX=document.getElementById("bh16p10Box"),MODAL=document.getElementById("bh16p10Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=9;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+/*BHPLACE*/function place(){var cands=[document.getElementById("c16p10Box")],eb=document.querySelector(".wy-ebox");if(eb)cands.push(eb);var best=null;for(var i=0;i<cands.length;i++){var el=cands[i];if(!el)continue;var cs=getComputedStyle(el);if(cs.display==="none")continue;var r=el.getBoundingClientRect();if(r.height<=4)continue;var v=Math.round(window.innerHeight-r.top)+8;if(best===null||v>best)best=v;}if(best!==null)BOX.style.bottom=best+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh16p10Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH16P10:END-->
 </body></html>
